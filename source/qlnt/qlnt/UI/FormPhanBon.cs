@@ -15,6 +15,7 @@ namespace qlnt
 {
     public partial class FormPhanBon : Form1
     {
+        PhanBonBUS bus = new PhanBonBUS();
         public FormPhanBon()
         {
             InitializeComponent();
@@ -22,9 +23,7 @@ namespace qlnt
         }
         private void Form2_Load(object sender, EventArgs e)
         {
-
-            PhanBonBUS bus = new PhanBonBUS();
-            bus.xem(dataGrid);
+            bus.View(dataGrid);
             
         }
 
@@ -32,15 +31,23 @@ namespace qlnt
         {
             Diablog_PB d = new Diablog_PB();
             d.ShowDialog(this);
+            bus.View(dataGrid);
         }
 
         private void dataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(dataGrid.Columns[e.ColumnIndex].Name=="Sua")
+            string id = dataGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString();
+            if (dataGrid.Columns[e.ColumnIndex].Name=="Sua")
             {
                 //MessageBox.Show(dataGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
-                Diablog_PB d = new Diablog_PB(dataGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
+                Diablog_PB d = new Diablog_PB(id);
                 d.ShowDialog(this);
+                bus.View(dataGrid);
+            }
+            if (dataGrid.Columns[e.ColumnIndex].Name == "Xoa")
+            {
+                bus.Delete(id);
+                bus.View(dataGrid);
             }
         }
     }

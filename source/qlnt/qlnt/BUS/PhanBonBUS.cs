@@ -16,16 +16,27 @@ namespace qlnt.BUS
         {
             checkString check = new checkString();
         }
-        public void them(PhanBon o)
+        public void Add(PhanBon o)
         {
 
             PhanBonDB db = new PhanBonDB();
-            db.them(o);
+            db.Add(o);
         }
-        internal void xem(BunifuCustomDataGrid dataGrid)
+        public void Delete(string id)
         {
             PhanBonDB db = new PhanBonDB();
-            db.xem(dataGrid);
+            db.Delete(id);
+        }
+        public void Edit(PhanBon o)
+        {
+            PhanBonDB db = new PhanBonDB();
+            db.Edit(o);
+        }
+
+        internal void View(BunifuCustomDataGrid dataGrid)
+        {
+            PhanBonDB db = new PhanBonDB();
+            db.View(dataGrid);
         }
     }
 }

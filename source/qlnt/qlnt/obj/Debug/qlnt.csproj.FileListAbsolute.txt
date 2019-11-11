@@ -16,3 +16,20 @@ C:\Users\Vi\documents\visual studio 2015\Projects\qlnt\qlnt\obj\Debug\qlnt.Form3
 C:\Users\Vi\documents\visual studio 2015\Projects\qlnt\qlnt\obj\Debug\qlnt.DialogForm.Diablog_PB.resources
 C:\Users\Vi\documents\visual studio 2015\Projects\qlnt\qlnt\obj\Debug\qlnt.FormPhanBon.resources
 C:\Users\Vi\documents\visual studio 2015\Projects\qlnt\qlnt\obj\Debug\qlnt.UI.demo.resources
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\bin\Debug\qlnt.exe.config
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\bin\Debug\qlnt.exe
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\bin\Debug\qlnt.pdb
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\bin\Debug\EntityFramework.dll
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\bin\Debug\EntityFramework.xml
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.csprojResolveAssemblyReference.cache
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.DialogForm.Diablog_PB.resources
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.demo.resources
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.Form1.resources
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.FormPhanBon.resources
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.Form3.resources
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.Properties.Resources.resources
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.csproj.GenerateResource.Cache
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.exe
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.pdb

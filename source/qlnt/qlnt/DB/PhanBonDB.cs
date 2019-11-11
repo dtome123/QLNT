@@ -37,7 +37,7 @@ namespace qlnt.DB
             }
             return o;
         }
-        public void them(PhanBon o)
+        public void Add(PhanBon o)
         {
             /*using (QLNTEntities1 db = new QLNTEntities1())
             {
@@ -51,7 +51,33 @@ namespace qlnt.DB
                 db.SaveChanges();
             }
         }
-        public void xem(BunifuCustomDataGrid dataGrid)
+        public void Delete(string id)
+        {
+            using (QLNTEntities1 db = new QLNTEntities1())
+            {
+                int ma = Convert.ToInt32(id);
+                PhanBon temp = db.PhanBons.Where(p => p.MaPB == ma).SingleOrDefault();
+                db.PhanBons.Remove(temp);
+                db.SaveChanges();
+            }
+        }
+        public void Edit(PhanBon o)
+        {
+            using (QLNTEntities1 db = new QLNTEntities1())
+            {
+                int ma = o.MaPB;
+                PhanBon temp = db.PhanBons.Find(ma);
+                temp.TenPB = o.TenPB;
+                temp.Loai = o.Loai;
+                temp.SoLuong = o.SoLuong;
+                temp.KhoiLuong = o.KhoiLuong;
+                temp.NgaySX = o.NgaySX;
+                temp.HanSD = o.HanSD;
+                temp.DonGia = o.DonGia;
+                db.SaveChanges();
+            }
+        }
+        public void View(BunifuCustomDataGrid dataGrid)
         {
             using (QLNTEntities1 db = new QLNTEntities1())
             {
@@ -61,5 +87,6 @@ namespace qlnt.DB
                 dataGrid.DataSource = result.ToList();
             }
         }
+        
     }
 }

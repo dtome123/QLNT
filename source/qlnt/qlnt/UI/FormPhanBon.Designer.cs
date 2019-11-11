@@ -160,6 +160,8 @@
             this.Sua.Name = "Sua";
             this.Sua.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Sua.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Sua.Text = "Sửa";
+            this.Sua.UseColumnTextForButtonValue = true;
             this.Sua.Width = 50;
             // 
             // Xoa
@@ -168,6 +170,8 @@
             this.Xoa.Name = "Xoa";
             this.Xoa.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Xoa.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Xoa.Text = "Xóa";
+            this.Xoa.UseColumnTextForButtonValue = true;
             this.Xoa.Width = 50;
             // 
             // id
