@@ -87,6 +87,16 @@ namespace qlnt.DB
                 dataGrid.DataSource = result.ToList();
             }
         }
+        public void Search(DataGrid dataGrid,string s)
+        {
+            using (QLNTEntities1 db = new QLNTEntities1())
+            {
+                var result = from c in db.PhanBons
+                              where c.TenPB.StartsWith(s) || c.TenPB.EndsWith(s)
+                              select new { TenPB = c.TenPB, Loai = c.Loai, KhoiLuong = c.KhoiLuong.ToString(), SoLuong = c.SoLuong, DonGia = c.DonGia, NgaySX = c.NgaySX.Day + "/" + c.NgaySX.Month + "/" + c.NgaySX.Year, HanSD = c.HanSD.Day + "/" + c.HanSD.Month + "/" + c.HanSD.Year, MaPB = c.MaPB };
+                dataGrid.DataSource = result.ToList();
+            }
+        }
         
     }
 }

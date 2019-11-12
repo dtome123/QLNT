@@ -35,12 +35,12 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.buttonSearch = new Bunifu.Framework.UI.BunifuImageButton();
+            this.buttonAdd = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -94,29 +94,29 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Tìm kiếm";
             // 
-            // bunifuImageButton2
+            // buttonSearch
             // 
-            this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
-            this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(384, 156);
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.Size = new System.Drawing.Size(32, 27);
-            this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton2.TabIndex = 6;
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 10;
+            this.buttonSearch.Image = ((System.Drawing.Image)(resources.GetObject("buttonSearch.Image")));
+            this.buttonSearch.ImageActive = null;
+            this.buttonSearch.Location = new System.Drawing.Point(384, 156);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(32, 27);
+            this.buttonSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.buttonSearch.TabIndex = 6;
+            this.buttonSearch.TabStop = false;
+            this.buttonSearch.Zoom = 10;
             // 
-            // bunifuImageButton3
+            // buttonAdd
             // 
-            this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(576, 156);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(28, 27);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 7;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
+            this.buttonAdd.Image = ((System.Drawing.Image)(resources.GetObject("buttonAdd.Image")));
+            this.buttonAdd.ImageActive = null;
+            this.buttonAdd.Location = new System.Drawing.Point(576, 156);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(28, 27);
+            this.buttonAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.buttonAdd.TabIndex = 7;
+            this.buttonAdd.TabStop = false;
+            this.buttonAdd.Zoom = 10;
             // 
             // bunifuCustomLabel2
             // 
@@ -135,8 +135,8 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(788, 491);
             this.Controls.Add(this.bunifuCustomLabel2);
-            this.Controls.Add(this.bunifuImageButton3);
-            this.Controls.Add(this.bunifuImageButton2);
+            this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bunifuCustomTextbox1);
             this.Controls.Add(this.bunifuCustomLabel1);
@@ -146,8 +146,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,8 +160,8 @@
         protected Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         protected WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
         protected System.Windows.Forms.Label label1;
-        protected Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
-        protected Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
+        protected Bunifu.Framework.UI.BunifuImageButton buttonSearch;
+        protected Bunifu.Framework.UI.BunifuImageButton buttonAdd;
         protected Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
     }
 }

@@ -27,9 +27,9 @@ C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.csprojResolveAs
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.DialogForm.Diablog_PB.resources
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.demo.resources
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.Form1.resources
-C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.FormPhanBon.resources
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.Form3.resources
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.Properties.Resources.resources
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.csproj.GenerateResource.Cache
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.exe
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.pdb
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.FormPhanBon.resources

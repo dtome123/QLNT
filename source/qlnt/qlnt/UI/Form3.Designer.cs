@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).BeginInit();
             this.SuspendLayout();
             // 
             // Form3
@@ -39,8 +39,8 @@
             this.ClientSize = new System.Drawing.Size(788, 491);
             this.Name = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
