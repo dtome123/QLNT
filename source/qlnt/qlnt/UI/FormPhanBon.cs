@@ -73,5 +73,10 @@ namespace qlnt
                 dataGrid.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.White;
             }
         }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

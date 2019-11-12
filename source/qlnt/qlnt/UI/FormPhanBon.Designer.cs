@@ -58,7 +58,11 @@
             // 
             this.bunifuCustomLabel1.Text = "Phân bón";
             // 
-            // bunifuImageButton3
+            // buttonSearch
+            // 
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
+            // 
+            // buttonAdd
             // 
             this.buttonAdd.Click += new System.EventHandler(this.bunifuImageButton3_Click);
             // 
