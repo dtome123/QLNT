@@ -45,7 +45,7 @@ namespace qlnt.DialogForm
             button_add.Visible = false;
             //Hien button luu
             button_luu.Visible = true;
-            
+            //button_luu.Enabled = false;
         }
         private void Dialog_close()
         {
@@ -91,13 +91,63 @@ namespace qlnt.DialogForm
         {
             Close();
         }
-
+        public bool check()
+        {
+            checkString c = new checkString();
+            if (c.isNUll(textTenPB.Text) )
+            {
+                MessageBox.Show("Dữ liệu không được để rỗng");
+                textTenPB.Focus();
+                return false;
+            }
+            if (c.isNUll(comboBoxLoai.Text) )
+            {
+                MessageBox.Show("Dữ liệu không được để rỗng");
+                comboBoxLoai.Focus();
+                return false;
+            }
+            if ( c.isNUll(textSoLuong.Text))
+            {
+                MessageBox.Show("Dữ liệu không được để rỗng");
+                textSoLuong.Focus();
+                return false;
+            }
+            if ( c.isNUll(textKhoiLuong.Text))
+            {
+                MessageBox.Show("Dữ liệu không được để rỗng");
+                textKhoiLuong.Focus();
+                return false;
+            }
+            if (c.isNUll(textDonGia.Text))
+            {
+                MessageBox.Show("Dữ liệu không được để rỗng");
+                textDonGia.Focus();
+                return false;
+            }
+            if (!c.isNumber(textSoLuong.Text))
+            {
+                MessageBox.Show("Dữ liệu số lượng phải là số");
+                textSoLuong.Focus();
+                return false;
+            }
+            if (!c.isNumber(textKhoiLuong.Text))
+            {
+                MessageBox.Show("Dữ liệu khối lượng phải là số");
+                textKhoiLuong.Focus();
+                return false;
+            }
+            return true;
+        }
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            o = new PhanBon() {MaPB=this.id ,TenPB = textTenPB.Text, Loai = comboBoxLoai.Text, SoLuong = Convert.ToInt32(textSoLuong.Text), DonGia = Convert.ToDouble(textDonGia.Text), KhoiLuong = Convert.ToInt32(textKhoiLuong.Text), NgaySX = DatepickerSX.Value.Date, HanSD = DatepickerHSD.Value.Date };
-            bus.Edit(o);
-            MessageBox.Show("Sửa thành công");
-            Dialog_close();
+            
+            if (check())
+            {
+                o = new PhanBon() { MaPB = this.id, TenPB = textTenPB.Text, Loai = comboBoxLoai.Text, SoLuong = Convert.ToInt32(textSoLuong.Text), DonGia = Convert.ToDouble(textDonGia.Text), KhoiLuong = Convert.ToInt32(textKhoiLuong.Text), NgaySX = DatepickerSX.Value.Date, HanSD = DatepickerHSD.Value.Date };
+                bus.Edit(o);
+                MessageBox.Show("Sửa thành công");
+                Dialog_close();
+            }
         }
     }
 }

@@ -62,7 +62,7 @@
             // 
             // dataGrid
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Yellow;
             this.dataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGrid.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -89,13 +89,14 @@
             this.id});
             this.dataGrid.DoubleBuffered = true;
             this.dataGrid.EnableHeadersVisualStyles = false;
+            this.dataGrid.GridColor = System.Drawing.Color.Silver;
             this.dataGrid.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.dataGrid.HeaderForeColor = System.Drawing.Color.Honeydew;
             this.dataGrid.Location = new System.Drawing.Point(39, 236);
             this.dataGrid.Name = "dataGrid";
             this.dataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
