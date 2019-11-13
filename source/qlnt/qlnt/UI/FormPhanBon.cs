@@ -31,7 +31,7 @@ namespace qlnt
         {
             View();
         }
-        // Chức năng 
+        // Chức năng bbbbbbbbbbbbbbbb
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
             Diablog_PB d = new Diablog_PB();
