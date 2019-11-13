@@ -151,10 +151,10 @@
     <Compile Include="DB\ViTri.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DialogForm\Diablog_PB.cs">
+    <Compile Include="UI\DialogForm\Diablog_PB.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DialogForm\Diablog_PB.Designer.cs">
+    <Compile Include="UI\DialogForm\Diablog_PB.Designer.cs">
       <DependentUpon>Diablog_PB.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\demo.cs">
@@ -183,7 +183,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DialogForm\Diablog_PB.resx">
+    <EmbeddedResource Include="UI\DialogForm\Diablog_PB.resx">
       <DependentUpon>Diablog_PB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\demo.resx">

@@ -33,10 +33,16 @@ namespace qlnt.BUS
             db.Edit(o);
         }
 
-        internal void View(BunifuCustomDataGrid dataGrid)
+        public void View(BunifuCustomDataGrid dataGrid)
         {
             PhanBonDB db = new PhanBonDB();
             db.View(dataGrid);
         }
+        public void Search(BunifuCustomDataGrid dataGrid,string s)
+        {
+            PhanBonDB db = new PhanBonDB();
+            db.Search(dataGrid,s);
+        }
+
     }
 }

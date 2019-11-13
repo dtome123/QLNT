@@ -31,7 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPhanBon));
             this.dataGrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.TenPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Loai = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,7 +42,6 @@
             this.Sua = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Xoa = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).BeginInit();
@@ -65,6 +63,11 @@
             // buttonAdd
             // 
             this.buttonAdd.Click += new System.EventHandler(this.bunifuImageButton3_Click);
+            // 
+            // buttonViewAll
+            // 
+            this.buttonViewAll.Location = new System.Drawing.Point(665, 154);
+            this.buttonViewAll.Click += new System.EventHandler(this.buttonViewAll_Click);
             // 
             // dataGrid
             // 
@@ -190,50 +193,24 @@
             this.id.Name = "id";
             this.id.Visible = false;
             // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Xem tất cả";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(668, 150);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(109, 33);
-            this.bunifuThinButton21.TabIndex = 10;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // FormPhanBon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(983, 452);
-            this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.dataGrid);
             this.Name = "FormPhanBon";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
+            this.Controls.SetChildIndex(this.buttonViewAll, 0);
             this.Controls.SetChildIndex(this.bunifuImageButton1, 0);
             this.Controls.SetChildIndex(this.bunifuCustomLabel1, 0);
-            this.Controls.SetChildIndex(this.bunifuCustomTextbox1, 0);
+            this.Controls.SetChildIndex(this.inputSearch, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.buttonSearch, 0);
             this.Controls.SetChildIndex(this.buttonAdd, 0);
             this.Controls.SetChildIndex(this.bunifuCustomLabel2, 0);
             this.Controls.SetChildIndex(this.dataGrid, 0);
-            this.Controls.SetChildIndex(this.bunifuThinButton21, 0);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).EndInit();
@@ -256,6 +233,5 @@
         private System.Windows.Forms.DataGridViewButtonColumn Sua;
         private System.Windows.Forms.DataGridViewButtonColumn Xoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
     }
 }
