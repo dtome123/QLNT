@@ -33,3 +33,6 @@ C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.csproj.Generate
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.exe
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.pdb
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.FormPhanBon.resources
+F:\GitHub\QLNT\source\qlnt\qlnt\bin\Debug\qlnt.exe.config
+F:\GitHub\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.exe
+F:\GitHub\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.pdb
