@@ -202,6 +202,7 @@
             this.Name = "FormPhanBon";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
+            this.Controls.SetChildIndex(this.dataGrid, 0);
             this.Controls.SetChildIndex(this.buttonViewAll, 0);
             this.Controls.SetChildIndex(this.bunifuImageButton1, 0);
             this.Controls.SetChildIndex(this.bunifuCustomLabel1, 0);
@@ -210,7 +211,6 @@
             this.Controls.SetChildIndex(this.buttonSearch, 0);
             this.Controls.SetChildIndex(this.buttonAdd, 0);
             this.Controls.SetChildIndex(this.bunifuCustomLabel2, 0);
-            this.Controls.SetChildIndex(this.dataGrid, 0);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).EndInit();
