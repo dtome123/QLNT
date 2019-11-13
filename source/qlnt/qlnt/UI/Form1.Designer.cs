@@ -33,11 +33,12 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.inputSearch = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonSearch = new Bunifu.Framework.UI.BunifuImageButton();
             this.buttonAdd = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.buttonViewAll = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).BeginInit();
@@ -75,14 +76,14 @@
             this.bunifuCustomLabel1.Text = "Tiêu đề";
             this.bunifuCustomLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // bunifuCustomTextbox1
+            // inputSearch
             // 
-            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(169, 156);
-            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(209, 27);
-            this.bunifuCustomTextbox1.TabIndex = 4;
+            this.inputSearch.BorderColor = System.Drawing.Color.SeaGreen;
+            this.inputSearch.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputSearch.Location = new System.Drawing.Point(169, 156);
+            this.inputSearch.Name = "inputSearch";
+            this.inputSearch.Size = new System.Drawing.Size(209, 27);
+            this.inputSearch.TabIndex = 4;
             // 
             // label1
             // 
@@ -128,17 +129,43 @@
             this.bunifuCustomLabel2.TabIndex = 8;
             this.bunifuCustomLabel2.Text = "Thêm";
             // 
+            // buttonViewAll
+            // 
+            this.buttonViewAll.ActiveBorderThickness = 1;
+            this.buttonViewAll.ActiveCornerRadius = 20;
+            this.buttonViewAll.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.buttonViewAll.ActiveForecolor = System.Drawing.Color.White;
+            this.buttonViewAll.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.buttonViewAll.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonViewAll.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonViewAll.BackgroundImage")));
+            this.buttonViewAll.ButtonText = "Xem tất cả";
+            this.buttonViewAll.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonViewAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonViewAll.ForeColor = System.Drawing.Color.SeaGreen;
+            this.buttonViewAll.IdleBorderThickness = 1;
+            this.buttonViewAll.IdleCornerRadius = 20;
+            this.buttonViewAll.IdleFillColor = System.Drawing.Color.White;
+            this.buttonViewAll.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.buttonViewAll.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.buttonViewAll.Location = new System.Drawing.Point(665, 150);
+            this.buttonViewAll.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonViewAll.Name = "buttonViewAll";
+            this.buttonViewAll.Size = new System.Drawing.Size(109, 33);
+            this.buttonViewAll.TabIndex = 11;
+            this.buttonViewAll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(788, 491);
+            this.Controls.Add(this.buttonViewAll);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.bunifuCustomTextbox1);
+            this.Controls.Add(this.inputSearch);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.bunifuImageButton1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -158,11 +185,12 @@
         protected Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         protected Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         protected Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        protected WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
+        protected WindowsFormsControlLibrary1.BunifuCustomTextbox inputSearch;
         protected System.Windows.Forms.Label label1;
         protected Bunifu.Framework.UI.BunifuImageButton buttonSearch;
         protected Bunifu.Framework.UI.BunifuImageButton buttonAdd;
         protected Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        protected Bunifu.Framework.UI.BunifuThinButton2 buttonViewAll;
     }
 }
 

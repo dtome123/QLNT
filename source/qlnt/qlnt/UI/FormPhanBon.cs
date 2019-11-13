@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using qlnt.DB;
 using qlnt.BUS;
+using Bunifu.Framework.UI;
 
 namespace qlnt
 {
@@ -40,9 +41,10 @@ namespace qlnt
 
         private void dataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string id = dataGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString();
+            string id;
             if (dataGrid.Columns[e.ColumnIndex].Name=="Sua")
             {
+                id = dataGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString();
                 //MessageBox.Show(dataGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
                 Diablog_PB d = new Diablog_PB(id);
                 d.ShowDialog(this);
@@ -50,6 +52,7 @@ namespace qlnt
             }
             if (dataGrid.Columns[e.ColumnIndex].Name == "Xoa")
             {
+                id = dataGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString();
                 bus.Delete(id);
                 View();
             }
@@ -76,7 +79,22 @@ namespace qlnt
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-
+            try {
+                bus.Search(dataGrid, inputSearch.Text);
+                dataGrid.Rows[0].Selected = false;
+            }
+            catch 
+            {
+                MessageBox.Show("Không tìm thấy");
+                View();
+            }
         }
+
+        private void buttonViewAll_Click(object sender, EventArgs e)
+        {
+            View();
+        }
+
+        
     }
 }

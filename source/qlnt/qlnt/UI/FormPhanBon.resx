@@ -150,21 +150,6 @@
   <metadata name="id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAG0AAAAhCAYAAADTYiVBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHdSURBVGhD7ZqrS4NRGIf9i2wmm8lmEsuSBhEMWrRoMBkU
-        vIQFYcGgCBoGhiVBxIFoEBFRFiYICyqiyMLQcOQ5+86HH7skN98DvwcOjN3CeXiv24AT0SFpESJpESJp
-        ESJpESJpEdJVWuP7y5Xuy27heMtNHay40Z1ZN7g2odODw91yx3PFdVe8PXWfjXpioZWO0s6r1/6LEIa4
-        q6c7V/t4SV4Vfw13yx2fVC7dcinv7x557WiRhmE+NHO06l7r78mzot9085CRxhvHdxc7Ghb9h4yX21vK
-        ZLmMNMxKmD1Im9S7QCoNo4SisMnm2b4rXBT9Yy+NLpHCpxpmFxxRuqpvtaY0UiKpUdiGSCPivDRmA1pN
-        YZuH50cfbV7aWGHeh52wDSlyaCPXlDa8Pdl1Ahd2YHvipWEPi8I+qTQ6R62o4iCVxnzGnCZsQ99B/+Gl
-        hVZS2CaMZl4aqRGDqmu2CaOZlwb58qE/wibhd01IpRFlLCVvapXkGWEF1otkwjCWpdKAQhf2W8IGCCOY
-        2PQHMtKASENc2CiL/4P6RYT9FgYt0oBUSTeJYToWbf/7Bykw1C8aj3abqrbSAhimxRzJT6d/QNHp7WGl
-        GP6X04mu0oRNJC1CJC1CJC1CJC06nPsBqBg/dHCTteQAAAAASUVORK5CYII=
-</value>
-  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
