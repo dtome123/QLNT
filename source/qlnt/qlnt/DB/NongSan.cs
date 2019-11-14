@@ -26,7 +26,7 @@ namespace qlnt.DB
         public double SanLuongTonKho { get; set; }
         public double DonGia { get; set; }
         public int MaLoaiCay { get; set; }
-    
+        public double BaoQuan { get; set; }
         public virtual Cay Cay { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTiet_TH> ChiTiet_TH { get; set; }

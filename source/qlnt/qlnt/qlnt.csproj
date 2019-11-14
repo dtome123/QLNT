@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\checkString.cs" />
+    <Compile Include="BUS\CayBUS.cs" />
     <Compile Include="BUS\PhanBonBUS.cs" />
     <Compile Include="DB\Cay.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
@@ -120,6 +121,8 @@
     <Compile Include="DB\PhanBon.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
+    <Compile Include="DB\CayDB.cs" />
+    <Compile Include="DB\NongSanDB.cs" />
     <Compile Include="DB\PhanBonDB.cs" />
     <Compile Include="DB\PhieuNhap.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
@@ -151,6 +154,12 @@
     <Compile Include="DB\ViTri.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
+    <Compile Include="UI\DialogForm\Diablog_Cay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_Cay.Designer.cs">
+      <DependentUpon>Diablog_Cay.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\DialogForm\Diablog_PB.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +178,12 @@
     <Compile Include="UI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\FormCay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormCay.Designer.cs">
+      <DependentUpon>FormCay.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FormPhanBon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +198,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UI\DialogForm\Diablog_Cay.resx">
+      <DependentUpon>Diablog_Cay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\DialogForm\Diablog_PB.resx">
       <DependentUpon>Diablog_PB.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormCay.resx">
+      <DependentUpon>FormCay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormPhanBon.resx">
       <DependentUpon>FormPhanBon.cs</DependentUpon>

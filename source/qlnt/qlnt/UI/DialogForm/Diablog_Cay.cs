@@ -13,34 +13,29 @@ using qlnt.BUS;
 
 namespace qlnt.DialogForm
 {
- 
-    public partial class Diablog_PB : Form
+  
+    public partial class Diablog_Cay : Form
     {
-        PhanBonBUS bus = new PhanBonBUS();
-        PhanBon o;
+        CayBUS bus = new CayBUS();
+        Cay o;
         int id;
 
-        public Diablog_PB()
+        public Diablog_Cay()
         {
             InitializeComponent();
         }
-        public Diablog_PB(string id)
+        public Diablog_Cay(string id)
         {
             InitializeComponent();
-            PhanBonDB db = new PhanBonDB();
+            CayDB db = new CayDB();
             // load noi dung de sua thong tin
             #region gắn giá trị
             this.id = Convert.ToInt32(id);
-            o = db.getPhanBon(id);
-            textTenPB.Text = o.TenPB ;
-            comboBoxLoai.Text = o.Loai;
-            textDonGia.Text = o.DonGia.ToString();
-            textKhoiLuong.Text = o.KhoiLuong.ToString();
+            o = db.GetCay(id);
+            textTenCay.Text = o.TenCay ;
+            comboBoxMuaThuHoach.Text = o.MuaThuHoach;
             textSoLuong.Text = o.SoLuong.ToString();
-            DatepickerSX.Value = o.NgaySX;
-            DatepickerSX.Value.ToString("dd/MM/yyyy");
-            DatepickerHSD.Value = o.HanSD;
-            DatepickerHSD.Value.ToString("dd/MM/yyyy");
+            DatepickerNamGieoDau.Value = o.NamGieoDau ;
             #endregion
             // An button add
             button_add.Enabled = false;
@@ -52,16 +47,16 @@ namespace qlnt.DialogForm
         public bool check()
         {
             checkString c = new checkString();
-            if (c.isNUll(textTenPB.Text))
+            if (c.isNUll(textTenCay.Text))
             {
                 MessageBox.Show("Dữ liệu không được để rỗng");
-                textTenPB.Focus();
+                textTenCay.Focus();
                 return false;
             }
-            if (c.isNUll(comboBoxLoai.Text))
+            if (c.isNUll(comboBoxMuaThuHoach.Text))
             {
                 MessageBox.Show("Dữ liệu không được để rỗng");
-                comboBoxLoai.Focus();
+                comboBoxMuaThuHoach.Focus();
                 return false;
             }
             if (c.isNUll(textSoLuong.Text))
@@ -70,28 +65,10 @@ namespace qlnt.DialogForm
                 textSoLuong.Focus();
                 return false;
             }
-            if (c.isNUll(textKhoiLuong.Text))
-            {
-                MessageBox.Show("Dữ liệu không được để rỗng");
-                textKhoiLuong.Focus();
-                return false;
-            }
-            if (c.isNUll(textDonGia.Text))
-            {
-                MessageBox.Show("Dữ liệu không được để rỗng");
-                textDonGia.Focus();
-                return false;
-            }
             if (!c.isNumber(textSoLuong.Text))
             {
                 MessageBox.Show("Dữ liệu số lượng phải là số");
                 textSoLuong.Focus();
-                return false;
-            }
-            if (!c.isNumber(textKhoiLuong.Text))
-            {
-                MessageBox.Show("Dữ liệu khối lượng phải là số");
-                textKhoiLuong.Focus();
                 return false;
             }
             return true;
@@ -106,7 +83,7 @@ namespace qlnt.DialogForm
 
             if(check())
             {
-                o = new PhanBon() { TenPB = textTenPB.Text, Loai = comboBoxLoai.Text, SoLuong = Convert.ToInt32(textSoLuong.Text), DonGia = Convert.ToDouble(textDonGia.Text), KhoiLuong = Convert.ToInt32(textKhoiLuong.Text), NgaySX = DatepickerSX.Value.Date, HanSD = DatepickerHSD.Value.Date };
+                o = new Cay() {TenCay = o.TenCay, SoLuong = o.SoLuong, MuaThuHoach = o.MuaThuHoach, NamGieoDau = o.NamGieoDau,MaLoaiCay=o.MaLoaiCay };
                 bus.Add(o);
                 Dialog_close();
             }            
@@ -125,8 +102,8 @@ namespace qlnt.DialogForm
 
         private void add_PB_Load(object sender, EventArgs e)
         {
-            List<string> l=new List<string>() {"Vô cơ", "Hữu cơ"} ;
-            comboBoxLoai.DataSource = l;
+            List<string> l=new List<string>() {"Xuân", "Hạ", "Thu", "Đông" } ;
+            comboBoxMuaThuHoach.DataSource = l;
             //DatepickerSX.Format = DateTimePickerFormat.Custom;
             //DatepickerSX.FormatCustom = "dd/MM/yyyy";
 
@@ -147,11 +124,21 @@ namespace qlnt.DialogForm
             
             if (check())
             {
-                o = new PhanBon() { MaPB = this.id, TenPB = textTenPB.Text, Loai = comboBoxLoai.Text, SoLuong = Convert.ToInt32(textSoLuong.Text), DonGia = Convert.ToDouble(textDonGia.Text), KhoiLuong = Convert.ToInt32(textKhoiLuong.Text), NgaySX = DatepickerSX.Value.Date, HanSD = DatepickerHSD.Value.Date };
+                o = new Cay() { MaLoaiCay = this.id, TenCay = textTenCay.Text, MuaThuHoach = comboBoxMuaThuHoach.Text, SoLuong = Convert.ToInt32(textSoLuong.Text),NamGieoDau=DatepickerNamGieoDau.Value.Date, };
                 bus.Edit(o);
                 MessageBox.Show("Sửa thành công");
                 Dialog_close();
             }
+        }
+
+        private void labelTen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -14,10 +14,10 @@ using Bunifu.Framework.UI;
 
 namespace qlnt
 {
-    public partial class FormPhanBon : Form1
+    public partial class FormCay : Form1
     {
-        PhanBonBUS bus = new PhanBonBUS();
-        public FormPhanBon()
+        CayBUS bus = new CayBUS();
+        public FormCay()
         {
             InitializeComponent();
             
@@ -31,10 +31,10 @@ namespace qlnt
         {
             View();
         }
-        // Chức năng
+        // Chức năng 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
-            Diablog_PB d = new Diablog_PB();
+            Diablog_Cay d = new Diablog_Cay();
             d.ShowDialog(this);
             View();
         }
@@ -46,7 +46,7 @@ namespace qlnt
             {
                 id = dataGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString();
                 //MessageBox.Show(dataGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
-                Diablog_PB d = new Diablog_PB(id);
+                Diablog_Cay d = new Diablog_Cay(id);
                 d.ShowDialog(this);
                 View();
             }
