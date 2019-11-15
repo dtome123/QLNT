@@ -183,7 +183,7 @@
             // 
             this.fbtnCreate.Active = false;
             this.fbtnCreate.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.fbtnCreate.BackColor = System.Drawing.Color.ForestGreen;
+            this.fbtnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.fbtnCreate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.fbtnCreate.BorderRadius = 0;
             this.fbtnCreate.ButtonText = "Create Import Form";
@@ -217,7 +217,7 @@
             // fbtnDiscard
             // 
             this.fbtnDiscard.Active = false;
-            this.fbtnDiscard.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.fbtnDiscard.Activecolor = System.Drawing.Color.DarkRed;
             this.fbtnDiscard.BackColor = System.Drawing.Color.DarkRed;
             this.fbtnDiscard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.fbtnDiscard.BorderRadius = 0;
@@ -238,8 +238,8 @@
             this.fbtnDiscard.IsTab = false;
             this.fbtnDiscard.Location = new System.Drawing.Point(668, 615);
             this.fbtnDiscard.Name = "fbtnDiscard";
-            this.fbtnDiscard.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.fbtnDiscard.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.fbtnDiscard.Normalcolor = System.Drawing.Color.DarkRed;
+            this.fbtnDiscard.OnHovercolor = System.Drawing.Color.DarkRed;
             this.fbtnDiscard.OnHoverTextColor = System.Drawing.Color.White;
             this.fbtnDiscard.selected = false;
             this.fbtnDiscard.Size = new System.Drawing.Size(195, 48);
