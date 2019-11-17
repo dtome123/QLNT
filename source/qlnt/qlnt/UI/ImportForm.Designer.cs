@@ -33,7 +33,6 @@
             this.lblWorker = new System.Windows.Forms.Label();
             this.txtboxWorker = new System.Windows.Forms.TextBox();
             this.lblDate = new System.Windows.Forms.Label();
-            this.txtboxDateCreate = new System.Windows.Forms.TextBox();
             this.cbbProducts = new System.Windows.Forms.ComboBox();
             this.lblProductName = new System.Windows.Forms.Label();
             this.lblAmount = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@
             this.fbtnDiscard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.fbtnAddProduct = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ibtnClose = new Bunifu.Framework.UI.BunifuImageButton();
+            this.dpDate = new Bunifu.Framework.UI.BunifuDatepicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ibtnClose)).BeginInit();
             this.SuspendLayout();
@@ -88,14 +88,6 @@
             this.lblDate.Size = new System.Drawing.Size(59, 25);
             this.lblDate.TabIndex = 3;
             this.lblDate.Text = "Date:";
-            // 
-            // txtboxDateCreate
-            // 
-            this.txtboxDateCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtboxDateCreate.Location = new System.Drawing.Point(905, 132);
-            this.txtboxDateCreate.Name = "txtboxDateCreate";
-            this.txtboxDateCreate.Size = new System.Drawing.Size(177, 30);
-            this.txtboxDateCreate.TabIndex = 4;
             // 
             // cbbProducts
             // 
@@ -296,12 +288,26 @@
             this.ibtnClose.TabStop = false;
             this.ibtnClose.Zoom = 10;
             // 
+            // dpDate
+            // 
+            this.dpDate.BackColor = System.Drawing.Color.SeaGreen;
+            this.dpDate.BorderRadius = 0;
+            this.dpDate.ForeColor = System.Drawing.Color.White;
+            this.dpDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dpDate.FormatCustom = null;
+            this.dpDate.Location = new System.Drawing.Point(905, 126);
+            this.dpDate.Name = "dpDate";
+            this.dpDate.Size = new System.Drawing.Size(177, 36);
+            this.dpDate.TabIndex = 19;
+            this.dpDate.Value = new System.DateTime(2019, 11, 16, 10, 39, 54, 610);
+            // 
             // ImportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.dpDate);
             this.Controls.Add(this.ibtnClose);
             this.Controls.Add(this.fbtnAddProduct);
             this.Controls.Add(this.fbtnDiscard);
@@ -315,7 +321,6 @@
             this.Controls.Add(this.lblAmount);
             this.Controls.Add(this.lblProductName);
             this.Controls.Add(this.cbbProducts);
-            this.Controls.Add(this.txtboxDateCreate);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.txtboxWorker);
             this.Controls.Add(this.lblWorker);
@@ -337,7 +342,6 @@
         private System.Windows.Forms.Label lblWorker;
         private System.Windows.Forms.TextBox txtboxWorker;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.TextBox txtboxDateCreate;
         private System.Windows.Forms.ComboBox cbbProducts;
         private System.Windows.Forms.Label lblProductName;
         private System.Windows.Forms.Label lblAmount;
@@ -351,5 +355,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton fbtnDiscard;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnAddProduct;
         private Bunifu.Framework.UI.BunifuImageButton ibtnClose;
+        private Bunifu.Framework.UI.BunifuDatepicker dpDate;
     }
 }

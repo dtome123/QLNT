@@ -49,7 +49,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.lblTitle.Location = new System.Drawing.Point(582, 77);
+            this.lblTitle.Location = new System.Drawing.Point(583, 45);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(250, 39);
             this.lblTitle.TabIndex = 0;
