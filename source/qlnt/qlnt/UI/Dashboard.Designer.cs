@@ -30,20 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.pnlSidebar = new System.Windows.Forms.Panel();
+            this.fbtnWorkMngmt = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.fbtnWarehouseMngmt = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.fbtnEmployMngmt = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ftbnProductsSellingMngmt = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.pnlLogo = new System.Windows.Forms.Panel();
             this.fbtnStatistics = new Bunifu.Framework.UI.BunifuFlatButton();
             this.fbtnSearch = new Bunifu.Framework.UI.BunifuFlatButton();
             this.fbtnInstruction = new Bunifu.Framework.UI.BunifuFlatButton();
             this.fbtnInformation = new Bunifu.Framework.UI.BunifuFlatButton();
             this.fbtnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlNavibar = new System.Windows.Forms.Panel();
+            this.fbtnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ibtnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnlWeather = new System.Windows.Forms.Panel();
             this.pnlToDoList = new System.Windows.Forms.Panel();
             this.pnlStatistics = new System.Windows.Forms.Panel();
             this.pnlUnknownFeature = new System.Windows.Forms.Panel();
-            this.pnlLogo = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.ftbnProductsSellingMngmt = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlSidebar.SuspendLayout();
             this.pnlNavibar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ibtnClose)).BeginInit();
@@ -52,6 +56,9 @@
             // pnlSidebar
             // 
             this.pnlSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
+            this.pnlSidebar.Controls.Add(this.fbtnWorkMngmt);
+            this.pnlSidebar.Controls.Add(this.fbtnWarehouseMngmt);
+            this.pnlSidebar.Controls.Add(this.fbtnEmployMngmt);
             this.pnlSidebar.Controls.Add(this.ftbnProductsSellingMngmt);
             this.pnlSidebar.Controls.Add(this.pnlLogo);
             this.pnlSidebar.Controls.Add(this.fbtnStatistics);
@@ -64,6 +71,155 @@
             this.pnlSidebar.Name = "pnlSidebar";
             this.pnlSidebar.Size = new System.Drawing.Size(180, 720);
             this.pnlSidebar.TabIndex = 0;
+            // 
+            // fbtnWorkMngmt
+            // 
+            this.fbtnWorkMngmt.Active = false;
+            this.fbtnWorkMngmt.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.fbtnWorkMngmt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
+            this.fbtnWorkMngmt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.fbtnWorkMngmt.BorderRadius = 0;
+            this.fbtnWorkMngmt.ButtonText = "Quản lý công việc";
+            this.fbtnWorkMngmt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fbtnWorkMngmt.DisabledColor = System.Drawing.Color.Gray;
+            this.fbtnWorkMngmt.Iconcolor = System.Drawing.Color.Transparent;
+            this.fbtnWorkMngmt.Iconimage = ((System.Drawing.Image)(resources.GetObject("fbtnWorkMngmt.Iconimage")));
+            this.fbtnWorkMngmt.Iconimage_right = null;
+            this.fbtnWorkMngmt.Iconimage_right_Selected = null;
+            this.fbtnWorkMngmt.Iconimage_Selected = null;
+            this.fbtnWorkMngmt.IconMarginLeft = 0;
+            this.fbtnWorkMngmt.IconMarginRight = 0;
+            this.fbtnWorkMngmt.IconRightVisible = true;
+            this.fbtnWorkMngmt.IconRightZoom = 0D;
+            this.fbtnWorkMngmt.IconVisible = true;
+            this.fbtnWorkMngmt.IconZoom = 90D;
+            this.fbtnWorkMngmt.IsTab = false;
+            this.fbtnWorkMngmt.Location = new System.Drawing.Point(0, 406);
+            this.fbtnWorkMngmt.Name = "fbtnWorkMngmt";
+            this.fbtnWorkMngmt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
+            this.fbtnWorkMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.fbtnWorkMngmt.OnHoverTextColor = System.Drawing.Color.White;
+            this.fbtnWorkMngmt.selected = false;
+            this.fbtnWorkMngmt.Size = new System.Drawing.Size(180, 50);
+            this.fbtnWorkMngmt.TabIndex = 11;
+            this.fbtnWorkMngmt.Text = "Quản lý công việc";
+            this.fbtnWorkMngmt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.fbtnWorkMngmt.Textcolor = System.Drawing.Color.White;
+            this.fbtnWorkMngmt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // fbtnWarehouseMngmt
+            // 
+            this.fbtnWarehouseMngmt.Active = false;
+            this.fbtnWarehouseMngmt.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.fbtnWarehouseMngmt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
+            this.fbtnWarehouseMngmt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.fbtnWarehouseMngmt.BorderRadius = 0;
+            this.fbtnWarehouseMngmt.ButtonText = "Quản lý kho";
+            this.fbtnWarehouseMngmt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fbtnWarehouseMngmt.DisabledColor = System.Drawing.Color.Gray;
+            this.fbtnWarehouseMngmt.Iconcolor = System.Drawing.Color.Transparent;
+            this.fbtnWarehouseMngmt.Iconimage = ((System.Drawing.Image)(resources.GetObject("fbtnWarehouseMngmt.Iconimage")));
+            this.fbtnWarehouseMngmt.Iconimage_right = null;
+            this.fbtnWarehouseMngmt.Iconimage_right_Selected = null;
+            this.fbtnWarehouseMngmt.Iconimage_Selected = null;
+            this.fbtnWarehouseMngmt.IconMarginLeft = 0;
+            this.fbtnWarehouseMngmt.IconMarginRight = 0;
+            this.fbtnWarehouseMngmt.IconRightVisible = true;
+            this.fbtnWarehouseMngmt.IconRightZoom = 0D;
+            this.fbtnWarehouseMngmt.IconVisible = true;
+            this.fbtnWarehouseMngmt.IconZoom = 90D;
+            this.fbtnWarehouseMngmt.IsTab = false;
+            this.fbtnWarehouseMngmt.Location = new System.Drawing.Point(0, 238);
+            this.fbtnWarehouseMngmt.Name = "fbtnWarehouseMngmt";
+            this.fbtnWarehouseMngmt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
+            this.fbtnWarehouseMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.fbtnWarehouseMngmt.OnHoverTextColor = System.Drawing.Color.White;
+            this.fbtnWarehouseMngmt.selected = false;
+            this.fbtnWarehouseMngmt.Size = new System.Drawing.Size(180, 50);
+            this.fbtnWarehouseMngmt.TabIndex = 10;
+            this.fbtnWarehouseMngmt.Text = "Quản lý kho";
+            this.fbtnWarehouseMngmt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.fbtnWarehouseMngmt.Textcolor = System.Drawing.Color.White;
+            this.fbtnWarehouseMngmt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // fbtnEmployMngmt
+            // 
+            this.fbtnEmployMngmt.Active = false;
+            this.fbtnEmployMngmt.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.fbtnEmployMngmt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
+            this.fbtnEmployMngmt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.fbtnEmployMngmt.BorderRadius = 0;
+            this.fbtnEmployMngmt.ButtonText = "Quản lý nhân viên";
+            this.fbtnEmployMngmt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fbtnEmployMngmt.DisabledColor = System.Drawing.Color.Gray;
+            this.fbtnEmployMngmt.Iconcolor = System.Drawing.Color.Transparent;
+            this.fbtnEmployMngmt.Iconimage = ((System.Drawing.Image)(resources.GetObject("fbtnEmployMngmt.Iconimage")));
+            this.fbtnEmployMngmt.Iconimage_right = null;
+            this.fbtnEmployMngmt.Iconimage_right_Selected = null;
+            this.fbtnEmployMngmt.Iconimage_Selected = null;
+            this.fbtnEmployMngmt.IconMarginLeft = 0;
+            this.fbtnEmployMngmt.IconMarginRight = 0;
+            this.fbtnEmployMngmt.IconRightVisible = true;
+            this.fbtnEmployMngmt.IconRightZoom = 0D;
+            this.fbtnEmployMngmt.IconVisible = true;
+            this.fbtnEmployMngmt.IconZoom = 90D;
+            this.fbtnEmployMngmt.IsTab = false;
+            this.fbtnEmployMngmt.Location = new System.Drawing.Point(0, 294);
+            this.fbtnEmployMngmt.Name = "fbtnEmployMngmt";
+            this.fbtnEmployMngmt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
+            this.fbtnEmployMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.fbtnEmployMngmt.OnHoverTextColor = System.Drawing.Color.White;
+            this.fbtnEmployMngmt.selected = false;
+            this.fbtnEmployMngmt.Size = new System.Drawing.Size(180, 50);
+            this.fbtnEmployMngmt.TabIndex = 9;
+            this.fbtnEmployMngmt.Text = "Quản lý nhân viên";
+            this.fbtnEmployMngmt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.fbtnEmployMngmt.Textcolor = System.Drawing.Color.White;
+            this.fbtnEmployMngmt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // ftbnProductsSellingMngmt
+            // 
+            this.ftbnProductsSellingMngmt.Active = false;
+            this.ftbnProductsSellingMngmt.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ftbnProductsSellingMngmt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
+            this.ftbnProductsSellingMngmt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ftbnProductsSellingMngmt.BorderRadius = 0;
+            this.ftbnProductsSellingMngmt.ButtonText = "Quản lý phân phối";
+            this.ftbnProductsSellingMngmt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ftbnProductsSellingMngmt.DisabledColor = System.Drawing.Color.Gray;
+            this.ftbnProductsSellingMngmt.Iconcolor = System.Drawing.Color.Transparent;
+            this.ftbnProductsSellingMngmt.Iconimage = ((System.Drawing.Image)(resources.GetObject("ftbnProductsSellingMngmt.Iconimage")));
+            this.ftbnProductsSellingMngmt.Iconimage_right = null;
+            this.ftbnProductsSellingMngmt.Iconimage_right_Selected = null;
+            this.ftbnProductsSellingMngmt.Iconimage_Selected = null;
+            this.ftbnProductsSellingMngmt.IconMarginLeft = 0;
+            this.ftbnProductsSellingMngmt.IconMarginRight = 0;
+            this.ftbnProductsSellingMngmt.IconRightVisible = true;
+            this.ftbnProductsSellingMngmt.IconRightZoom = 0D;
+            this.ftbnProductsSellingMngmt.IconVisible = true;
+            this.ftbnProductsSellingMngmt.IconZoom = 90D;
+            this.ftbnProductsSellingMngmt.IsTab = false;
+            this.ftbnProductsSellingMngmt.Location = new System.Drawing.Point(0, 350);
+            this.ftbnProductsSellingMngmt.Name = "ftbnProductsSellingMngmt";
+            this.ftbnProductsSellingMngmt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
+            this.ftbnProductsSellingMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ftbnProductsSellingMngmt.OnHoverTextColor = System.Drawing.Color.White;
+            this.ftbnProductsSellingMngmt.selected = false;
+            this.ftbnProductsSellingMngmt.Size = new System.Drawing.Size(180, 50);
+            this.ftbnProductsSellingMngmt.TabIndex = 8;
+            this.ftbnProductsSellingMngmt.Text = "Quản lý phân phối";
+            this.ftbnProductsSellingMngmt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ftbnProductsSellingMngmt.Textcolor = System.Drawing.Color.White;
+            this.ftbnProductsSellingMngmt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // pnlLogo
+            // 
+            this.pnlLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlLogo.BackgroundImage")));
+            this.pnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo.Name = "pnlLogo";
+            this.pnlLogo.Size = new System.Drawing.Size(180, 120);
+            this.pnlLogo.TabIndex = 7;
             // 
             // fbtnStatistics
             // 
@@ -87,7 +243,7 @@
             this.fbtnStatistics.IconVisible = true;
             this.fbtnStatistics.IconZoom = 90D;
             this.fbtnStatistics.IsTab = false;
-            this.fbtnStatistics.Location = new System.Drawing.Point(0, 294);
+            this.fbtnStatistics.Location = new System.Drawing.Point(0, 462);
             this.fbtnStatistics.Name = "fbtnStatistics";
             this.fbtnStatistics.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
             this.fbtnStatistics.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -122,7 +278,7 @@
             this.fbtnSearch.IconVisible = true;
             this.fbtnSearch.IconZoom = 90D;
             this.fbtnSearch.IsTab = false;
-            this.fbtnSearch.Location = new System.Drawing.Point(0, 596);
+            this.fbtnSearch.Location = new System.Drawing.Point(0, 574);
             this.fbtnSearch.Name = "fbtnSearch";
             this.fbtnSearch.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
             this.fbtnSearch.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -157,7 +313,7 @@
             this.fbtnInstruction.IconVisible = true;
             this.fbtnInstruction.IconZoom = 90D;
             this.fbtnInstruction.IsTab = false;
-            this.fbtnInstruction.Location = new System.Drawing.Point(0, 238);
+            this.fbtnInstruction.Location = new System.Drawing.Point(0, 518);
             this.fbtnInstruction.Name = "fbtnInstruction";
             this.fbtnInstruction.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
             this.fbtnInstruction.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -245,12 +401,48 @@
             // pnlNavibar
             // 
             this.pnlNavibar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(145)))), ((int)(((byte)(27)))));
+            this.pnlNavibar.Controls.Add(this.fbtnLogin);
             this.pnlNavibar.Controls.Add(this.ibtnClose);
             this.pnlNavibar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlNavibar.Location = new System.Drawing.Point(180, 0);
             this.pnlNavibar.Name = "pnlNavibar";
             this.pnlNavibar.Size = new System.Drawing.Size(1100, 60);
             this.pnlNavibar.TabIndex = 1;
+            // 
+            // fbtnLogin
+            // 
+            this.fbtnLogin.Active = false;
+            this.fbtnLogin.Activecolor = System.Drawing.Color.Transparent;
+            this.fbtnLogin.BackColor = System.Drawing.Color.Transparent;
+            this.fbtnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fbtnLogin.BorderRadius = 0;
+            this.fbtnLogin.ButtonText = "Đăng nhập";
+            this.fbtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fbtnLogin.DisabledColor = System.Drawing.Color.Gray;
+            this.fbtnLogin.Iconcolor = System.Drawing.Color.Transparent;
+            this.fbtnLogin.Iconimage = null;
+            this.fbtnLogin.Iconimage_right = null;
+            this.fbtnLogin.Iconimage_right_Selected = null;
+            this.fbtnLogin.Iconimage_Selected = null;
+            this.fbtnLogin.IconMarginLeft = 0;
+            this.fbtnLogin.IconMarginRight = 0;
+            this.fbtnLogin.IconRightVisible = true;
+            this.fbtnLogin.IconRightZoom = 0D;
+            this.fbtnLogin.IconVisible = false;
+            this.fbtnLogin.IconZoom = 90D;
+            this.fbtnLogin.IsTab = false;
+            this.fbtnLogin.Location = new System.Drawing.Point(977, 12);
+            this.fbtnLogin.Name = "fbtnLogin";
+            this.fbtnLogin.Normalcolor = System.Drawing.Color.Transparent;
+            this.fbtnLogin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.fbtnLogin.OnHoverTextColor = System.Drawing.Color.White;
+            this.fbtnLogin.selected = false;
+            this.fbtnLogin.Size = new System.Drawing.Size(75, 30);
+            this.fbtnLogin.TabIndex = 1;
+            this.fbtnLogin.Text = "Đăng nhập";
+            this.fbtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.fbtnLogin.Textcolor = System.Drawing.Color.White;
+            this.fbtnLogin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // ibtnClose
             // 
@@ -300,56 +492,12 @@
             this.pnlUnknownFeature.Size = new System.Drawing.Size(450, 280);
             this.pnlUnknownFeature.TabIndex = 5;
             // 
-            // pnlLogo
-            // 
-            this.pnlLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlLogo.BackgroundImage")));
-            this.pnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(180, 120);
-            this.pnlLogo.TabIndex = 7;
-            // 
             // pnlMain
             // 
-            this.pnlMain.Location = new System.Drawing.Point(180, 57);
+            this.pnlMain.Location = new System.Drawing.Point(180, 59);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1100, 663);
+            this.pnlMain.Size = new System.Drawing.Size(1100, 661);
             this.pnlMain.TabIndex = 6;
-            // 
-            // ftbnProductsSellingMngmt
-            // 
-            this.ftbnProductsSellingMngmt.Active = false;
-            this.ftbnProductsSellingMngmt.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ftbnProductsSellingMngmt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
-            this.ftbnProductsSellingMngmt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ftbnProductsSellingMngmt.BorderRadius = 0;
-            this.ftbnProductsSellingMngmt.ButtonText = "Quản lý phân phối";
-            this.ftbnProductsSellingMngmt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ftbnProductsSellingMngmt.DisabledColor = System.Drawing.Color.Gray;
-            this.ftbnProductsSellingMngmt.Iconcolor = System.Drawing.Color.Transparent;
-            this.ftbnProductsSellingMngmt.Iconimage = ((System.Drawing.Image)(resources.GetObject("ftbnProductsSellingMngmt.Iconimage")));
-            this.ftbnProductsSellingMngmt.Iconimage_right = null;
-            this.ftbnProductsSellingMngmt.Iconimage_right_Selected = null;
-            this.ftbnProductsSellingMngmt.Iconimage_Selected = null;
-            this.ftbnProductsSellingMngmt.IconMarginLeft = 0;
-            this.ftbnProductsSellingMngmt.IconMarginRight = 0;
-            this.ftbnProductsSellingMngmt.IconRightVisible = true;
-            this.ftbnProductsSellingMngmt.IconRightZoom = 0D;
-            this.ftbnProductsSellingMngmt.IconVisible = true;
-            this.ftbnProductsSellingMngmt.IconZoom = 90D;
-            this.ftbnProductsSellingMngmt.IsTab = false;
-            this.ftbnProductsSellingMngmt.Location = new System.Drawing.Point(0, 350);
-            this.ftbnProductsSellingMngmt.Name = "ftbnProductsSellingMngmt";
-            this.ftbnProductsSellingMngmt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
-            this.ftbnProductsSellingMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.ftbnProductsSellingMngmt.OnHoverTextColor = System.Drawing.Color.White;
-            this.ftbnProductsSellingMngmt.selected = false;
-            this.ftbnProductsSellingMngmt.Size = new System.Drawing.Size(180, 50);
-            this.ftbnProductsSellingMngmt.TabIndex = 8;
-            this.ftbnProductsSellingMngmt.Text = "Quản lý phân phối";
-            this.ftbnProductsSellingMngmt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ftbnProductsSellingMngmt.Textcolor = System.Drawing.Color.White;
-            this.ftbnProductsSellingMngmt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // Dashboard
             // 
@@ -365,6 +513,7 @@
             this.Controls.Add(this.pnlMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.pnlSidebar.ResumeLayout(false);
             this.pnlNavibar.ResumeLayout(false);
@@ -390,5 +539,9 @@
         private System.Windows.Forms.Panel pnlLogo;
         private System.Windows.Forms.Panel pnlMain;
         private Bunifu.Framework.UI.BunifuFlatButton ftbnProductsSellingMngmt;
+        private Bunifu.Framework.UI.BunifuFlatButton fbtnWarehouseMngmt;
+        private Bunifu.Framework.UI.BunifuFlatButton fbtnEmployMngmt;
+        private Bunifu.Framework.UI.BunifuFlatButton fbtnLogin;
+        private Bunifu.Framework.UI.BunifuFlatButton fbtnWorkMngmt;
     }
 }
