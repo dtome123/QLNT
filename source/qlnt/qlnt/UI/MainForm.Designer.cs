@@ -211,6 +211,7 @@
             this.ftbnProductsSellingMngmt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ftbnProductsSellingMngmt.Textcolor = System.Drawing.Color.White;
             this.ftbnProductsSellingMngmt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ftbnProductsSellingMngmt.Click += new System.EventHandler(this.ftbnProductsSellingMngmt_Click);
             // 
             // pnlLogo
             // 
@@ -443,6 +444,7 @@
             this.fbtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.fbtnLogin.Textcolor = System.Drawing.Color.White;
             this.fbtnLogin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fbtnLogin.Click += new System.EventHandler(this.fbtnLogin_Click);
             // 
             // ibtnClose
             // 

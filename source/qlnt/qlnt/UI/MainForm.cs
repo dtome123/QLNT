@@ -12,10 +12,12 @@ namespace qlnt.UI
 {
     public partial class Dashboard : Form
     {
+
         public Dashboard()
         {
+            this.IsMdiContainer = true;
             InitializeComponent();
-            hidePanels();
+            showPanels();
         }
 
         private void hidePanels()
@@ -28,6 +30,10 @@ namespace qlnt.UI
 
         private void showPanels()
         {
+            APIPanel APIWeather = new APIPanel();
+            APIWeather.TopLevel = false;
+            pnlWeather.Controls.Add(APIWeather);
+            APIWeather.Show();
             pnlWeather.Visible = true;
             pnlToDoList.Visible = true;
             pnlStatistics.Visible = true;
@@ -41,12 +47,32 @@ namespace qlnt.UI
 
         private void fbtnDashboard_Click(object sender, EventArgs e)
         {
+            pnlMain.Controls.Clear();
             showPanels();
         }
 
         private void fbtnInformation_Click(object sender, EventArgs e)
         {
             hidePanels();
+        }
+        private void ftbnProductsSellingMngmt_Click(object sender, EventArgs e)
+        {
+            hidePanels();
+            ProductSellingManagement Management = new ProductSellingManagement();
+            Management.TopLevel = false;
+            Management.AutoScroll = true;
+            pnlMain.Controls.Add(Management);
+            Management.Show();
+        }
+
+        private void fbtnLogin_Click(object sender, EventArgs e)
+        {
+            hidePanels();
+            LoginForm login = new LoginForm();
+            login.TopLevel = false;
+            login.AutoScroll = true;
+            pnlMain.Controls.Add(login);
+            login.Show();
         }
     }
 }

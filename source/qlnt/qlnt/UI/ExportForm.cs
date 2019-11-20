@@ -15,6 +15,20 @@ namespace qlnt.UI
         public ExportForm()
         {
             InitializeComponent();
+            InitializeCombobox();
+        }
+
+        private void InitializeCombobox()
+        {
+            cbbCustomer.Items.Add("David Dang");
+            cbbCustomer.Items.Add("Hùng Vĩ Comp.");
+            cbbCustomer.Items.Add("Tuấn Trương Supplier");
+            cbbCustomer.Items.Add("Tù Trưởng Bộ lạc");
+        }
+
+        private void ibtnClose_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

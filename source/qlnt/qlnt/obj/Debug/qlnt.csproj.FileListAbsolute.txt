@@ -54,3 +54,8 @@ F:\GitHub\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.Form3.resources
 F:\GitHub\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.Properties.Resources.resources
 F:\GitHub\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.ImportForm.resources
 F:\GitHub\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.csproj.GenerateResource.Cache
+F:\GitHub\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.ProductSellingManagement.resources
+F:\GitHub\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.LoginForm.resources
+F:\GitHub\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.ActivePanel.resources
+F:\GitHub\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.APIPanel.resources
+F:\GitHub\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.InformationForm.resources

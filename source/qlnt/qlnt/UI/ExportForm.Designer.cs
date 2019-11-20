@@ -35,7 +35,7 @@
             this.fbtnCreate = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtboxTotalCost = new System.Windows.Forms.TextBox();
             this.lblTotatCost = new System.Windows.Forms.Label();
-            this.cbbSupplier = new System.Windows.Forms.ComboBox();
+            this.cbbCustomer = new System.Windows.Forms.ComboBox();
             this.lblSupplier = new System.Windows.Forms.Label();
             this.dgvProductList = new System.Windows.Forms.DataGridView();
             this.txtboxAmount = new System.Windows.Forms.TextBox();
@@ -55,13 +55,14 @@
             // 
             this.ibtnClose.Image = ((System.Drawing.Image)(resources.GetObject("ibtnClose.Image")));
             this.ibtnClose.ImageActive = null;
-            this.ibtnClose.Location = new System.Drawing.Point(1221, 15);
+            this.ibtnClose.Location = new System.Drawing.Point(1048, 12);
             this.ibtnClose.Name = "ibtnClose";
             this.ibtnClose.Size = new System.Drawing.Size(40, 40);
             this.ibtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ibtnClose.TabIndex = 36;
             this.ibtnClose.TabStop = false;
             this.ibtnClose.Zoom = 10;
+            this.ibtnClose.Click += new System.EventHandler(this.ibtnClose_Click);
             // 
             // fbtnAddProduct
             // 
@@ -85,7 +86,7 @@
             this.fbtnAddProduct.IconVisible = true;
             this.fbtnAddProduct.IconZoom = 90D;
             this.fbtnAddProduct.IsTab = false;
-            this.fbtnAddProduct.Location = new System.Drawing.Point(870, 246);
+            this.fbtnAddProduct.Location = new System.Drawing.Point(773, 222);
             this.fbtnAddProduct.Name = "fbtnAddProduct";
             this.fbtnAddProduct.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.fbtnAddProduct.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -120,7 +121,7 @@
             this.fbtnDiscard.IconVisible = true;
             this.fbtnDiscard.IconZoom = 90D;
             this.fbtnDiscard.IsTab = false;
-            this.fbtnDiscard.Location = new System.Drawing.Point(662, 618);
+            this.fbtnDiscard.Location = new System.Drawing.Point(565, 594);
             this.fbtnDiscard.Name = "fbtnDiscard";
             this.fbtnDiscard.Normalcolor = System.Drawing.Color.DarkRed;
             this.fbtnDiscard.OnHovercolor = System.Drawing.Color.DarkRed;
@@ -155,7 +156,7 @@
             this.fbtnCreate.IconVisible = true;
             this.fbtnCreate.IconZoom = 90D;
             this.fbtnCreate.IsTab = false;
-            this.fbtnCreate.Location = new System.Drawing.Point(420, 618);
+            this.fbtnCreate.Location = new System.Drawing.Point(323, 594);
             this.fbtnCreate.Name = "fbtnCreate";
             this.fbtnCreate.Normalcolor = System.Drawing.Color.Green;
             this.fbtnCreate.OnHovercolor = System.Drawing.Color.Green;
@@ -171,7 +172,7 @@
             // txtboxTotalCost
             // 
             this.txtboxTotalCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtboxTotalCost.Location = new System.Drawing.Point(890, 563);
+            this.txtboxTotalCost.Location = new System.Drawing.Point(793, 539);
             this.txtboxTotalCost.Name = "txtboxTotalCost";
             this.txtboxTotalCost.Size = new System.Drawing.Size(186, 30);
             this.txtboxTotalCost.TabIndex = 32;
@@ -180,26 +181,26 @@
             // 
             this.lblTotatCost.AutoSize = true;
             this.lblTotatCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblTotatCost.Location = new System.Drawing.Point(753, 566);
+            this.lblTotatCost.Location = new System.Drawing.Point(656, 542);
             this.lblTotatCost.Name = "lblTotatCost";
             this.lblTotatCost.Size = new System.Drawing.Size(131, 25);
             this.lblTotatCost.TabIndex = 31;
             this.lblTotatCost.Text = "Total Income:";
             // 
-            // cbbSupplier
+            // cbbCustomer
             // 
-            this.cbbSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.cbbSupplier.FormattingEnabled = true;
-            this.cbbSupplier.Location = new System.Drawing.Point(399, 246);
-            this.cbbSupplier.Name = "cbbSupplier";
-            this.cbbSupplier.Size = new System.Drawing.Size(401, 33);
-            this.cbbSupplier.TabIndex = 30;
+            this.cbbCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.cbbCustomer.FormattingEnabled = true;
+            this.cbbCustomer.Location = new System.Drawing.Point(302, 222);
+            this.cbbCustomer.Name = "cbbCustomer";
+            this.cbbCustomer.Size = new System.Drawing.Size(401, 33);
+            this.cbbCustomer.TabIndex = 30;
             // 
             // lblSupplier
             // 
             this.lblSupplier.AutoSize = true;
             this.lblSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblSupplier.Location = new System.Drawing.Point(235, 249);
+            this.lblSupplier.Location = new System.Drawing.Point(138, 225);
             this.lblSupplier.Name = "lblSupplier";
             this.lblSupplier.Size = new System.Drawing.Size(103, 25);
             this.lblSupplier.TabIndex = 29;
@@ -208,7 +209,7 @@
             // dgvProductList
             // 
             this.dgvProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductList.Location = new System.Drawing.Point(240, 310);
+            this.dgvProductList.Location = new System.Drawing.Point(143, 286);
             this.dgvProductList.Name = "dgvProductList";
             this.dgvProductList.Size = new System.Drawing.Size(836, 241);
             this.dgvProductList.TabIndex = 28;
@@ -216,7 +217,7 @@
             // txtboxAmount
             // 
             this.txtboxAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtboxAmount.Location = new System.Drawing.Point(927, 192);
+            this.txtboxAmount.Location = new System.Drawing.Point(830, 168);
             this.txtboxAmount.Name = "txtboxAmount";
             this.txtboxAmount.Size = new System.Drawing.Size(149, 30);
             this.txtboxAmount.TabIndex = 27;
@@ -225,7 +226,7 @@
             // 
             this.lblAmount.AutoSize = true;
             this.lblAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblAmount.Location = new System.Drawing.Point(835, 197);
+            this.lblAmount.Location = new System.Drawing.Point(738, 173);
             this.lblAmount.Name = "lblAmount";
             this.lblAmount.Size = new System.Drawing.Size(86, 25);
             this.lblAmount.TabIndex = 26;
@@ -235,7 +236,7 @@
             // 
             this.lblProductName.AutoSize = true;
             this.lblProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblProductName.Location = new System.Drawing.Point(235, 195);
+            this.lblProductName.Location = new System.Drawing.Point(138, 171);
             this.lblProductName.Name = "lblProductName";
             this.lblProductName.Size = new System.Drawing.Size(142, 25);
             this.lblProductName.TabIndex = 25;
@@ -245,7 +246,8 @@
             // 
             this.cbbProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.cbbProducts.FormattingEnabled = true;
-            this.cbbProducts.Location = new System.Drawing.Point(399, 189);
+            this.cbbProducts.Location = new System.Drawing.Point(302, 165);
+            this.cbbProducts.MaxDropDownItems = 10;
             this.cbbProducts.Name = "cbbProducts";
             this.cbbProducts.Size = new System.Drawing.Size(401, 33);
             this.cbbProducts.TabIndex = 24;
@@ -254,7 +256,7 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblDate.Location = new System.Drawing.Point(834, 140);
+            this.lblDate.Location = new System.Drawing.Point(737, 116);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(59, 25);
             this.lblDate.TabIndex = 22;
@@ -263,7 +265,7 @@
             // txtboxWorker
             // 
             this.txtboxWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtboxWorker.Location = new System.Drawing.Point(399, 135);
+            this.txtboxWorker.Location = new System.Drawing.Point(302, 111);
             this.txtboxWorker.Name = "txtboxWorker";
             this.txtboxWorker.Size = new System.Drawing.Size(401, 30);
             this.txtboxWorker.TabIndex = 21;
@@ -272,7 +274,7 @@
             // 
             this.lblWorker.AutoSize = true;
             this.lblWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblWorker.Location = new System.Drawing.Point(235, 140);
+            this.lblWorker.Location = new System.Drawing.Point(138, 116);
             this.lblWorker.Name = "lblWorker";
             this.lblWorker.Size = new System.Drawing.Size(158, 25);
             this.lblWorker.TabIndex = 20;
@@ -282,7 +284,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.lblTitle.Location = new System.Drawing.Point(491, 65);
+            this.lblTitle.Location = new System.Drawing.Point(394, 41);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(346, 39);
             this.lblTitle.TabIndex = 19;
@@ -295,7 +297,7 @@
             this.dpDate.ForeColor = System.Drawing.Color.White;
             this.dpDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dpDate.FormatCustom = null;
-            this.dpDate.Location = new System.Drawing.Point(899, 129);
+            this.dpDate.Location = new System.Drawing.Point(802, 105);
             this.dpDate.Name = "dpDate";
             this.dpDate.Size = new System.Drawing.Size(177, 36);
             this.dpDate.TabIndex = 37;
@@ -305,7 +307,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(1100, 661);
             this.Controls.Add(this.dpDate);
             this.Controls.Add(this.ibtnClose);
             this.Controls.Add(this.fbtnAddProduct);
@@ -313,7 +315,7 @@
             this.Controls.Add(this.fbtnCreate);
             this.Controls.Add(this.txtboxTotalCost);
             this.Controls.Add(this.lblTotatCost);
-            this.Controls.Add(this.cbbSupplier);
+            this.Controls.Add(this.cbbCustomer);
             this.Controls.Add(this.lblSupplier);
             this.Controls.Add(this.dgvProductList);
             this.Controls.Add(this.txtboxAmount);
@@ -342,7 +344,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton fbtnCreate;
         private System.Windows.Forms.TextBox txtboxTotalCost;
         private System.Windows.Forms.Label lblTotatCost;
-        private System.Windows.Forms.ComboBox cbbSupplier;
+        private System.Windows.Forms.ComboBox cbbCustomer;
         private System.Windows.Forms.Label lblSupplier;
         private System.Windows.Forms.DataGridView dgvProductList;
         private System.Windows.Forms.TextBox txtboxAmount;

@@ -151,6 +151,18 @@
     <Compile Include="DB\ViTri.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
+    <Compile Include="UI\ActivePanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ActivePanel.Designer.cs">
+      <DependentUpon>ActivePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\APIPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\APIPanel.Designer.cs">
+      <DependentUpon>APIPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Bill.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,11 +193,23 @@
     <Compile Include="UI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Dashboard.cs">
+    <Compile Include="UI\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InformationForm.Designer.cs">
+      <DependentUpon>InformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FormPhanBon.cs">
       <SubType>Form</SubType>
@@ -207,11 +231,23 @@
     <Compile Include="UI\ImportForm.Designer.cs">
       <DependentUpon>ImportForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\ProductSellingManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ProductSellingManagement.Designer.cs">
+      <DependentUpon>ProductSellingManagement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\ActivePanel.resx">
+      <DependentUpon>ActivePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\APIPanel.resx">
+      <DependentUpon>APIPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Bill.resx">
       <DependentUpon>Bill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\DialogForm\Diablog_PB.resx">
       <DependentUpon>Diablog_PB.cs</DependentUpon>
@@ -242,6 +278,15 @@
     </Compile>
     <EmbeddedResource Include="UI\ImportForm.resx">
       <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InformationForm.resx">
+      <DependentUpon>InformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ProductSellingManagement.resx">
+      <DependentUpon>ProductSellingManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="DB\QLNT.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
