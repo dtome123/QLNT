@@ -48,9 +48,19 @@
             this.pnlStatistics = new System.Windows.Forms.Panel();
             this.pnlUnknownFeature = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.tbtnImport = new Bunifu.Framework.UI.BunifuTileButton();
+            this.tbtnExport = new Bunifu.Framework.UI.BunifuTileButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.tbtnBill = new Bunifu.Framework.UI.BunifuTileButton();
+            this.pnlAnotherMain = new System.Windows.Forms.Panel();
             this.pnlSidebar.SuspendLayout();
             this.pnlNavibar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ibtnClose)).BeginInit();
+            this.pnlMain.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSidebar
@@ -97,7 +107,7 @@
             this.fbtnWorkMngmt.Location = new System.Drawing.Point(0, 406);
             this.fbtnWorkMngmt.Name = "fbtnWorkMngmt";
             this.fbtnWorkMngmt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
-            this.fbtnWorkMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.fbtnWorkMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(145)))), ((int)(((byte)(27)))));
             this.fbtnWorkMngmt.OnHoverTextColor = System.Drawing.Color.White;
             this.fbtnWorkMngmt.selected = false;
             this.fbtnWorkMngmt.Size = new System.Drawing.Size(180, 50);
@@ -132,7 +142,7 @@
             this.fbtnWarehouseMngmt.Location = new System.Drawing.Point(0, 238);
             this.fbtnWarehouseMngmt.Name = "fbtnWarehouseMngmt";
             this.fbtnWarehouseMngmt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
-            this.fbtnWarehouseMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.fbtnWarehouseMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(145)))), ((int)(((byte)(27)))));
             this.fbtnWarehouseMngmt.OnHoverTextColor = System.Drawing.Color.White;
             this.fbtnWarehouseMngmt.selected = false;
             this.fbtnWarehouseMngmt.Size = new System.Drawing.Size(180, 50);
@@ -167,7 +177,7 @@
             this.fbtnEmployMngmt.Location = new System.Drawing.Point(0, 294);
             this.fbtnEmployMngmt.Name = "fbtnEmployMngmt";
             this.fbtnEmployMngmt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
-            this.fbtnEmployMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.fbtnEmployMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(145)))), ((int)(((byte)(27)))));
             this.fbtnEmployMngmt.OnHoverTextColor = System.Drawing.Color.White;
             this.fbtnEmployMngmt.selected = false;
             this.fbtnEmployMngmt.Size = new System.Drawing.Size(180, 50);
@@ -202,7 +212,7 @@
             this.ftbnProductsSellingMngmt.Location = new System.Drawing.Point(0, 350);
             this.ftbnProductsSellingMngmt.Name = "ftbnProductsSellingMngmt";
             this.ftbnProductsSellingMngmt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
-            this.ftbnProductsSellingMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ftbnProductsSellingMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(145)))), ((int)(((byte)(27)))));
             this.ftbnProductsSellingMngmt.OnHoverTextColor = System.Drawing.Color.White;
             this.ftbnProductsSellingMngmt.selected = false;
             this.ftbnProductsSellingMngmt.Size = new System.Drawing.Size(180, 50);
@@ -247,7 +257,7 @@
             this.fbtnStatistics.Location = new System.Drawing.Point(0, 462);
             this.fbtnStatistics.Name = "fbtnStatistics";
             this.fbtnStatistics.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
-            this.fbtnStatistics.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.fbtnStatistics.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(145)))), ((int)(((byte)(27)))));
             this.fbtnStatistics.OnHoverTextColor = System.Drawing.Color.White;
             this.fbtnStatistics.selected = false;
             this.fbtnStatistics.Size = new System.Drawing.Size(180, 50);
@@ -317,7 +327,7 @@
             this.fbtnInstruction.Location = new System.Drawing.Point(0, 518);
             this.fbtnInstruction.Name = "fbtnInstruction";
             this.fbtnInstruction.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
-            this.fbtnInstruction.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.fbtnInstruction.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(145)))), ((int)(((byte)(27)))));
             this.fbtnInstruction.OnHoverTextColor = System.Drawing.Color.White;
             this.fbtnInstruction.selected = false;
             this.fbtnInstruction.Size = new System.Drawing.Size(180, 50);
@@ -352,7 +362,7 @@
             this.fbtnInformation.Location = new System.Drawing.Point(0, 182);
             this.fbtnInformation.Name = "fbtnInformation";
             this.fbtnInformation.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
-            this.fbtnInformation.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.fbtnInformation.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(145)))), ((int)(((byte)(27)))));
             this.fbtnInformation.OnHoverTextColor = System.Drawing.Color.White;
             this.fbtnInformation.selected = false;
             this.fbtnInformation.Size = new System.Drawing.Size(180, 50);
@@ -388,7 +398,7 @@
             this.fbtnDashboard.Location = new System.Drawing.Point(0, 126);
             this.fbtnDashboard.Name = "fbtnDashboard";
             this.fbtnDashboard.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
-            this.fbtnDashboard.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.fbtnDashboard.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(145)))), ((int)(((byte)(27)))));
             this.fbtnDashboard.OnHoverTextColor = System.Drawing.Color.White;
             this.fbtnDashboard.selected = false;
             this.fbtnDashboard.Size = new System.Drawing.Size(180, 50);
@@ -402,6 +412,7 @@
             // pnlNavibar
             // 
             this.pnlNavibar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(145)))), ((int)(((byte)(27)))));
+            this.pnlNavibar.Controls.Add(this.panel1);
             this.pnlNavibar.Controls.Add(this.fbtnLogin);
             this.pnlNavibar.Controls.Add(this.ibtnClose);
             this.pnlNavibar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -432,10 +443,10 @@
             this.fbtnLogin.IconVisible = false;
             this.fbtnLogin.IconZoom = 90D;
             this.fbtnLogin.IsTab = false;
-            this.fbtnLogin.Location = new System.Drawing.Point(977, 12);
+            this.fbtnLogin.Location = new System.Drawing.Point(978, 12);
             this.fbtnLogin.Name = "fbtnLogin";
             this.fbtnLogin.Normalcolor = System.Drawing.Color.Transparent;
-            this.fbtnLogin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.fbtnLogin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
             this.fbtnLogin.OnHoverTextColor = System.Drawing.Color.White;
             this.fbtnLogin.selected = false;
             this.fbtnLogin.Size = new System.Drawing.Size(75, 30);
@@ -462,7 +473,7 @@
             // 
             // pnlWeather
             // 
-            this.pnlWeather.BackColor = System.Drawing.Color.Red;
+            this.pnlWeather.BackColor = System.Drawing.Color.Gray;
             this.pnlWeather.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlWeather.Location = new System.Drawing.Point(247, 98);
             this.pnlWeather.Name = "pnlWeather";
@@ -471,7 +482,7 @@
             // 
             // pnlToDoList
             // 
-            this.pnlToDoList.BackColor = System.Drawing.Color.Yellow;
+            this.pnlToDoList.BackColor = System.Drawing.Color.Gray;
             this.pnlToDoList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlToDoList.Location = new System.Drawing.Point(768, 98);
             this.pnlToDoList.Name = "pnlToDoList";
@@ -480,7 +491,7 @@
             // 
             // pnlStatistics
             // 
-            this.pnlStatistics.BackColor = System.Drawing.Color.Blue;
+            this.pnlStatistics.BackColor = System.Drawing.Color.Gray;
             this.pnlStatistics.Location = new System.Drawing.Point(247, 401);
             this.pnlStatistics.Name = "pnlStatistics";
             this.pnlStatistics.Size = new System.Drawing.Size(450, 280);
@@ -488,7 +499,7 @@
             // 
             // pnlUnknownFeature
             // 
-            this.pnlUnknownFeature.BackColor = System.Drawing.Color.Green;
+            this.pnlUnknownFeature.BackColor = System.Drawing.Color.Gray;
             this.pnlUnknownFeature.Location = new System.Drawing.Point(768, 401);
             this.pnlUnknownFeature.Name = "pnlUnknownFeature";
             this.pnlUnknownFeature.Size = new System.Drawing.Size(450, 280);
@@ -496,10 +507,146 @@
             // 
             // pnlMain
             // 
+            this.pnlMain.Controls.Add(this.pnlAnotherMain);
+            this.pnlMain.Controls.Add(this.tbtnBill);
+            this.pnlMain.Controls.Add(this.tbtnImport);
+            this.pnlMain.Controls.Add(this.tbtnExport);
             this.pnlMain.Location = new System.Drawing.Point(180, 59);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(1100, 661);
             this.pnlMain.TabIndex = 6;
+            // 
+            // tbtnImport
+            // 
+            this.tbtnImport.BackColor = System.Drawing.Color.SeaGreen;
+            this.tbtnImport.color = System.Drawing.Color.SeaGreen;
+            this.tbtnImport.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.tbtnImport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tbtnImport.Font = new System.Drawing.Font("Arial", 15F);
+            this.tbtnImport.ForeColor = System.Drawing.Color.White;
+            this.tbtnImport.Image = ((System.Drawing.Image)(resources.GetObject("tbtnImport.Image")));
+            this.tbtnImport.ImagePosition = 19;
+            this.tbtnImport.ImageZoom = 50;
+            this.tbtnImport.LabelPosition = 39;
+            this.tbtnImport.LabelText = "Tạo phiếu nhập";
+            this.tbtnImport.Location = new System.Drawing.Point(154, 235);
+            this.tbtnImport.Margin = new System.Windows.Forms.Padding(6);
+            this.tbtnImport.Name = "tbtnImport";
+            this.tbtnImport.Size = new System.Drawing.Size(205, 211);
+            this.tbtnImport.TabIndex = 0;
+            // 
+            // tbtnExport
+            // 
+            this.tbtnExport.BackColor = System.Drawing.Color.SeaGreen;
+            this.tbtnExport.color = System.Drawing.Color.SeaGreen;
+            this.tbtnExport.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.tbtnExport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tbtnExport.Font = new System.Drawing.Font("Arial", 15F);
+            this.tbtnExport.ForeColor = System.Drawing.Color.White;
+            this.tbtnExport.Image = ((System.Drawing.Image)(resources.GetObject("tbtnExport.Image")));
+            this.tbtnExport.ImagePosition = 19;
+            this.tbtnExport.ImageZoom = 50;
+            this.tbtnExport.LabelPosition = 39;
+            this.tbtnExport.LabelText = "Tạo phiếu xuất";
+            this.tbtnExport.Location = new System.Drawing.Point(446, 235);
+            this.tbtnExport.Margin = new System.Windows.Forms.Padding(6);
+            this.tbtnExport.Name = "tbtnExport";
+            this.tbtnExport.Size = new System.Drawing.Size(205, 211);
+            this.tbtnExport.TabIndex = 1;
+            this.tbtnExport.Click += new System.EventHandler(this.tbtnExport_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.bunifuTileButton1);
+            this.panel1.Controls.Add(this.bunifuTileButton2);
+            this.panel1.Controls.Add(this.bunifuTileButton3);
+            this.panel1.Location = new System.Drawing.Point(0, 59);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1100, 661);
+            this.panel1.TabIndex = 7;
+            // 
+            // bunifuTileButton1
+            // 
+            this.bunifuTileButton1.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton1.color = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton1.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton1.Font = new System.Drawing.Font("Arial", 15F);
+            this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton1.Image")));
+            this.bunifuTileButton1.ImagePosition = 19;
+            this.bunifuTileButton1.ImageZoom = 50;
+            this.bunifuTileButton1.LabelPosition = 39;
+            this.bunifuTileButton1.LabelText = "Xuất hoá đơn";
+            this.bunifuTileButton1.Location = new System.Drawing.Point(752, 235);
+            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuTileButton1.Name = "bunifuTileButton1";
+            this.bunifuTileButton1.Size = new System.Drawing.Size(205, 211);
+            this.bunifuTileButton1.TabIndex = 2;
+            // 
+            // bunifuTileButton2
+            // 
+            this.bunifuTileButton2.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton2.color = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton2.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton2.Font = new System.Drawing.Font("Arial", 15F);
+            this.bunifuTileButton2.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton2.Image")));
+            this.bunifuTileButton2.ImagePosition = 19;
+            this.bunifuTileButton2.ImageZoom = 50;
+            this.bunifuTileButton2.LabelPosition = 39;
+            this.bunifuTileButton2.LabelText = "Tạo phiếu nhập";
+            this.bunifuTileButton2.Location = new System.Drawing.Point(154, 235);
+            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuTileButton2.Name = "bunifuTileButton2";
+            this.bunifuTileButton2.Size = new System.Drawing.Size(205, 211);
+            this.bunifuTileButton2.TabIndex = 0;
+            // 
+            // bunifuTileButton3
+            // 
+            this.bunifuTileButton3.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton3.color = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton3.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton3.Font = new System.Drawing.Font("Arial", 15F);
+            this.bunifuTileButton3.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton3.Image")));
+            this.bunifuTileButton3.ImagePosition = 19;
+            this.bunifuTileButton3.ImageZoom = 50;
+            this.bunifuTileButton3.LabelPosition = 39;
+            this.bunifuTileButton3.LabelText = "Tạo phiếu xuất";
+            this.bunifuTileButton3.Location = new System.Drawing.Point(446, 235);
+            this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuTileButton3.Name = "bunifuTileButton3";
+            this.bunifuTileButton3.Size = new System.Drawing.Size(205, 211);
+            this.bunifuTileButton3.TabIndex = 1;
+            // 
+            // tbtnBill
+            // 
+            this.tbtnBill.BackColor = System.Drawing.Color.SeaGreen;
+            this.tbtnBill.color = System.Drawing.Color.SeaGreen;
+            this.tbtnBill.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.tbtnBill.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tbtnBill.Font = new System.Drawing.Font("Arial", 15F);
+            this.tbtnBill.ForeColor = System.Drawing.Color.White;
+            this.tbtnBill.Image = ((System.Drawing.Image)(resources.GetObject("tbtnBill.Image")));
+            this.tbtnBill.ImagePosition = 19;
+            this.tbtnBill.ImageZoom = 50;
+            this.tbtnBill.LabelPosition = 39;
+            this.tbtnBill.LabelText = "Xuất hoá đơn";
+            this.tbtnBill.Location = new System.Drawing.Point(752, 235);
+            this.tbtnBill.Margin = new System.Windows.Forms.Padding(6);
+            this.tbtnBill.Name = "tbtnBill";
+            this.tbtnBill.Size = new System.Drawing.Size(205, 211);
+            this.tbtnBill.TabIndex = 2;
+            // 
+            // pnlAnotherMain
+            // 
+            this.pnlAnotherMain.Location = new System.Drawing.Point(0, 0);
+            this.pnlAnotherMain.Name = "pnlAnotherMain";
+            this.pnlAnotherMain.Size = new System.Drawing.Size(1100, 661);
+            this.pnlAnotherMain.TabIndex = 3;
             // 
             // Dashboard
             // 
@@ -520,6 +667,8 @@
             this.pnlSidebar.ResumeLayout(false);
             this.pnlNavibar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ibtnClose)).EndInit();
+            this.pnlMain.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -539,11 +688,19 @@
         private Bunifu.Framework.UI.BunifuFlatButton fbtnInstruction;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnStatistics;
         private System.Windows.Forms.Panel pnlLogo;
-        private System.Windows.Forms.Panel pnlMain;
+        public System.Windows.Forms.Panel pnlMain;
         private Bunifu.Framework.UI.BunifuFlatButton ftbnProductsSellingMngmt;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnWarehouseMngmt;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnEmployMngmt;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnLogin;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnWorkMngmt;
+        private Bunifu.Framework.UI.BunifuTileButton tbtnImport;
+        private Bunifu.Framework.UI.BunifuTileButton tbtnExport;
+        public System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton3;
+        private Bunifu.Framework.UI.BunifuTileButton tbtnBill;
+        private System.Windows.Forms.Panel pnlAnotherMain;
     }
 }

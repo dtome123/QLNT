@@ -15,9 +15,9 @@ namespace qlnt.UI
 
         public Dashboard()
         {
-            this.IsMdiContainer = true;
             InitializeComponent();
             showPanels();
+            hideButtons();
         }
 
         private void hidePanels()
@@ -27,16 +27,45 @@ namespace qlnt.UI
             pnlStatistics.Visible = false;
             pnlUnknownFeature.Visible = false;
         }
-
+        private void showButtons()
+        {
+            pnlMain.Controls.Add(tbtnImport);
+            pnlMain.Controls.Add(tbtnExport);
+            pnlMain.Controls.Add(tbtnBill);
+            tbtnImport.Show();
+            tbtnExport.Show();
+            tbtnBill.Show();
+        }
+        private void hideButtons()
+        {
+            tbtnImport.Visible = false;
+            tbtnExport.Visible = false;
+            tbtnBill.Visible = false;
+        }
         private void showPanels()
         {
+            //showing API Weather Panel
             APIPanel APIWeather = new APIPanel();
-            APIWeather.TopLevel = false;
+            APIWeather.TopLevel =  false;
             pnlWeather.Controls.Add(APIWeather);
             APIWeather.Show();
             pnlWeather.Visible = true;
+
+            //showing today's To-do List Panel
+            ToDoListPanel todo = new ToDoListPanel();
+            todo.TopLevel = false;
+            pnlToDoList.Controls.Add(todo);
+            todo.Show();
             pnlToDoList.Visible = true;
+
+            //showing all time statistics Panel
+            StatisticsPanel stat = new StatisticsPanel();
+            stat.TopLevel = false;
+            pnlStatistics.Controls.Add(stat);
+            stat.Show();
             pnlStatistics.Visible = true;
+
+            //i don't have any idea for this one yet
             pnlUnknownFeature.Visible = true;
         }
 
@@ -50,29 +79,41 @@ namespace qlnt.UI
             pnlMain.Controls.Clear();
             showPanels();
         }
-
         private void fbtnInformation_Click(object sender, EventArgs e)
         {
             hidePanels();
         }
-        private void ftbnProductsSellingMngmt_Click(object sender, EventArgs e)
+            
+        public void ftbnProductsSellingMngmt_Click(object sender, EventArgs e)
         {
+            pnlMain.Controls.Clear();
             hidePanels();
-            ProductSellingManagement Management = new ProductSellingManagement();
-            Management.TopLevel = false;
-            Management.AutoScroll = true;
-            pnlMain.Controls.Add(Management);
-            Management.Show();
+            showButtons();
         }
-
         private void fbtnLogin_Click(object sender, EventArgs e)
         {
             hidePanels();
             LoginForm login = new LoginForm();
-            login.TopLevel = false;
-            login.AutoScroll = true;
-            pnlMain.Controls.Add(login);
-            login.Show();
+            load(pnlMain, login);
+        }
+
+        public void load(Panel panel, Form form)
+        {
+            panel.Controls.Clear();
+            form.Dock = DockStyle.Fill;
+            form.TopLevel = false;
+            form.TopMost = true;
+            panel.Controls.Add(form);
+            form.Show();
+        }
+
+        private void tbtnExport_Click(object sender, EventArgs e)
+        {
+            hidePanels();
+            hideButtons();
+            pnlMain.Controls.Clear();
+            ExportForm expf = new ExportForm();
+            load(pnlMain, expf);
         }
     }
 }

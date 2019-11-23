@@ -45,17 +45,15 @@
             this.fbtnCreate = new Bunifu.Framework.UI.BunifuFlatButton();
             this.fbtnDiscard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.fbtnAddProduct = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.ibtnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.dpDate = new Bunifu.Framework.UI.BunifuDatepicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ibtnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.lblTitle.Location = new System.Drawing.Point(497, 62);
+            this.lblTitle.Location = new System.Drawing.Point(392, 36);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(344, 39);
             this.lblTitle.TabIndex = 0;
@@ -65,7 +63,7 @@
             // 
             this.lblWorker.AutoSize = true;
             this.lblWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblWorker.Location = new System.Drawing.Point(241, 137);
+            this.lblWorker.Location = new System.Drawing.Point(136, 111);
             this.lblWorker.Name = "lblWorker";
             this.lblWorker.Size = new System.Drawing.Size(158, 25);
             this.lblWorker.TabIndex = 1;
@@ -74,7 +72,7 @@
             // txtboxWorker
             // 
             this.txtboxWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtboxWorker.Location = new System.Drawing.Point(405, 132);
+            this.txtboxWorker.Location = new System.Drawing.Point(300, 106);
             this.txtboxWorker.Name = "txtboxWorker";
             this.txtboxWorker.Size = new System.Drawing.Size(401, 30);
             this.txtboxWorker.TabIndex = 2;
@@ -83,7 +81,7 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblDate.Location = new System.Drawing.Point(840, 137);
+            this.lblDate.Location = new System.Drawing.Point(735, 111);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(59, 25);
             this.lblDate.TabIndex = 3;
@@ -93,7 +91,7 @@
             // 
             this.cbbProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.cbbProducts.FormattingEnabled = true;
-            this.cbbProducts.Location = new System.Drawing.Point(405, 186);
+            this.cbbProducts.Location = new System.Drawing.Point(300, 160);
             this.cbbProducts.Name = "cbbProducts";
             this.cbbProducts.Size = new System.Drawing.Size(401, 33);
             this.cbbProducts.TabIndex = 5;
@@ -102,7 +100,7 @@
             // 
             this.lblProductName.AutoSize = true;
             this.lblProductName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblProductName.Location = new System.Drawing.Point(241, 192);
+            this.lblProductName.Location = new System.Drawing.Point(136, 166);
             this.lblProductName.Name = "lblProductName";
             this.lblProductName.Size = new System.Drawing.Size(142, 25);
             this.lblProductName.TabIndex = 6;
@@ -112,7 +110,7 @@
             // 
             this.lblAmount.AutoSize = true;
             this.lblAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblAmount.Location = new System.Drawing.Point(841, 194);
+            this.lblAmount.Location = new System.Drawing.Point(736, 168);
             this.lblAmount.Name = "lblAmount";
             this.lblAmount.Size = new System.Drawing.Size(86, 25);
             this.lblAmount.TabIndex = 7;
@@ -121,7 +119,7 @@
             // txtboxAmount
             // 
             this.txtboxAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtboxAmount.Location = new System.Drawing.Point(933, 189);
+            this.txtboxAmount.Location = new System.Drawing.Point(828, 163);
             this.txtboxAmount.Name = "txtboxAmount";
             this.txtboxAmount.Size = new System.Drawing.Size(149, 30);
             this.txtboxAmount.TabIndex = 8;
@@ -129,7 +127,7 @@
             // dgvProductList
             // 
             this.dgvProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductList.Location = new System.Drawing.Point(246, 307);
+            this.dgvProductList.Location = new System.Drawing.Point(141, 281);
             this.dgvProductList.Name = "dgvProductList";
             this.dgvProductList.Size = new System.Drawing.Size(836, 241);
             this.dgvProductList.TabIndex = 10;
@@ -138,7 +136,7 @@
             // 
             this.lblSupplier.AutoSize = true;
             this.lblSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblSupplier.Location = new System.Drawing.Point(241, 246);
+            this.lblSupplier.Location = new System.Drawing.Point(136, 220);
             this.lblSupplier.Name = "lblSupplier";
             this.lblSupplier.Size = new System.Drawing.Size(90, 25);
             this.lblSupplier.TabIndex = 11;
@@ -148,7 +146,7 @@
             // 
             this.cbbSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.cbbSupplier.FormattingEnabled = true;
-            this.cbbSupplier.Location = new System.Drawing.Point(405, 243);
+            this.cbbSupplier.Location = new System.Drawing.Point(300, 217);
             this.cbbSupplier.Name = "cbbSupplier";
             this.cbbSupplier.Size = new System.Drawing.Size(401, 33);
             this.cbbSupplier.TabIndex = 12;
@@ -157,7 +155,7 @@
             // 
             this.lblTotatCost.AutoSize = true;
             this.lblTotatCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblTotatCost.Location = new System.Drawing.Point(782, 565);
+            this.lblTotatCost.Location = new System.Drawing.Point(677, 539);
             this.lblTotatCost.Name = "lblTotatCost";
             this.lblTotatCost.Size = new System.Drawing.Size(108, 25);
             this.lblTotatCost.TabIndex = 13;
@@ -166,7 +164,7 @@
             // txtboxTotalCost
             // 
             this.txtboxTotalCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtboxTotalCost.Location = new System.Drawing.Point(896, 560);
+            this.txtboxTotalCost.Location = new System.Drawing.Point(791, 534);
             this.txtboxTotalCost.Name = "txtboxTotalCost";
             this.txtboxTotalCost.Size = new System.Drawing.Size(186, 30);
             this.txtboxTotalCost.TabIndex = 14;
@@ -193,7 +191,7 @@
             this.fbtnCreate.IconVisible = true;
             this.fbtnCreate.IconZoom = 90D;
             this.fbtnCreate.IsTab = false;
-            this.fbtnCreate.Location = new System.Drawing.Point(426, 615);
+            this.fbtnCreate.Location = new System.Drawing.Point(321, 589);
             this.fbtnCreate.Name = "fbtnCreate";
             this.fbtnCreate.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.fbtnCreate.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -228,7 +226,7 @@
             this.fbtnDiscard.IconVisible = true;
             this.fbtnDiscard.IconZoom = 90D;
             this.fbtnDiscard.IsTab = false;
-            this.fbtnDiscard.Location = new System.Drawing.Point(668, 615);
+            this.fbtnDiscard.Location = new System.Drawing.Point(563, 589);
             this.fbtnDiscard.Name = "fbtnDiscard";
             this.fbtnDiscard.Normalcolor = System.Drawing.Color.DarkRed;
             this.fbtnDiscard.OnHovercolor = System.Drawing.Color.DarkRed;
@@ -263,7 +261,7 @@
             this.fbtnAddProduct.IconVisible = true;
             this.fbtnAddProduct.IconZoom = 90D;
             this.fbtnAddProduct.IsTab = false;
-            this.fbtnAddProduct.Location = new System.Drawing.Point(876, 243);
+            this.fbtnAddProduct.Location = new System.Drawing.Point(771, 217);
             this.fbtnAddProduct.Name = "fbtnAddProduct";
             this.fbtnAddProduct.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.fbtnAddProduct.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -276,18 +274,6 @@
             this.fbtnAddProduct.Textcolor = System.Drawing.Color.White;
             this.fbtnAddProduct.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // ibtnClose
-            // 
-            this.ibtnClose.Image = ((System.Drawing.Image)(resources.GetObject("ibtnClose.Image")));
-            this.ibtnClose.ImageActive = null;
-            this.ibtnClose.Location = new System.Drawing.Point(1227, 12);
-            this.ibtnClose.Name = "ibtnClose";
-            this.ibtnClose.Size = new System.Drawing.Size(40, 40);
-            this.ibtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ibtnClose.TabIndex = 18;
-            this.ibtnClose.TabStop = false;
-            this.ibtnClose.Zoom = 10;
-            // 
             // dpDate
             // 
             this.dpDate.BackColor = System.Drawing.Color.SeaGreen;
@@ -295,7 +281,7 @@
             this.dpDate.ForeColor = System.Drawing.Color.White;
             this.dpDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dpDate.FormatCustom = null;
-            this.dpDate.Location = new System.Drawing.Point(905, 126);
+            this.dpDate.Location = new System.Drawing.Point(800, 100);
             this.dpDate.Name = "dpDate";
             this.dpDate.Size = new System.Drawing.Size(177, 36);
             this.dpDate.TabIndex = 19;
@@ -306,9 +292,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(1100, 661);
             this.Controls.Add(this.dpDate);
-            this.Controls.Add(this.ibtnClose);
             this.Controls.Add(this.fbtnAddProduct);
             this.Controls.Add(this.fbtnDiscard);
             this.Controls.Add(this.fbtnCreate);
@@ -330,7 +315,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ImportForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ibtnClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,7 +338,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton fbtnCreate;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnDiscard;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnAddProduct;
-        private Bunifu.Framework.UI.BunifuImageButton ibtnClose;
         private Bunifu.Framework.UI.BunifuDatepicker dpDate;
     }
 }

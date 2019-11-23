@@ -49,7 +49,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.lblTitle.Location = new System.Drawing.Point(583, 45);
+            this.lblTitle.Location = new System.Drawing.Point(443, 26);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(250, 39);
             this.lblTitle.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             this.lblWorker.AutoSize = true;
             this.lblWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblWorker.Location = new System.Drawing.Point(353, 122);
+            this.lblWorker.Location = new System.Drawing.Point(213, 103);
             this.lblWorker.Name = "lblWorker";
             this.lblWorker.Size = new System.Drawing.Size(142, 25);
             this.lblWorker.TabIndex = 1;
@@ -68,7 +68,7 @@
             // txtboxWorker
             // 
             this.txtboxWorker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtboxWorker.Location = new System.Drawing.Point(501, 119);
+            this.txtboxWorker.Location = new System.Drawing.Point(361, 100);
             this.txtboxWorker.Name = "txtboxWorker";
             this.txtboxWorker.Size = new System.Drawing.Size(331, 30);
             this.txtboxWorker.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblDate.Location = new System.Drawing.Point(353, 177);
+            this.lblDate.Location = new System.Drawing.Point(213, 158);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(171, 25);
             this.lblDate.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             this.cbbImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.cbbImport.FormattingEnabled = true;
-            this.cbbImport.Location = new System.Drawing.Point(545, 224);
+            this.cbbImport.Location = new System.Drawing.Point(405, 205);
             this.cbbImport.Name = "cbbImport";
             this.cbbImport.Size = new System.Drawing.Size(287, 33);
             this.cbbImport.TabIndex = 5;
@@ -96,7 +96,7 @@
             // 
             this.lblImport.AutoSize = true;
             this.lblImport.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblImport.Location = new System.Drawing.Point(353, 227);
+            this.lblImport.Location = new System.Drawing.Point(213, 208);
             this.lblImport.Name = "lblImport";
             this.lblImport.Size = new System.Drawing.Size(168, 25);
             this.lblImport.TabIndex = 6;
@@ -109,7 +109,7 @@
             this.dpDate.ForeColor = System.Drawing.Color.White;
             this.dpDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dpDate.FormatCustom = null;
-            this.dpDate.Location = new System.Drawing.Point(530, 166);
+            this.dpDate.Location = new System.Drawing.Point(390, 147);
             this.dpDate.Name = "dpDate";
             this.dpDate.Size = new System.Drawing.Size(303, 36);
             this.dpDate.TabIndex = 7;
@@ -137,7 +137,7 @@
             this.fbtnReadFile.IconVisible = true;
             this.fbtnReadFile.IconZoom = 90D;
             this.fbtnReadFile.IsTab = false;
-            this.fbtnReadFile.Location = new System.Drawing.Point(867, 224);
+            this.fbtnReadFile.Location = new System.Drawing.Point(727, 205);
             this.fbtnReadFile.Name = "fbtnReadFile";
             this.fbtnReadFile.Normalcolor = System.Drawing.Color.Blue;
             this.fbtnReadFile.OnHovercolor = System.Drawing.Color.Blue;
@@ -153,7 +153,7 @@
             // dgvProductList
             // 
             this.dgvProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductList.Location = new System.Drawing.Point(299, 283);
+            this.dgvProductList.Location = new System.Drawing.Point(159, 264);
             this.dgvProductList.Name = "dgvProductList";
             this.dgvProductList.Size = new System.Drawing.Size(733, 240);
             this.dgvProductList.TabIndex = 9;
@@ -162,7 +162,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lblTotal.Location = new System.Drawing.Point(722, 551);
+            this.lblTotal.Location = new System.Drawing.Point(582, 532);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(111, 25);
             this.lblTotal.TabIndex = 10;
@@ -171,7 +171,7 @@
             // txtboxTotal
             // 
             this.txtboxTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtboxTotal.Location = new System.Drawing.Point(839, 546);
+            this.txtboxTotal.Location = new System.Drawing.Point(699, 527);
             this.txtboxTotal.Name = "txtboxTotal";
             this.txtboxTotal.Size = new System.Drawing.Size(145, 30);
             this.txtboxTotal.TabIndex = 11;
@@ -198,7 +198,7 @@
             this.fbtnConfirm.IconVisible = true;
             this.fbtnConfirm.IconZoom = 90D;
             this.fbtnConfirm.IsTab = false;
-            this.fbtnConfirm.Location = new System.Drawing.Point(501, 607);
+            this.fbtnConfirm.Location = new System.Drawing.Point(361, 588);
             this.fbtnConfirm.Name = "fbtnConfirm";
             this.fbtnConfirm.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.fbtnConfirm.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
@@ -233,7 +233,7 @@
             this.fbtnDiscard.IconVisible = true;
             this.fbtnDiscard.IconZoom = 90D;
             this.fbtnDiscard.IsTab = false;
-            this.fbtnDiscard.Location = new System.Drawing.Point(727, 607);
+            this.fbtnDiscard.Location = new System.Drawing.Point(587, 588);
             this.fbtnDiscard.Name = "fbtnDiscard";
             this.fbtnDiscard.Normalcolor = System.Drawing.Color.DarkRed;
             this.fbtnDiscard.OnHovercolor = System.Drawing.Color.DarkRed;
@@ -250,7 +250,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(1100, 661);
             this.Controls.Add(this.fbtnDiscard);
             this.Controls.Add(this.fbtnConfirm);
             this.Controls.Add(this.txtboxTotal);
