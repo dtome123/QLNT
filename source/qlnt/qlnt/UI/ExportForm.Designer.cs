@@ -47,10 +47,8 @@
             this.dpDate = new Bunifu.Framework.UI.BunifuDatepicker();
             this.cbbExportProductType = new System.Windows.Forms.ComboBox();
             this.lblExportProductType = new System.Windows.Forms.Label();
-            this.pnlActive = new System.Windows.Forms.Panel();
             this.fbtnDiscardChanges = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductList)).BeginInit();
-            this.pnlActive.SuspendLayout();
             this.SuspendLayout();
             // 
             // fbtnAddProduct
@@ -276,14 +274,6 @@
             this.lblExportProductType.TabIndex = 39;
             this.lblExportProductType.Text = "Loại phiếu xuất";
             // 
-            // pnlActive
-            // 
-            this.pnlActive.Controls.Add(this.fbtnDiscardChanges);
-            this.pnlActive.Location = new System.Drawing.Point(0, 0);
-            this.pnlActive.Name = "pnlActive";
-            this.pnlActive.Size = new System.Drawing.Size(1100, 661);
-            this.pnlActive.TabIndex = 40;
-            // 
             // fbtnDiscardChanges
             // 
             this.fbtnDiscardChanges.Active = false;
@@ -306,24 +296,26 @@
             this.fbtnDiscardChanges.IconVisible = true;
             this.fbtnDiscardChanges.IconZoom = 90D;
             this.fbtnDiscardChanges.IsTab = false;
-            this.fbtnDiscardChanges.Location = new System.Drawing.Point(574, 594);
+            this.fbtnDiscardChanges.Location = new System.Drawing.Point(593, 594);
             this.fbtnDiscardChanges.Name = "fbtnDiscardChanges";
             this.fbtnDiscardChanges.Normalcolor = System.Drawing.Color.DarkRed;
             this.fbtnDiscardChanges.OnHovercolor = System.Drawing.Color.DarkRed;
             this.fbtnDiscardChanges.OnHoverTextColor = System.Drawing.Color.White;
             this.fbtnDiscardChanges.selected = false;
             this.fbtnDiscardChanges.Size = new System.Drawing.Size(195, 48);
-            this.fbtnDiscardChanges.TabIndex = 41;
+            this.fbtnDiscardChanges.TabIndex = 42;
             this.fbtnDiscardChanges.Text = "Huỷ thay đổi";
             this.fbtnDiscardChanges.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.fbtnDiscardChanges.Textcolor = System.Drawing.Color.White;
             this.fbtnDiscardChanges.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fbtnDiscardChanges.Click += new System.EventHandler(this.fbtnDiscardChanges_Click);
             // 
             // ExportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 661);
+            this.Controls.Add(this.fbtnDiscardChanges);
             this.Controls.Add(this.lblExportProductType);
             this.Controls.Add(this.cbbExportProductType);
             this.Controls.Add(this.dpDate);
@@ -342,12 +334,11 @@
             this.Controls.Add(this.txtboxWorker);
             this.Controls.Add(this.lblWorker);
             this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.pnlActive);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ExportForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ExportForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductList)).EndInit();
-            this.pnlActive.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -373,7 +364,6 @@
         private Bunifu.Framework.UI.BunifuDatepicker dpDate;
         private System.Windows.Forms.ComboBox cbbExportProductType;
         private System.Windows.Forms.Label lblExportProductType;
-        private System.Windows.Forms.Panel pnlActive;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnDiscardChanges;
     }
 }

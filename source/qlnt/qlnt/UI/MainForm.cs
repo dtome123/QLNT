@@ -109,11 +109,35 @@ namespace qlnt.UI
 
         private void tbtnExport_Click(object sender, EventArgs e)
         {
-            hidePanels();
             hideButtons();
-            pnlMain.Controls.Clear();
             ExportForm expf = new ExportForm();
-            load(pnlMain, expf);
+            expf.TopLevel = false;
+            expf.TopMost = true;
+            pnlMain.Controls.Add(expf);
+            expf.Show();
+            showButtons();
+        }
+
+        private void tbtnImport_Click(object sender, EventArgs e)
+        {
+            hideButtons();
+            ImportForm impf = new ImportForm();
+            impf.TopLevel = false;
+            impf.TopMost = true;
+            pnlMain.Controls.Add(impf);
+            impf.Show();
+            showButtons();
+        }
+
+        private void tbtnBill_Click(object sender, EventArgs e)
+        {
+            hideButtons();
+            Bill bill = new Bill();
+            bill.TopLevel = false;
+            bill.TopMost = true;
+            pnlMain.Controls.Add(bill);
+            bill.Show();
+            showButtons();
         }
     }
 }

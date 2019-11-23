@@ -41,6 +41,10 @@
             this.fbtnInformation = new Bunifu.Framework.UI.BunifuFlatButton();
             this.fbtnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlNavibar = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
             this.fbtnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ibtnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnlWeather = new System.Windows.Forms.Panel();
@@ -48,19 +52,14 @@
             this.pnlStatistics = new System.Windows.Forms.Panel();
             this.pnlUnknownFeature = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.tbtnBill = new Bunifu.Framework.UI.BunifuTileButton();
             this.tbtnImport = new Bunifu.Framework.UI.BunifuTileButton();
             this.tbtnExport = new Bunifu.Framework.UI.BunifuTileButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.tbtnBill = new Bunifu.Framework.UI.BunifuTileButton();
-            this.pnlAnotherMain = new System.Windows.Forms.Panel();
             this.pnlSidebar.SuspendLayout();
             this.pnlNavibar.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ibtnClose)).BeginInit();
             this.pnlMain.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlSidebar
@@ -421,6 +420,73 @@
             this.pnlNavibar.Size = new System.Drawing.Size(1100, 60);
             this.pnlNavibar.TabIndex = 1;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.bunifuTileButton1);
+            this.panel1.Controls.Add(this.bunifuTileButton2);
+            this.panel1.Controls.Add(this.bunifuTileButton3);
+            this.panel1.Location = new System.Drawing.Point(0, 59);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1100, 661);
+            this.panel1.TabIndex = 7;
+            // 
+            // bunifuTileButton1
+            // 
+            this.bunifuTileButton1.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton1.color = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton1.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton1.Font = new System.Drawing.Font("Arial", 15F);
+            this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton1.Image")));
+            this.bunifuTileButton1.ImagePosition = 19;
+            this.bunifuTileButton1.ImageZoom = 50;
+            this.bunifuTileButton1.LabelPosition = 39;
+            this.bunifuTileButton1.LabelText = "Xuất hoá đơn";
+            this.bunifuTileButton1.Location = new System.Drawing.Point(752, 235);
+            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuTileButton1.Name = "bunifuTileButton1";
+            this.bunifuTileButton1.Size = new System.Drawing.Size(205, 211);
+            this.bunifuTileButton1.TabIndex = 2;
+            // 
+            // bunifuTileButton2
+            // 
+            this.bunifuTileButton2.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton2.color = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton2.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton2.Font = new System.Drawing.Font("Arial", 15F);
+            this.bunifuTileButton2.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton2.Image")));
+            this.bunifuTileButton2.ImagePosition = 19;
+            this.bunifuTileButton2.ImageZoom = 50;
+            this.bunifuTileButton2.LabelPosition = 39;
+            this.bunifuTileButton2.LabelText = "Tạo phiếu nhập";
+            this.bunifuTileButton2.Location = new System.Drawing.Point(154, 235);
+            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuTileButton2.Name = "bunifuTileButton2";
+            this.bunifuTileButton2.Size = new System.Drawing.Size(205, 211);
+            this.bunifuTileButton2.TabIndex = 0;
+            // 
+            // bunifuTileButton3
+            // 
+            this.bunifuTileButton3.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton3.color = System.Drawing.Color.SeaGreen;
+            this.bunifuTileButton3.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton3.Font = new System.Drawing.Font("Arial", 15F);
+            this.bunifuTileButton3.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton3.Image")));
+            this.bunifuTileButton3.ImagePosition = 19;
+            this.bunifuTileButton3.ImageZoom = 50;
+            this.bunifuTileButton3.LabelPosition = 39;
+            this.bunifuTileButton3.LabelText = "Tạo phiếu xuất";
+            this.bunifuTileButton3.Location = new System.Drawing.Point(446, 235);
+            this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuTileButton3.Name = "bunifuTileButton3";
+            this.bunifuTileButton3.Size = new System.Drawing.Size(205, 211);
+            this.bunifuTileButton3.TabIndex = 1;
+            // 
             // fbtnLogin
             // 
             this.fbtnLogin.Active = false;
@@ -507,7 +573,6 @@
             // 
             // pnlMain
             // 
-            this.pnlMain.Controls.Add(this.pnlAnotherMain);
             this.pnlMain.Controls.Add(this.tbtnBill);
             this.pnlMain.Controls.Add(this.tbtnImport);
             this.pnlMain.Controls.Add(this.tbtnExport);
@@ -515,6 +580,26 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(1100, 661);
             this.pnlMain.TabIndex = 6;
+            // 
+            // tbtnBill
+            // 
+            this.tbtnBill.BackColor = System.Drawing.Color.SeaGreen;
+            this.tbtnBill.color = System.Drawing.Color.SeaGreen;
+            this.tbtnBill.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.tbtnBill.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tbtnBill.Font = new System.Drawing.Font("Arial", 15F);
+            this.tbtnBill.ForeColor = System.Drawing.Color.White;
+            this.tbtnBill.Image = ((System.Drawing.Image)(resources.GetObject("tbtnBill.Image")));
+            this.tbtnBill.ImagePosition = 19;
+            this.tbtnBill.ImageZoom = 50;
+            this.tbtnBill.LabelPosition = 39;
+            this.tbtnBill.LabelText = "Lập hoá đơn";
+            this.tbtnBill.Location = new System.Drawing.Point(752, 235);
+            this.tbtnBill.Margin = new System.Windows.Forms.Padding(6);
+            this.tbtnBill.Name = "tbtnBill";
+            this.tbtnBill.Size = new System.Drawing.Size(205, 211);
+            this.tbtnBill.TabIndex = 2;
+            this.tbtnBill.Click += new System.EventHandler(this.tbtnBill_Click);
             // 
             // tbtnImport
             // 
@@ -534,6 +619,7 @@
             this.tbtnImport.Name = "tbtnImport";
             this.tbtnImport.Size = new System.Drawing.Size(205, 211);
             this.tbtnImport.TabIndex = 0;
+            this.tbtnImport.Click += new System.EventHandler(this.tbtnImport_Click);
             // 
             // tbtnExport
             // 
@@ -555,99 +641,6 @@
             this.tbtnExport.TabIndex = 1;
             this.tbtnExport.Click += new System.EventHandler(this.tbtnExport_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.bunifuTileButton1);
-            this.panel1.Controls.Add(this.bunifuTileButton2);
-            this.panel1.Controls.Add(this.bunifuTileButton3);
-            this.panel1.Location = new System.Drawing.Point(0, 59);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1100, 661);
-            this.panel1.TabIndex = 7;
-            // 
-            // bunifuTileButton1
-            // 
-            this.bunifuTileButton1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuTileButton1.color = System.Drawing.Color.SeaGreen;
-            this.bunifuTileButton1.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton1.Font = new System.Drawing.Font("Arial", 15F);
-            this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton1.Image")));
-            this.bunifuTileButton1.ImagePosition = 19;
-            this.bunifuTileButton1.ImageZoom = 50;
-            this.bunifuTileButton1.LabelPosition = 39;
-            this.bunifuTileButton1.LabelText = "Xuất hoá đơn";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(752, 235);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuTileButton1.Name = "bunifuTileButton1";
-            this.bunifuTileButton1.Size = new System.Drawing.Size(205, 211);
-            this.bunifuTileButton1.TabIndex = 2;
-            // 
-            // bunifuTileButton2
-            // 
-            this.bunifuTileButton2.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuTileButton2.color = System.Drawing.Color.SeaGreen;
-            this.bunifuTileButton2.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton2.Font = new System.Drawing.Font("Arial", 15F);
-            this.bunifuTileButton2.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton2.Image")));
-            this.bunifuTileButton2.ImagePosition = 19;
-            this.bunifuTileButton2.ImageZoom = 50;
-            this.bunifuTileButton2.LabelPosition = 39;
-            this.bunifuTileButton2.LabelText = "Tạo phiếu nhập";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(154, 235);
-            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuTileButton2.Name = "bunifuTileButton2";
-            this.bunifuTileButton2.Size = new System.Drawing.Size(205, 211);
-            this.bunifuTileButton2.TabIndex = 0;
-            // 
-            // bunifuTileButton3
-            // 
-            this.bunifuTileButton3.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuTileButton3.color = System.Drawing.Color.SeaGreen;
-            this.bunifuTileButton3.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton3.Font = new System.Drawing.Font("Arial", 15F);
-            this.bunifuTileButton3.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton3.Image")));
-            this.bunifuTileButton3.ImagePosition = 19;
-            this.bunifuTileButton3.ImageZoom = 50;
-            this.bunifuTileButton3.LabelPosition = 39;
-            this.bunifuTileButton3.LabelText = "Tạo phiếu xuất";
-            this.bunifuTileButton3.Location = new System.Drawing.Point(446, 235);
-            this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(6);
-            this.bunifuTileButton3.Name = "bunifuTileButton3";
-            this.bunifuTileButton3.Size = new System.Drawing.Size(205, 211);
-            this.bunifuTileButton3.TabIndex = 1;
-            // 
-            // tbtnBill
-            // 
-            this.tbtnBill.BackColor = System.Drawing.Color.SeaGreen;
-            this.tbtnBill.color = System.Drawing.Color.SeaGreen;
-            this.tbtnBill.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.tbtnBill.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tbtnBill.Font = new System.Drawing.Font("Arial", 15F);
-            this.tbtnBill.ForeColor = System.Drawing.Color.White;
-            this.tbtnBill.Image = ((System.Drawing.Image)(resources.GetObject("tbtnBill.Image")));
-            this.tbtnBill.ImagePosition = 19;
-            this.tbtnBill.ImageZoom = 50;
-            this.tbtnBill.LabelPosition = 39;
-            this.tbtnBill.LabelText = "Xuất hoá đơn";
-            this.tbtnBill.Location = new System.Drawing.Point(752, 235);
-            this.tbtnBill.Margin = new System.Windows.Forms.Padding(6);
-            this.tbtnBill.Name = "tbtnBill";
-            this.tbtnBill.Size = new System.Drawing.Size(205, 211);
-            this.tbtnBill.TabIndex = 2;
-            // 
-            // pnlAnotherMain
-            // 
-            this.pnlAnotherMain.Location = new System.Drawing.Point(0, 0);
-            this.pnlAnotherMain.Name = "pnlAnotherMain";
-            this.pnlAnotherMain.Size = new System.Drawing.Size(1100, 661);
-            this.pnlAnotherMain.TabIndex = 3;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -666,9 +659,9 @@
             this.Text = "Form2";
             this.pnlSidebar.ResumeLayout(false);
             this.pnlNavibar.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ibtnClose)).EndInit();
             this.pnlMain.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -701,6 +694,5 @@
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton3;
         private Bunifu.Framework.UI.BunifuTileButton tbtnBill;
-        private System.Windows.Forms.Panel pnlAnotherMain;
     }
 }

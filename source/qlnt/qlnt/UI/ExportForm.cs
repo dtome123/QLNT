@@ -26,5 +26,10 @@ namespace qlnt.UI
             cbbCustomer.Items.Add("Tuấn Trương Supplier");
             cbbCustomer.Items.Add("Tù Trưởng Bộ lạc");
         }
+
+        private void fbtnDiscardChanges_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

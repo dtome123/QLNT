@@ -119,7 +119,7 @@
             // 
             this.fbtnReadFile.Active = false;
             this.fbtnReadFile.Activecolor = System.Drawing.Color.Blue;
-            this.fbtnReadFile.BackColor = System.Drawing.Color.Blue;
+            this.fbtnReadFile.BackColor = System.Drawing.Color.SeaGreen;
             this.fbtnReadFile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.fbtnReadFile.BorderRadius = 0;
             this.fbtnReadFile.ButtonText = "Đọc phiếu";
@@ -245,6 +245,7 @@
             this.fbtnDiscard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.fbtnDiscard.Textcolor = System.Drawing.Color.White;
             this.fbtnDiscard.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fbtnDiscard.Click += new System.EventHandler(this.fbtnDiscard_Click);
             // 
             // Bill
             // 
