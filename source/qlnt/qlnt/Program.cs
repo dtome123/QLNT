@@ -1,6 +1,6 @@
 ﻿using qlnt.DialogForm;
 using qlnt.UI;
-
+using qlnt.UI.DialogForm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +19,7 @@ namespace qlnt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormQuanLyKho());   
+            Application.Run(new FormKhachHang());   
         }
     }
 }

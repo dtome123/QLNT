@@ -17,6 +17,31 @@ namespace qlnt.UI
 
     public partial class Diablog_NS : Form
     {
+        #region di chuyển dialog
+        private const int WM_NCHITTEST = 0x84;
+        private const int HTCLIENT = 0x1;
+        private const int HTCAPTION = 0x2;
+
+        ///
+        /// Handling the window messages
+        ///
+        protected override void WndProc(ref Message message)
+        {
+            base.WndProc(ref message);
+
+            if (message.Msg == WM_NCHITTEST && (int)message.Result == HTCLIENT)
+                message.Result = (IntPtr)HTCAPTION;
+        }
+        #endregion
+
+        #region border
+        public void border()
+        {
+            this.ControlBox = false;
+            this.Text = String.Empty;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
+        #endregion
         NongSanBUS bus = new NongSanBUS();
         CayBUS busCay = new CayBUS();
         Dictionary<int, string> ds = new Dictionary<int, string>();
@@ -27,12 +52,14 @@ namespace qlnt.UI
         public Diablog_NS()
         {
             InitializeComponent();
+            border();
             ds = busCay.getAllNameTree();
             comboBoxLoaiCay.DataSource = ds.Values.ToList();
         }
         public Diablog_NS(string id)
         {
             InitializeComponent();
+            border();
             NongSanDB db = new NongSanDB();
             ds = busCay.getAllNameTree();
             // MessageBox.Show(ds.Count.ToString());

@@ -71,7 +71,10 @@
     <Compile Include="BUS\CayBUS.cs" />
     <Compile Include="BUS\checkString.cs" />
     <Compile Include="BUS\HangHoa.cs" />
+    <Compile Include="BUS\KhachHangBUS.cs" />
     <Compile Include="BUS\LoaiKHBUS.cs" />
+    <Compile Include="BUS\NhaCungCapNCCBUS.cs" />
+    <Compile Include="BUS\NhanVienBUS.cs" />
     <Compile Include="BUS\NongSanBUS.cs" />
     <Compile Include="BUS\ThuocBaoVeTVBUS.cs" />
     <Compile Include="DB\BangThuHoachDB.cs" />
@@ -200,10 +203,13 @@
     <Compile Include="DB\Entity\ThuocBaoVeTV.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
+    <Compile Include="DB\KhachHangDB.cs" />
     <Compile Include="DB\LoaiKHDB.cs" />
     <Compile Include="BUS\PhanBonBUS.cs" />
     <Compile Include="BUS\KeHoachBUS.cs" />
     <Compile Include="DB\KeHoachDB.cs" />
+    <Compile Include="DB\NhaCungCapDB.cs" />
+    <Compile Include="DB\NhanVienDB.cs" />
     <Compile Include="DB\NongSanDB.cs" />
     <Compile Include="DB\PhanBonDB.cs" />
     <Compile Include="DB\ThuocBaoVeTVDB.cs" />
@@ -231,11 +237,29 @@
     <Compile Include="UI\DialogForm\Diablog_Cay.Designer.cs">
       <DependentUpon>Diablog_Cay.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\DialogForm\Diablog_KH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_KH.Designer.cs">
+      <DependentUpon>Diablog_KH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_NCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_NCC.Designer.cs">
+      <DependentUpon>Diablog_NCC.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\DialogForm\Diablog_NS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\DialogForm\Diablog_NS.Designer.cs">
       <DependentUpon>Diablog_NS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_NV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_NV.Designer.cs">
+      <DependentUpon>Diablog_NV.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\DialogForm\Diablog_PB.cs">
       <SubType>Form</SubType>
@@ -297,6 +321,24 @@
     </Compile>
     <Compile Include="UI\FormCay.Designer.cs">
       <DependentUpon>FormCay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormKhachHang.Designer.cs">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormNhaCungCap.Designer.cs">
+      <DependentUpon>FormNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormNhanVien.Designer.cs">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FormNongSan.cs">
       <SubType>Form</SubType>
@@ -360,8 +402,17 @@
     <EmbeddedResource Include="UI\DialogForm\Diablog_Cay.resx">
       <DependentUpon>Diablog_Cay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForm\Diablog_KH.resx">
+      <DependentUpon>Diablog_KH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForm\Diablog_NCC.resx">
+      <DependentUpon>Diablog_NCC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\DialogForm\Diablog_NS.resx">
       <DependentUpon>Diablog_NS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForm\Diablog_NV.resx">
+      <DependentUpon>Diablog_NV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\DialogForm\Diablog_PB.resx">
       <DependentUpon>Diablog_PB.cs</DependentUpon>
@@ -392,6 +443,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormCay.resx">
       <DependentUpon>FormCay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormKhachHang.resx">
+      <DependentUpon>FormKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormNhaCungCap.resx">
+      <DependentUpon>FormNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormNhanVien.resx">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormNongSan.resx">
       <DependentUpon>FormNongSan.cs</DependentUpon>

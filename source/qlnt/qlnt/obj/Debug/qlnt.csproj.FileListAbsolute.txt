@@ -52,3 +52,8 @@ C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.Dialog_LapKe
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.Dialog_XemCTKH.resources
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.DialogForm.Dialog.resources
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.APIWeather.resources
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.DialogForm.Diablog_NCC.resources
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.FormKhachHang.resources
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.FormNhaCungCap.resources
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.FormNhanVien.resources
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.Diablog_KH.resources
