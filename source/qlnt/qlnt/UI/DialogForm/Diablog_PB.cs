@@ -10,15 +10,14 @@ using System.Windows.Forms;
 using qlnt.DB;
 using System.Text.RegularExpressions;
 using qlnt.BUS;
+using qlnt.DB.Entity;
 
-namespace qlnt.DialogForm
+namespace qlnt.UI
 {
-    public interface hover
-    {
-
-    }
+ 
     public partial class Diablog_PB : Form
     {
+
         PhanBonBUS bus = new PhanBonBUS();
         PhanBon o;
         int id;
@@ -26,11 +25,17 @@ namespace qlnt.DialogForm
         public Diablog_PB()
         {
             InitializeComponent();
+            border();
+            List<string> l = new List<string>() { "Vô cơ", "Hữu cơ" };
+            comboBoxLoai.DataSource = l;
         }
         public Diablog_PB(string id)
         {
             InitializeComponent();
+            border();
             PhanBonDB db = new PhanBonDB();
+            List<string> l = new List<string>() { "Vô cơ", "Hữu cơ" };
+            comboBoxLoai.DataSource = l;
             // load noi dung de sua thong tin
             #region gắn giá trị
             this.id = Convert.ToInt32(id);
@@ -111,6 +116,7 @@ namespace qlnt.DialogForm
             {
                 o = new PhanBon() { TenPB = textTenPB.Text, Loai = comboBoxLoai.Text, SoLuong = Convert.ToInt32(textSoLuong.Text), DonGia = Convert.ToDouble(textDonGia.Text), KhoiLuong = Convert.ToInt32(textKhoiLuong.Text), NgaySX = DatepickerSX.Value.Date, HanSD = DatepickerHSD.Value.Date };
                 bus.Add(o);
+                MessageBox.Show("Thêm thành công");
                 Dialog_close();
             }            
             #region kt
@@ -126,14 +132,14 @@ namespace qlnt.DialogForm
 
         }
 
-        private void add_PB_Load(object sender, EventArgs e)
+        /*private void add_PB_Load(object sender, EventArgs e)
         {
             List<string> l=new List<string>() {"Vô cơ", "Hữu cơ"} ;
             comboBoxLoai.DataSource = l;
             //DatepickerSX.Format = DateTimePickerFormat.Custom;
             //DatepickerSX.FormatCustom = "dd/MM/yyyy";
 
-        }
+        }*/
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
@@ -156,5 +162,40 @@ namespace qlnt.DialogForm
                 Dialog_close();
             }
         }
+
+        private void Diablog_PB_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+        #region di chuyển dialog
+        private const int WM_NCHITTEST = 0x84;
+        private const int HTCLIENT = 0x1;
+        private const int HTCAPTION = 0x2;
+
+        ///
+        /// Handling the window messages
+        ///
+        protected override void WndProc(ref Message message)
+        {
+            base.WndProc(ref message);
+
+            if (message.Msg == WM_NCHITTEST && (int)message.Result == HTCLIENT)
+                message.Result = (IntPtr)HTCAPTION;
+        }
+        #endregion
+
+        #region border
+        public void border()
+        {
+            this.ControlBox = false;
+            this.Text = String.Empty;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+        }
+        #endregion
     }
 }

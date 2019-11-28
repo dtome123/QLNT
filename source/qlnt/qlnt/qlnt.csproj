@@ -47,9 +47,12 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,103 +62,156 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="XanderUI">
+      <HintPath>..\..\..\..\..\..\Downloads\plupin\XanderUI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\BangThuHoachBUS.cs" />
+    <Compile Include="BUS\CayBUS.cs" />
     <Compile Include="BUS\checkString.cs" />
-    <Compile Include="BUS\PhanBonBUS.cs" />
-    <Compile Include="DB\Cay.cs">
+    <Compile Include="BUS\HangHoa.cs" />
+    <Compile Include="BUS\LoaiKHBUS.cs" />
+    <Compile Include="BUS\NongSanBUS.cs" />
+    <Compile Include="BUS\ThuocBaoVeTVBUS.cs" />
+    <Compile Include="DB\BangThuHoachDB.cs" />
+    <Compile Include="DB\CayDB.cs" />
+    <Compile Include="DB\ChiTietKHDB.cs" />
+    <Compile Include="DB\Entity\BangThuHoach.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\ChiTietCay_KH.cs">
+    <Compile Include="DB\Entity\Cay.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\ChiTietKHBonPhan.cs">
+    <Compile Include="DB\Entity\ChiTietHoaDon.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\ChiTietKHDungThuoc.cs">
+    <Compile Include="DB\Entity\ChiTietKH.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\ChiTietNhapGiong.cs">
+    <Compile Include="DB\Entity\ChiTietNhap_PB.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\ChiTietNhap_PB.cs">
+    <Compile Include="DB\Entity\ChiTietNhap_TBV.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\ChiTietNhap_TBV.cs">
+    <Compile Include="DB\Entity\ChiTietXuat_PB.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\ChiTietXuat_NS.cs">
+    <Compile Include="DB\Entity\ChiTietXuat_TBV.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\ChiTietXuat_PB.cs">
+    <Compile Include="DB\Entity\ChiTiet_TH.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\ChiTietXuat_TBV.cs">
+    <Compile Include="DB\Entity\DoDoc.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\ChiTiet_TH.cs">
+    <Compile Include="DB\Entity\getListNongSan1_Result.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\DoDoc.cs">
+    <Compile Include="DB\Entity\getListNongSan1_Result1.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\HoaDon.cs">
+    <Compile Include="DB\Entity\getListNongSan_Result.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\KeHoach.cs">
+    <Compile Include="DB\Entity\getListNongSan_Result1.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\KhachHang.cs">
+    <Compile Include="DB\Entity\getListNongSan_Result2.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\NhaCungCap.cs">
+    <Compile Include="DB\Entity\getListNongSan_Result3.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\NhanVien.cs">
+    <Compile Include="DB\Entity\getListNongSan_Result4.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\NongSan.cs">
+    <Compile Include="DB\Entity\HoaDon.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\PhanBon.cs">
+    <Compile Include="DB\Entity\KeHoach.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\PhanBonDB.cs" />
-    <Compile Include="DB\PhieuNhap.cs">
+    <Compile Include="DB\Entity\KhachHang.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\PhieuNhapN.cs">
+    <Compile Include="DB\Entity\LoaiKH.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\PhieuXuat.cs">
+    <Compile Include="DB\Entity\NhaCungCap.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\QLNT.Context.cs">
+    <Compile Include="DB\Entity\NhanVien.cs">
+      <DependentUpon>QLNT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Entity\NongSan.cs">
+      <DependentUpon>QLNT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Entity\PhanBon.cs">
+      <DependentUpon>QLNT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Entity\PhieuNhap.cs">
+      <DependentUpon>QLNT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Entity\PhieuXuat.cs">
+      <DependentUpon>QLNT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Entity\QLNT.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNT.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\QLNT.cs">
+    <Compile Include="DB\Entity\QLNT.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\QLNT.Designer.cs">
+    <Compile Include="DB\Entity\QLNT.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLNT.edmx</DependentUpon>
     </Compile>
-    <Compile Include="DB\ThuocBaoVeTV.cs">
+    <Compile Include="DB\Entity\Quyen.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="DB\ViTri.cs">
+    <Compile Include="DB\Entity\sysdiagrams.cs">
       <DependentUpon>QLNT.tt</DependentUpon>
     </Compile>
-    <Compile Include="UI\DialogForm\Diablog_PB.cs">
+    <Compile Include="DB\Entity\ThongKeDoanhThuTheoNam1_Result.cs">
+      <DependentUpon>QLNT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Entity\ThongKeDoanhThuTheoNam_Result.cs">
+      <DependentUpon>QLNT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Entity\ThongKeDoanhThuTheoNam_Result1.cs">
+      <DependentUpon>QLNT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Entity\ThongKeSanLuong1_Result.cs">
+      <DependentUpon>QLNT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Entity\ThongKeSanLuong_Result.cs">
+      <DependentUpon>QLNT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Entity\ThongKeSanLuong_Result1.cs">
+      <DependentUpon>QLNT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\Entity\ThuocBaoVeTV.cs">
+      <DependentUpon>QLNT.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB\LoaiKHDB.cs" />
+    <Compile Include="BUS\PhanBonBUS.cs" />
+    <Compile Include="BUS\KeHoachBUS.cs" />
+    <Compile Include="DB\KeHoachDB.cs" />
+    <Compile Include="DB\NongSanDB.cs" />
+    <Compile Include="DB\PhanBonDB.cs" />
+    <Compile Include="DB\ThuocBaoVeTVDB.cs" />
+    <Compile Include="UI\APIWeather.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\DialogForm\Diablog_PB.Designer.cs">
-      <DependentUpon>Diablog_PB.cs</DependentUpon>
+    <Compile Include="UI\APIWeather.Designer.cs">
+      <DependentUpon>APIWeather.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\demo.cs">
       <SubType>Form</SubType>
@@ -163,11 +219,90 @@
     <Compile Include="UI\demo.Designer.cs">
       <DependentUpon>demo.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\DialogForm\Diablog_BangTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_BangTH.Designer.cs">
+      <DependentUpon>Diablog_BangTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_Cay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_Cay.Designer.cs">
+      <DependentUpon>Diablog_Cay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_NS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_NS.Designer.cs">
+      <DependentUpon>Diablog_NS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_PB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_PB.Designer.cs">
+      <DependentUpon>Diablog_PB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_TBV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_TBV.Designer.cs">
+      <DependentUpon>Diablog_TBV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_viewbangth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Diablog_viewbangth.Designer.cs">
+      <DependentUpon>Diablog_viewbangth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForm\Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Dialog.Designer.cs">
+      <DependentUpon>Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForm\Dialog_AddCTKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Dialog_AddCTKH.Designer.cs">
+      <DependentUpon>Dialog_AddCTKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForm\Dialog_LapKeHoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Dialog_LapKeHoach.Designer.cs">
+      <DependentUpon>Dialog_LapKeHoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForm\Dialog_XemCTKeHoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForm\Dialog_XemCTKeHoach.Designer.cs">
+      <DependentUpon>Dialog_XemCTKeHoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForm\InterfaceDialog.cs" />
     <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormBangThuHoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormBangThuHoach.Designer.cs">
+      <DependentUpon>FormBangThuHoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormCay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormCay.Designer.cs">
+      <DependentUpon>FormCay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormNongSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormNongSan.Designer.cs">
+      <DependentUpon>FormNongSan.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\FormPhanBon.cs">
       <SubType>Form</SubType>
@@ -183,14 +318,83 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="UI\DialogForm\Diablog_PB.resx">
-      <DependentUpon>Diablog_PB.cs</DependentUpon>
+    <Compile Include="UI\FormKeHoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormKeHoach.Designer.cs">
+      <DependentUpon>FormKeHoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormQuanLyKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormQuanLyKho.Designer.cs">
+      <DependentUpon>FormQuanLyKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormThongKeSanLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormThongKeSanLuong.Designer.cs">
+      <DependentUpon>FormThongKeSanLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormThongKeDoanhThuTheoNam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormThongKeDoanhThuTheoNam.Designer.cs">
+      <DependentUpon>FormThongKeDoanhThuTheoNam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormThuocBaoVeTV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormThuocBaoVeTV.Designer.cs">
+      <DependentUpon>FormThuocBaoVeTV.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\APIWeather.resx">
+      <DependentUpon>APIWeather.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\demo.resx">
       <DependentUpon>demo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForm\Diablog_BangTH.resx">
+      <DependentUpon>Diablog_BangTH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForm\Diablog_Cay.resx">
+      <DependentUpon>Diablog_Cay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForm\Diablog_NS.resx">
+      <DependentUpon>Diablog_NS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForm\Diablog_PB.resx">
+      <DependentUpon>Diablog_PB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForm\Diablog_TBV.resx">
+      <DependentUpon>Diablog_TBV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForm\Diablog_viewbangth.resx">
+      <DependentUpon>Diablog_viewbangth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForm\Dialog.resx">
+      <DependentUpon>Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForm\Dialog_AddCTKH.resx">
+      <DependentUpon>Dialog_AddCTKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForm\Dialog_LapKeHoach.resx">
+      <DependentUpon>Dialog_LapKeHoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForm\Dialog_XemCTKeHoach.resx">
+      <DependentUpon>Dialog_XemCTKeHoach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormBangThuHoach.resx">
+      <DependentUpon>FormBangThuHoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormCay.resx">
+      <DependentUpon>FormCay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormNongSan.resx">
+      <DependentUpon>FormNongSan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormPhanBon.resx">
       <DependentUpon>FormPhanBon.cs</DependentUpon>
@@ -207,11 +411,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="DB\QLNT.edmx">
+    <EmbeddedResource Include="UI\FormKeHoach.resx">
+      <DependentUpon>FormKeHoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormQuanLyKho.resx">
+      <DependentUpon>FormQuanLyKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormThongKeSanLuong.resx">
+      <DependentUpon>FormThongKeSanLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormThongKeDoanhThuTheoNam.resx">
+      <DependentUpon>FormThongKeDoanhThuTheoNam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormThuocBaoVeTV.resx">
+      <DependentUpon>FormThuocBaoVeTV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="DB\Entity\QLNT.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>QLNT.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DB\QLNT.edmx.diagram">
+    <None Include="DB\Entity\QLNT.edmx.diagram">
       <DependentUpon>QLNT.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -226,24 +445,26 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB\QLNT.Context.tt">
+    <Content Include="DB\Entity\QLNT.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>QLNT.edmx</DependentUpon>
       <LastGenOutput>QLNT.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="DB\QLNT.tt">
+    <Content Include="DB\Entity\QLNT.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>QLNT.edmx</DependentUpon>
       <LastGenOutput>QLNT.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

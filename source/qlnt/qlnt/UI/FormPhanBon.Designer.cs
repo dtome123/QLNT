@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGrid = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.TenPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Loai = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,7 +40,6 @@
             this.NgaySX = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HanSD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sua = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Xoa = new System.Windows.Forms.DataGridViewButtonColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonSearch)).BeginInit();
@@ -50,40 +49,55 @@
             // 
             // bunifuImageButton1
             // 
-            this.bunifuImageButton1.Location = new System.Drawing.Point(927, 12);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(827, 12);
             // 
             // bunifuCustomLabel1
             // 
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(41, 50);
             this.bunifuCustomLabel1.Text = "Phân bón";
+            // 
+            // inputSearch
+            // 
+            this.inputSearch.Location = new System.Drawing.Point(131, 156);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(49, 160);
             // 
             // buttonSearch
             // 
+            this.buttonSearch.Location = new System.Drawing.Point(346, 156);
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // buttonAdd
             // 
+            this.buttonAdd.Location = new System.Drawing.Point(538, 156);
             this.buttonAdd.Click += new System.EventHandler(this.bunifuImageButton3_Click);
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(489, 160);
             // 
             // buttonViewAll
             // 
-            this.buttonViewAll.Location = new System.Drawing.Point(665, 154);
+            this.buttonViewAll.Location = new System.Drawing.Point(627, 154);
             this.buttonViewAll.Click += new System.EventHandler(this.buttonViewAll_Click);
             // 
             // dataGrid
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGrid.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGrid.BackgroundColor = System.Drawing.Color.White;
             this.dataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Honeydew;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TenPB,
@@ -94,7 +108,6 @@
             this.NgaySX,
             this.HanSD,
             this.Sua,
-            this.Xoa,
             this.id});
             this.dataGrid.DoubleBuffered = true;
             this.dataGrid.EnableHeadersVisualStyles = false;
@@ -104,15 +117,16 @@
             this.dataGrid.Location = new System.Drawing.Point(39, 236);
             this.dataGrid.Name = "dataGrid";
             this.dataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGrid.Size = new System.Drawing.Size(872, 154);
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGrid.RowHeadersVisible = false;
+            this.dataGrid.Size = new System.Drawing.Size(835, 154);
             this.dataGrid.TabIndex = 9;
             this.dataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_CellContentClick);
             this.dataGrid.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_CellMouseLeave);
@@ -176,16 +190,6 @@
             this.Sua.UseColumnTextForButtonValue = true;
             this.Sua.Width = 50;
             // 
-            // Xoa
-            // 
-            this.Xoa.HeaderText = "Xóa";
-            this.Xoa.Name = "Xoa";
-            this.Xoa.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Xoa.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Xoa.Text = "Xóa";
-            this.Xoa.UseColumnTextForButtonValue = true;
-            this.Xoa.Width = 50;
-            // 
             // id
             // 
             this.id.DataPropertyName = "MaPB";
@@ -197,12 +201,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(983, 452);
+            this.ClientSize = new System.Drawing.Size(883, 452);
             this.Controls.Add(this.dataGrid);
             this.Name = "FormPhanBon";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
-            this.Controls.SetChildIndex(this.dataGrid, 0);
             this.Controls.SetChildIndex(this.buttonViewAll, 0);
             this.Controls.SetChildIndex(this.bunifuImageButton1, 0);
             this.Controls.SetChildIndex(this.bunifuCustomLabel1, 0);
@@ -211,6 +214,7 @@
             this.Controls.SetChildIndex(this.buttonSearch, 0);
             this.Controls.SetChildIndex(this.buttonAdd, 0);
             this.Controls.SetChildIndex(this.bunifuCustomLabel2, 0);
+            this.Controls.SetChildIndex(this.dataGrid, 0);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).EndInit();
@@ -231,7 +235,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NgaySX;
         private System.Windows.Forms.DataGridViewTextBoxColumn HanSD;
         private System.Windows.Forms.DataGridViewButtonColumn Sua;
-        private System.Windows.Forms.DataGridViewButtonColumn Xoa;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
     }
 }

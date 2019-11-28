@@ -14,11 +14,11 @@ namespace qlnt.BUS
         public bool isNUll(string t)
         {
             
-            if (t.CompareTo("") == 1)
+            if (t.Equals(""))
             {
-                return false;
+                return true;
             }
-            return true;
+            return false;
         }
         public bool checkLength(string t, int lengthMin, int lengthMax)
         {

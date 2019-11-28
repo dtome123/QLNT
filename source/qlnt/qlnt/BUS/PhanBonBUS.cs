@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Bunifu.Framework.UI;
+using qlnt.DB.Entity;
 
 namespace qlnt.BUS
 {
@@ -43,6 +44,25 @@ namespace qlnt.BUS
             PhanBonDB db = new PhanBonDB();
             db.Search(dataGrid,s);
         }
-
+        public PhanBon getPhanBon(string id)
+        {
+            PhanBonDB db = new PhanBonDB();
+            return db.getPhanBon(id);
+        }
+        // huy so luong phan bon qua han
+        public List<HangHoa> getListPhanBon()
+        {
+            PhanBonDB db = new PhanBonDB();
+            return db.getListPhanBon();
+        }
+        public void setHuySL(List<HangHoa> list)
+        {
+            PhanBonDB db = new PhanBonDB();
+            foreach (var i in list)
+            {
+                if(i.loai.Equals("Phân bón"))
+                    db.setHuySL(i.ma);
+            }
+        }
     }
 }

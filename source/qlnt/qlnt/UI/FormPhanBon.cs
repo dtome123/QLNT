@@ -1,4 +1,4 @@
-﻿using qlnt.DialogForm;
+﻿//using qlnt.DialogForm;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,11 +31,11 @@ namespace qlnt
         {
             View();
         }
-        // Chức năng 
+        // Chức năng
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
-            Diablog_PB d = new Diablog_PB();
-            d.ShowDialog(this);
+            //Diablog_PB d = new Diablog_PB();
+            //d.ShowDialog(this);
             View();
         }
 
@@ -44,10 +44,10 @@ namespace qlnt
             string id;
             if (dataGrid.Columns[e.ColumnIndex].Name=="Sua")
             {
-                id = dataGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString();
-                //MessageBox.Show(dataGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString());
-                Diablog_PB d = new Diablog_PB(id);
-                d.ShowDialog(this);
+               
+                id = dataGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString(); 
+                //Diablog_PB d = new Diablog_PB(id);
+                //d.ShowDialog(this);
                 View();
             }
             if (dataGrid.Columns[e.ColumnIndex].Name == "Xoa")
@@ -89,7 +89,6 @@ namespace qlnt
                 View();
             }
         }
-        ////////////
 
         private void buttonViewAll_Click(object sender, EventArgs e)
         {

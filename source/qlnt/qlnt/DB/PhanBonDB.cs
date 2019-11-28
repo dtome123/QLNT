@@ -1,5 +1,6 @@
 ﻿using Bunifu.Framework.UI;
 using qlnt.BUS;
+using qlnt.DB.Entity;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -22,7 +23,7 @@ namespace qlnt.DB
             using (QLNTEntities1 db = new QLNTEntities1())
             {
                 d.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                var result = from c in db.PhanBons select new { TenPB = c.TenPB, Loai = c.Loai };
+                var result = from c in db.PhanBon select new { TenPB = c.TenPB, Loai = c.Loai };
                 d.DataSource = result.ToList();
             }
         }
@@ -33,7 +34,7 @@ namespace qlnt.DB
             {
                 //p= db.PhanBons.Find();
                 int ma=Convert.ToInt32(id);
-                o = db.PhanBons.Where(p => p.MaPB == ma).SingleOrDefault();
+                o = db.PhanBon.Where(p => p.MaPB == ma).SingleOrDefault();
             }
             return o;
         }
@@ -47,7 +48,7 @@ namespace qlnt.DB
             }*/
             using (QLNTEntities1 db = new QLNTEntities1())
             {
-                db.PhanBons.Add(o);
+                db.PhanBon.Add(o);
                 db.SaveChanges();
             }
         }
@@ -56,8 +57,8 @@ namespace qlnt.DB
             using (QLNTEntities1 db = new QLNTEntities1())
             {
                 int ma = Convert.ToInt32(id);
-                PhanBon temp = db.PhanBons.Where(p => p.MaPB == ma).SingleOrDefault();
-                db.PhanBons.Remove(temp);
+                PhanBon temp = db.PhanBon.Where(p => p.MaPB == ma).SingleOrDefault();
+                db.PhanBon.Remove(temp);
                 db.SaveChanges();
             }
         }
@@ -66,7 +67,7 @@ namespace qlnt.DB
             using (QLNTEntities1 db = new QLNTEntities1())
             {
                 int ma = o.MaPB;
-                PhanBon temp = db.PhanBons.Find(ma);
+                PhanBon temp = db.PhanBon.Find(ma);
                 temp.TenPB = o.TenPB;
                 temp.Loai = o.Loai;
                 temp.SoLuong = o.SoLuong;
@@ -82,7 +83,7 @@ namespace qlnt.DB
             using (QLNTEntities1 db = new QLNTEntities1())
             {
                 //var result = from c in db.PhanBons select new { TenPB=c.TenPB, Loai=c} ;
-                var result = from c in db.PhanBons
+                var result = from c in db.PhanBon
                              select new { TenPB = c.TenPB, Loai = c.Loai,KhoiLuong = c.KhoiLuong.ToString(), SoLuong = c.SoLuong, DonGia = c.DonGia, NgaySX = c.NgaySX.Day+"/"+ c.NgaySX.Month +"/"+ c.NgaySX.Year,HanSD=  c.HanSD.Day+"/"+c.HanSD.Month +"/"+ c.HanSD.Year ,MaPB=c.MaPB};
                 dataGrid.DataSource = result.ToList();
             }
@@ -91,12 +92,53 @@ namespace qlnt.DB
         {
             using (QLNTEntities1 db = new QLNTEntities1())
             {
-                var result = from c in db.PhanBons
+                var result = from c in db.PhanBon
                               where c.TenPB.Contains(s)
                               select new { TenPB = c.TenPB, Loai = c.Loai, KhoiLuong = c.KhoiLuong.ToString(), SoLuong = c.SoLuong, DonGia = c.DonGia, NgaySX = c.NgaySX.Day + "/" + c.NgaySX.Month + "/" + c.NgaySX.Year, HanSD = c.HanSD.Day + "/" + c.HanSD.Month + "/" + c.HanSD.Year, MaPB = c.MaPB };
                 dataGrid.DataSource = result.ToList();
             }
         }
-        
+        public List<HangHoa> getListPhanBon()
+        {
+            using (QLNTEntities1 db = new QLNTEntities1())
+            {
+                var result = from c in db.PhanBon
+                             select c;
+                List<HangHoa> l = new List<HangHoa>();
+                foreach (var item in result)
+                {
+                    HangHoa h = new HangHoa();
+                    h.ten = item.TenPB;
+                    h.hanSD = item.HanSD.ToString("dd/MM/yyyy");
+                    h.SL = item.SoLuong;
+                    h.ma = item.MaPB;
+                    h.loai = "Phân bón";
+                    string trangThai = "Còn hàng";
+                    if (item.SoLuong == 0)
+                    {
+                        trangThai = "Hết hàng";
+                        h.hanSD = "-";
+                    }
+                    else
+                        if (item.SoLuong < 10)
+                        trangThai = "Sắp hết hàng";
+                    if (DateTime.Compare(item.HanSD, DateTime.Now) == -1 && item.SoLuong != 0)
+                        trangThai = "Hết hạn sử dụng";
+                    h.tinhTrang = trangThai;
+                    l.Add(h);
+                }
+                return l;
+            }
+        }
+        public void setHuySL(int id)
+        {
+            using (QLNTEntities1 db = new QLNTEntities1())
+            {
+                PhanBon p = db.PhanBon.Where(c => c.MaPB == id).SingleOrDefault();
+                p.SoLuong = 0;
+                db.SaveChanges();
+            }
+        }
+
     }
 }

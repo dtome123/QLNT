@@ -1,4 +1,4 @@
-﻿namespace qlnt.DialogForm
+﻿namespace qlnt.UI
 {
     partial class Diablog_PB
     {
@@ -46,9 +46,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.DatepickerSX = new Bunifu.Framework.UI.BunifuDatepicker();
             this.DatepickerHSD = new Bunifu.Framework.UI.BunifuDatepicker();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.button_luu = new Bunifu.Framework.UI.BunifuFlatButton();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -67,7 +69,7 @@
             this.button_add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_add.DisabledColor = System.Drawing.Color.Gray;
             this.button_add.Iconcolor = System.Drawing.Color.Transparent;
-            this.button_add.Iconimage = ((System.Drawing.Image)(resources.GetObject("button_add.Iconimage")));
+            this.button_add.Iconimage = null;
             this.button_add.Iconimage_right = null;
             this.button_add.Iconimage_right_Selected = null;
             this.button_add.Iconimage_Selected = null;
@@ -95,7 +97,7 @@
             // textTenPB
             // 
             this.textTenPB.BorderColor = System.Drawing.Color.SeaGreen;
-            this.textTenPB.Location = new System.Drawing.Point(119, 71);
+            this.textTenPB.Location = new System.Drawing.Point(119, 104);
             this.textTenPB.Name = "textTenPB";
             this.textTenPB.Size = new System.Drawing.Size(121, 20);
             this.textTenPB.TabIndex = 1;
@@ -104,7 +106,7 @@
             // 
             this.labelTen.AutoSize = true;
             this.labelTen.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTen.Location = new System.Drawing.Point(13, 70);
+            this.labelTen.Location = new System.Drawing.Point(13, 103);
             this.labelTen.Name = "labelTen";
             this.labelTen.Size = new System.Drawing.Size(100, 18);
             this.labelTen.TabIndex = 3;
@@ -113,7 +115,7 @@
             // textDonGia
             // 
             this.textDonGia.BorderColor = System.Drawing.Color.SeaGreen;
-            this.textDonGia.Location = new System.Drawing.Point(413, 126);
+            this.textDonGia.Location = new System.Drawing.Point(413, 146);
             this.textDonGia.Name = "textDonGia";
             this.textDonGia.Size = new System.Drawing.Size(121, 20);
             this.textDonGia.TabIndex = 6;
@@ -121,7 +123,7 @@
             // textSoLuong
             // 
             this.textSoLuong.BorderColor = System.Drawing.Color.SeaGreen;
-            this.textSoLuong.Location = new System.Drawing.Point(119, 126);
+            this.textSoLuong.Location = new System.Drawing.Point(119, 146);
             this.textSoLuong.Name = "textSoLuong";
             this.textSoLuong.Size = new System.Drawing.Size(121, 20);
             this.textSoLuong.TabIndex = 5;
@@ -130,7 +132,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(306, 128);
+            this.label1.Location = new System.Drawing.Point(306, 148);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 18);
             this.label1.TabIndex = 9;
@@ -140,7 +142,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(13, 125);
+            this.label5.Location = new System.Drawing.Point(13, 145);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 18);
             this.label5.TabIndex = 10;
@@ -150,7 +152,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(306, 71);
+            this.label6.Location = new System.Drawing.Point(306, 104);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(33, 18);
             this.label6.TabIndex = 11;
@@ -159,7 +161,7 @@
             // comboBoxLoai
             // 
             this.comboBoxLoai.FormattingEnabled = true;
-            this.comboBoxLoai.Location = new System.Drawing.Point(412, 71);
+            this.comboBoxLoai.Location = new System.Drawing.Point(412, 104);
             this.comboBoxLoai.Name = "comboBoxLoai";
             this.comboBoxLoai.Size = new System.Drawing.Size(121, 21);
             this.comboBoxLoai.TabIndex = 12;
@@ -228,19 +230,6 @@
             this.DatepickerHSD.TabIndex = 24;
             this.DatepickerHSD.Value = new System.DateTime(2019, 11, 2, 0, 0, 0, 0);
             // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(543, 12);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(25, 25);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 25;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
             // button_luu
             // 
             this.button_luu.Active = false;
@@ -252,7 +241,7 @@
             this.button_luu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_luu.DisabledColor = System.Drawing.Color.Gray;
             this.button_luu.Iconcolor = System.Drawing.Color.Transparent;
-            this.button_luu.Iconimage = ((System.Drawing.Image)(resources.GetObject("button_luu.Iconimage")));
+            this.button_luu.Iconimage = null;
             this.button_luu.Iconimage_right = null;
             this.button_luu.Iconimage_right_Selected = null;
             this.button_luu.Iconimage_Selected = null;
@@ -272,20 +261,56 @@
             this.button_luu.Size = new System.Drawing.Size(113, 48);
             this.button_luu.TabIndex = 26;
             this.button_luu.Text = "Lưu";
-            this.button_luu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_luu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.button_luu.Textcolor = System.Drawing.Color.White;
             this.button_luu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_luu.Visible = false;
             this.button_luu.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.label3.Location = new System.Drawing.Point(246, 188);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(23, 18);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "kg";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.LimeGreen;
+            this.label9.Location = new System.Drawing.Point(238, 40);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(142, 33);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "Phân bón";
+            // 
+            // bunifuImageButton3
+            // 
+            this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
+            this.bunifuImageButton3.ImageActive = null;
+            this.bunifuImageButton3.Location = new System.Drawing.Point(562, 12);
+            this.bunifuImageButton3.Name = "bunifuImageButton3";
+            this.bunifuImageButton3.Size = new System.Drawing.Size(25, 25);
+            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton3.TabIndex = 25;
+            this.bunifuImageButton3.TabStop = false;
+            this.bunifuImageButton3.Zoom = 10;
+            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
+            // 
             // Diablog_PB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(599, 440);
+            this.Controls.Add(this.bunifuImageButton3);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button_luu);
-            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.DatepickerHSD);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.DatepickerSX);
@@ -304,8 +329,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Diablog_PB";
             this.Text = "Diablog_PB";
-            this.Load += new System.EventHandler(this.add_PB_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            this.Load += new System.EventHandler(this.Diablog_PB_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,7 +354,9 @@
         private System.Windows.Forms.Label label2;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox textKhoiLuong;
         private Bunifu.Framework.UI.BunifuDatepicker DatepickerHSD;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuFlatButton button_luu;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label9;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
     }
 }
