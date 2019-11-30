@@ -36,7 +36,7 @@ namespace qlnt.UI
         public void createDictionary()
         {
             int j = 0;
-            List<string> name = new List<string>() { "Quang đãng", "Ít mây", "Nhiều mây", "Nhiều mây", "", "", "", "", "Mưa rào", "Mưa", "Có sấm" };
+            List<string> name = new List<string>() { "Quang đãng", "Ít mây", "Nhiều mây", "Mây rải rác", "", "", "", "", "Mưa rào", "Mưa", "Có sấm" };
             for (int i = 1; i <= 11; i++)
             {
                 string h = "";
@@ -119,7 +119,7 @@ namespace qlnt.UI
                     //chuyển từ độ F sang C
                     double tempC = (Convert.ToDouble(temp) * 1.0 - 32) / 1.8;
                     temp = tempC.ToString();
-                    labelNhiet.Text = temp;
+
                     // Lấy biểu tượng thời tiết hiện tại
                     XmlNode sym_node = time_node.SelectSingleNode("symbol");
                     string var = sym_node.Attributes["var"].Value;

@@ -213,11 +213,35 @@
     <Compile Include="DB\NongSanDB.cs" />
     <Compile Include="DB\PhanBonDB.cs" />
     <Compile Include="DB\ThuocBaoVeTVDB.cs" />
+    <Compile Include="UI\APIPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\APIPanel.designer.cs">
+      <DependentUpon>APIPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\APIWeather.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\APIWeather.Designer.cs">
       <DependentUpon>APIWeather.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Bill.designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BillList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BillList.designer.cs">
+      <DependentUpon>BillList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BillMngmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BillMngmt.designer.cs">
+      <DependentUpon>BillMngmt.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\DialogForm\Diablog_BangTH.cs">
       <SubType>Form</SubType>
@@ -378,8 +402,20 @@
     <Compile Include="UI\FormThuocBaoVeTV.Designer.cs">
       <DependentUpon>FormThuocBaoVeTV.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\APIPanel.resx">
+      <DependentUpon>APIPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\APIWeather.resx">
       <DependentUpon>APIWeather.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BillList.resx">
+      <DependentUpon>BillList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BillMngmt.resx">
+      <DependentUpon>BillMngmt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\DialogForm\Diablog_BangTH.resx">
       <DependentUpon>Diablog_BangTH.cs</DependentUpon>
