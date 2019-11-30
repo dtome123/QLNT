@@ -19,7 +19,7 @@ namespace qlnt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormKhachHang());   
+            Application.Run(new FormCay());   
         }
     }
 }

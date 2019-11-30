@@ -24,9 +24,7 @@ C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\bin\Debug\EntityFramework.SqlS
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\bin\Debug\EntityFramework.xml
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.csprojResolveAssemblyReference.cache
-C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.demo.resources
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.Form1.resources
-C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.Form3.resources
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.Properties.Resources.resources
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.csproj.GenerateResource.Cache
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.exe
@@ -57,3 +55,4 @@ C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.FormKhachHan
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.FormNhaCungCap.resources
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.FormNhanVien.resources
 C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.Diablog_KH.resources
+C:\Users\Vi\Desktop\Project\QLNT\source\qlnt\qlnt\obj\Debug\qlnt.UI.DialogForm.Diablog_NV.resources
