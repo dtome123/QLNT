@@ -16,5 +16,21 @@ namespace qlnt.UI
         {
             InitializeComponent();
         }
+        private void hideComponents()
+        {
+            tbtnCreateExpf.Visible = false;
+            tbtnSearchExpf.Visible = false;
+        }
+
+        private void showComponents()
+        {
+            tbtnCreateExpf.Visible = true;
+            tbtnSearchExpf.Visible = true;
+        }
+
+        private void ibtnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

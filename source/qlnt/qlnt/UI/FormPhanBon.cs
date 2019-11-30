@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using qlnt.DB;
 using qlnt.BUS;
 using Bunifu.Framework.UI;
+using qlnt.UI;
 
 namespace qlnt
 {
@@ -25,7 +26,7 @@ namespace qlnt
         internal void View()
         {
             bus.View(dataGrid);
-            dataGrid.Rows[0].Selected = false;
+            
         }
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -34,8 +35,8 @@ namespace qlnt
         // Chức năng
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
-            //Diablog_PB d = new Diablog_PB();
-            //d.ShowDialog(this);
+            Diablog_PB d = new Diablog_PB();
+            d.ShowDialog(this);
             View();
         }
 
@@ -46,8 +47,8 @@ namespace qlnt
             {
                
                 id = dataGrid.Rows[e.RowIndex].Cells["Id"].Value.ToString(); 
-                //Diablog_PB d = new Diablog_PB(id);
-                //d.ShowDialog(this);
+                Diablog_PB d = new Diablog_PB(id);
+                d.ShowDialog(this);
                 View();
             }
             if (dataGrid.Columns[e.ColumnIndex].Name == "Xoa")

@@ -32,7 +32,9 @@
             this.tbtnSearchImpf = new Bunifu.Framework.UI.BunifuTileButton();
             this.tbtnCreateImpf = new Bunifu.Framework.UI.BunifuTileButton();
             this.pnlContainer = new System.Windows.Forms.Panel();
+            this.ibtnBack = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnlContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ibtnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // tbtnSearchImpf
@@ -77,12 +79,26 @@
             // 
             // pnlContainer
             // 
+            this.pnlContainer.Controls.Add(this.ibtnBack);
             this.pnlContainer.Controls.Add(this.tbtnCreateImpf);
             this.pnlContainer.Controls.Add(this.tbtnSearchImpf);
             this.pnlContainer.Location = new System.Drawing.Point(1, 0);
             this.pnlContainer.Name = "pnlContainer";
             this.pnlContainer.Size = new System.Drawing.Size(1100, 661);
             this.pnlContainer.TabIndex = 6;
+            // 
+            // ibtnBack
+            // 
+            this.ibtnBack.Image = ((System.Drawing.Image)(resources.GetObject("ibtnBack.Image")));
+            this.ibtnBack.ImageActive = null;
+            this.ibtnBack.Location = new System.Drawing.Point(27, 28);
+            this.ibtnBack.Name = "ibtnBack";
+            this.ibtnBack.Size = new System.Drawing.Size(71, 71);
+            this.ibtnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ibtnBack.TabIndex = 6;
+            this.ibtnBack.TabStop = false;
+            this.ibtnBack.Zoom = 10;
+            this.ibtnBack.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // ImportMngmt
             // 
@@ -94,6 +110,7 @@
             this.Name = "ImportMngmt";
             this.Text = "ImportMngmt";
             this.pnlContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ibtnBack)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -103,5 +120,6 @@
         private Bunifu.Framework.UI.BunifuTileButton tbtnSearchImpf;
         private Bunifu.Framework.UI.BunifuTileButton tbtnCreateImpf;
         private System.Windows.Forms.Panel pnlContainer;
+        private Bunifu.Framework.UI.BunifuImageButton ibtnBack;
     }
 }

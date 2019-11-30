@@ -12,7 +12,6 @@ namespace qlnt.UI
 {
     public partial class ExportForm : Form
     {
-        Dashboard board = new Dashboard();
         public ExportForm()
         {
             InitializeComponent();

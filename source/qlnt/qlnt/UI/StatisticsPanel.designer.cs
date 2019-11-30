@@ -29,21 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StatisticsPanel));
-            this.lblTitle = new System.Windows.Forms.Label();
             this.xuiLineGraph = new XanderUI.XUILineGraph();
             this.SuspendLayout();
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(140, 32);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(159, 39);
-            this.lblTitle.TabIndex = 1;
-            this.lblTitle.Text = "Thống kê";
             // 
             // xuiLineGraph
             // 
@@ -76,20 +63,16 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(450, 280);
-            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.xuiLineGraph);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StatisticsPanel";
             this.Text = "Statistics";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblTitle;
         private XanderUI.XUILineGraph xuiLineGraph;
     }
 }

@@ -102,13 +102,13 @@ namespace qlnt.UI
             checkString c = new checkString();
             if (c.isNUll(textTenThuoc.Text))
             {
-                MessageBox.Show("Dữ liệu không được để rỗng");
+                MessageBox.Show("Dữ liệu tên thuốc không được để rỗng");
                 textTenThuoc.Focus();
                 return false;
             }
             if (c.isNUll(comboboxDang.Text))
             {
-                MessageBox.Show("Dữ liệu không được để rỗng");
+                MessageBox.Show("Dữ liệu dạng thuốc không được để rỗng");
                 comboboxDang.Focus();
                 return false;
             }
@@ -120,7 +120,7 @@ namespace qlnt.UI
             }
             if (c.isNUll(textNoiSX.Text))
             {
-                MessageBox.Show("Dữ liệu không được để rỗng");
+                MessageBox.Show("Dữ liệu nơi sản xuất không được để rỗng");
                 textNoiSX.Focus();
                 return false;
             }
@@ -132,7 +132,7 @@ namespace qlnt.UI
             }
             if (c.isNUll(textCongDung.Text))
             {
-                MessageBox.Show("Dữ liệu không được để trống");
+                MessageBox.Show("Dữ liệu công dụng không được để trống");
                 textCongDung.Focus();
                 return false;
             }
@@ -158,7 +158,6 @@ namespace qlnt.UI
 
                         ).ToDictionary(z => z.MaDoc, z => z.MucDoDoc);
                 }
-                MessageBox.Show(temp);
                 var kq = d.Keys.ToString();
                 foreach (var k in d)
                 {
@@ -169,7 +168,6 @@ namespace qlnt.UI
                         break;
                     }
                 }
-                MessageBox.Show(kq);
                 o = new ThuocBaoVeTV() { TenThuoc = textTenThuoc.Text, Dang = comboboxDang.Text, SoLuong = Convert.ToInt32(textSoLuong.Text), ThoiGianCachLy = Convert.ToInt32(textThoiGianCachLy.Text),NoiSX=textNoiSX.Text,CongDung=textCongDung.Text,NgaySX = DatepickerSX.Value.Date, HanSD = DatepickerHSD.Value.Date,MaDoc=kq };
                 bus.Add(o);
                 MessageBox.Show("Thêm thành công");

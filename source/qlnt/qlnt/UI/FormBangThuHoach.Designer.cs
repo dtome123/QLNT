@@ -96,7 +96,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGrid.Size = new System.Drawing.Size(623, 154);
+            this.dataGrid.Size = new System.Drawing.Size(987, 363);
             this.dataGrid.TabIndex = 9;
             this.dataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_CellContentClick);
             this.dataGrid.CellMouseLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_CellMouseLeave);
@@ -169,7 +169,7 @@
             // 
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(517, 132);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(663, 119);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(44, 40);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -182,7 +182,7 @@
             // 
             this.lblThem.AutoSize = true;
             this.lblThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.lblThem.Location = new System.Drawing.Point(567, 139);
+            this.lblThem.Location = new System.Drawing.Point(713, 126);
             this.lblThem.Name = "lblThem";
             this.lblThem.Size = new System.Drawing.Size(65, 24);
             this.lblThem.TabIndex = 31;
@@ -192,7 +192,7 @@
             // 
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(638, 12);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(1052, 12);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Size = new System.Drawing.Size(25, 25);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -204,7 +204,7 @@
             // comboBoxNam
             // 
             this.comboBoxNam.FormattingEnabled = true;
-            this.comboBoxNam.Location = new System.Drawing.Point(331, 144);
+            this.comboBoxNam.Location = new System.Drawing.Point(477, 131);
             this.comboBoxNam.Name = "comboBoxNam";
             this.comboBoxNam.Size = new System.Drawing.Size(68, 21);
             this.comboBoxNam.TabIndex = 33;
@@ -215,7 +215,7 @@
             this.lblTim.AutoSize = true;
             this.lblTim.Font = new System.Drawing.Font("Tahoma", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTim.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lblTim.Location = new System.Drawing.Point(6, 140);
+            this.lblTim.Location = new System.Drawing.Point(89, 126);
             this.lblTim.Name = "lblTim";
             this.lblTim.Size = new System.Drawing.Size(103, 28);
             this.lblTim.TabIndex = 35;
@@ -225,7 +225,7 @@
             // 
             this.lblThang.AutoSize = true;
             this.lblThang.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThang.Location = new System.Drawing.Point(115, 142);
+            this.lblThang.Location = new System.Drawing.Point(261, 129);
             this.lblThang.Name = "lblThang";
             this.lblThang.Size = new System.Drawing.Size(64, 23);
             this.lblThang.TabIndex = 36;
@@ -235,7 +235,7 @@
             // 
             this.lblNam.AutoSize = true;
             this.lblNam.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNam.Location = new System.Drawing.Point(275, 143);
+            this.lblNam.Location = new System.Drawing.Point(421, 130);
             this.lblNam.Name = "lblNam";
             this.lblNam.Size = new System.Drawing.Size(51, 24);
             this.lblNam.TabIndex = 37;
@@ -245,7 +245,7 @@
             // comboBoxThang
             // 
             this.comboBoxThang.FormattingEnabled = true;
-            this.comboBoxThang.Location = new System.Drawing.Point(186, 144);
+            this.comboBoxThang.Location = new System.Drawing.Point(332, 131);
             this.comboBoxThang.Name = "comboBoxThang";
             this.comboBoxThang.Size = new System.Drawing.Size(64, 21);
             this.comboBoxThang.TabIndex = 34;
@@ -254,7 +254,7 @@
             // 
             this.bunifuImageButtonSearch.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButtonSearch.Image")));
             this.bunifuImageButtonSearch.ImageActive = null;
-            this.bunifuImageButtonSearch.Location = new System.Drawing.Point(424, 142);
+            this.bunifuImageButtonSearch.Location = new System.Drawing.Point(570, 129);
             this.bunifuImageButtonSearch.Name = "bunifuImageButtonSearch";
             this.bunifuImageButtonSearch.Size = new System.Drawing.Size(40, 25);
             this.bunifuImageButtonSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -268,7 +268,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(675, 452);
+            this.ClientSize = new System.Drawing.Size(1100, 661);
             this.Controls.Add(this.bunifuImageButtonSearch);
             this.Controls.Add(this.lblNam);
             this.Controls.Add(this.lblThang);

@@ -243,6 +243,30 @@
     <Compile Include="UI\BillMngmt.designer.cs">
       <DependentUpon>BillMngmt.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Clock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Clock.designer.cs">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ClockPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ClockPanel.designer.cs">
+      <DependentUpon>ClockPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DashboardPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DashboardPanel.Designer.cs">
+      <DependentUpon>DashboardPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\demo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\demo.designer.cs">
+      <DependentUpon>demo.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\DialogForm\Diablog_BangTH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -322,6 +346,30 @@
       <DependentUpon>Dialog_XemCTKeHoach.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\DialogForm\InterfaceDialog.cs" />
+    <Compile Include="UI\EmployMngmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EmployMngmt.designer.cs">
+      <DependentUpon>EmployMngmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ExportForm.designer.cs">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExportFormList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ExportFormList.designer.cs">
+      <DependentUpon>ExportFormList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExportMngmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ExportMngmt.designer.cs">
+      <DependentUpon>ExportMngmt.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -402,6 +450,78 @@
     <Compile Include="UI\FormThuocBaoVeTV.Designer.cs">
       <DependentUpon>FormThuocBaoVeTV.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ImportForm.designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ImportFormList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ImportFormList.designer.cs">
+      <DependentUpon>ImportFormList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ImportMngmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ImportMngmt.designer.cs">
+      <DependentUpon>ImportMngmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InformationForm.designer.cs">
+      <DependentUpon>InformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ProductSellingMngmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ProductSellingMngmt.designer.cs">
+      <DependentUpon>ProductSellingMngmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StatisticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StatisticsForm.Designer.cs">
+      <DependentUpon>StatisticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StatisticsPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StatisticsPanel.designer.cs">
+      <DependentUpon>StatisticsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Test.designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ToDoListPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ToDoListPanel.designer.cs">
+      <DependentUpon>ToDoListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WarehouseMngmtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WarehouseMngmtForm.designer.cs">
+      <DependentUpon>WarehouseMngmtForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="UI\APIPanel.resx">
       <DependentUpon>APIPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -416,6 +536,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\BillMngmt.resx">
       <DependentUpon>BillMngmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Clock.resx">
+      <DependentUpon>Clock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ClockPanel.resx">
+      <DependentUpon>ClockPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DashboardPanel.resx">
+      <DependentUpon>DashboardPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\demo.resx">
+      <DependentUpon>demo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\DialogForm\Diablog_BangTH.resx">
       <DependentUpon>Diablog_BangTH.cs</DependentUpon>
@@ -455,6 +587,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\DialogForm\Dialog_XemCTKeHoach.resx">
       <DependentUpon>Dialog_XemCTKeHoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EmployMngmt.resx">
+      <DependentUpon>EmployMngmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ExportForm.resx">
+      <DependentUpon>ExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ExportFormList.resx">
+      <DependentUpon>ExportFormList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ExportMngmt.resx">
+      <DependentUpon>ExportMngmt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -503,6 +647,42 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormThuocBaoVeTV.resx">
       <DependentUpon>FormThuocBaoVeTV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ImportFormList.resx">
+      <DependentUpon>ImportFormList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ImportMngmt.resx">
+      <DependentUpon>ImportMngmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InformationForm.resx">
+      <DependentUpon>InformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ProductSellingMngmt.resx">
+      <DependentUpon>ProductSellingMngmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StatisticsForm.resx">
+      <DependentUpon>StatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StatisticsPanel.resx">
+      <DependentUpon>StatisticsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ToDoListPanel.resx">
+      <DependentUpon>ToDoListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WarehouseMngmtForm.resx">
+      <DependentUpon>WarehouseMngmtForm.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="DB\Entity\QLNT.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

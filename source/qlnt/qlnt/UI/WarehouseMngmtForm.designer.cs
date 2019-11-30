@@ -40,18 +40,19 @@
             this.tbtnPesticideMngmt.color = System.Drawing.Color.SeaGreen;
             this.tbtnPesticideMngmt.colorActive = System.Drawing.Color.MediumSeaGreen;
             this.tbtnPesticideMngmt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tbtnPesticideMngmt.Font = new System.Drawing.Font("Arial", 15F);
+            this.tbtnPesticideMngmt.Font = new System.Drawing.Font("Arial", 13F);
             this.tbtnPesticideMngmt.ForeColor = System.Drawing.Color.White;
             this.tbtnPesticideMngmt.Image = ((System.Drawing.Image)(resources.GetObject("tbtnPesticideMngmt.Image")));
-            this.tbtnPesticideMngmt.ImagePosition = 19;
-            this.tbtnPesticideMngmt.ImageZoom = 50;
-            this.tbtnPesticideMngmt.LabelPosition = 39;
-            this.tbtnPesticideMngmt.LabelText = "Danh sách thuốc BTV";
+            this.tbtnPesticideMngmt.ImagePosition = 16;
+            this.tbtnPesticideMngmt.ImageZoom = 60;
+            this.tbtnPesticideMngmt.LabelPosition = 32;
+            this.tbtnPesticideMngmt.LabelText = "Danh sách thuốc BVTV";
             this.tbtnPesticideMngmt.Location = new System.Drawing.Point(141, 217);
             this.tbtnPesticideMngmt.Margin = new System.Windows.Forms.Padding(6);
             this.tbtnPesticideMngmt.Name = "tbtnPesticideMngmt";
             this.tbtnPesticideMngmt.Size = new System.Drawing.Size(205, 211);
             this.tbtnPesticideMngmt.TabIndex = 8;
+            this.tbtnPesticideMngmt.Click += new System.EventHandler(this.tbtnPesticideMngmt_Click);
             // 
             // tbtnFertilizerMngmt
             // 
@@ -63,7 +64,7 @@
             this.tbtnFertilizerMngmt.ForeColor = System.Drawing.Color.White;
             this.tbtnFertilizerMngmt.Image = ((System.Drawing.Image)(resources.GetObject("tbtnFertilizerMngmt.Image")));
             this.tbtnFertilizerMngmt.ImagePosition = 19;
-            this.tbtnFertilizerMngmt.ImageZoom = 50;
+            this.tbtnFertilizerMngmt.ImageZoom = 60;
             this.tbtnFertilizerMngmt.LabelPosition = 39;
             this.tbtnFertilizerMngmt.LabelText = "Danh sách phân bón";
             this.tbtnFertilizerMngmt.Location = new System.Drawing.Point(754, 217);
@@ -71,6 +72,7 @@
             this.tbtnFertilizerMngmt.Name = "tbtnFertilizerMngmt";
             this.tbtnFertilizerMngmt.Size = new System.Drawing.Size(205, 211);
             this.tbtnFertilizerMngmt.TabIndex = 10;
+            this.tbtnFertilizerMngmt.Click += new System.EventHandler(this.tbtnFertilizerMngmt_Click);
             // 
             // tbtnProductMngmt
             // 
@@ -82,7 +84,7 @@
             this.tbtnProductMngmt.ForeColor = System.Drawing.Color.White;
             this.tbtnProductMngmt.Image = ((System.Drawing.Image)(resources.GetObject("tbtnProductMngmt.Image")));
             this.tbtnProductMngmt.ImagePosition = 19;
-            this.tbtnProductMngmt.ImageZoom = 50;
+            this.tbtnProductMngmt.ImageZoom = 60;
             this.tbtnProductMngmt.LabelPosition = 39;
             this.tbtnProductMngmt.LabelText = "Danh sách nông sản";
             this.tbtnProductMngmt.Location = new System.Drawing.Point(448, 217);
@@ -90,6 +92,7 @@
             this.tbtnProductMngmt.Name = "tbtnProductMngmt";
             this.tbtnProductMngmt.Size = new System.Drawing.Size(205, 211);
             this.tbtnProductMngmt.TabIndex = 9;
+            this.tbtnProductMngmt.Click += new System.EventHandler(this.tbtnProductMngmt_Click);
             // 
             // WarehouseMngmtForm
             // 

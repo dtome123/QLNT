@@ -29,5 +29,20 @@ namespace qlnt.UI
             this.Controls.Add(impf);
             impf.Show();
         }
+        private void hideComponents()
+        {
+            tbtnCreateImpf.Visible = false;
+            tbtnSearchImpf.Visible = false;
+        }
+
+        private void showComponents()
+        {
+            tbtnCreateImpf.Visible = true;
+            tbtnSearchImpf.Visible = true;
+        }
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

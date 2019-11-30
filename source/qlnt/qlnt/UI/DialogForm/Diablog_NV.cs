@@ -80,7 +80,6 @@ namespace qlnt.UI.DialogForm
         {
             this.Close();
         }
-
         Dictionary<int, string> dictionaryNhanVien = new Dictionary<int, string>();
         private void Diablog_NV_Load(object sender, EventArgs e)
         {
@@ -107,6 +106,12 @@ namespace qlnt.UI.DialogForm
             {
                 MessageBox.Show("Dữ liệu không được để rỗng");
                 txbSoDienThoai.Focus();
+                return false;
+            }
+            if (c.isNumber(txbTenNV.Text))
+            {
+                MessageBox.Show("Dữ liệu tên nhân viên phải là chữ");
+                txbTenNV.Focus(); 
                 return false;
             }
             if (!c.isNumber(txbSoDienThoai.Text))

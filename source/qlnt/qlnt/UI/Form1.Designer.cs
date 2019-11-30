@@ -53,7 +53,7 @@
             // 
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(743, 12);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1024, 21);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(33, 26);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -80,16 +80,16 @@
             // 
             this.inputSearch.BorderColor = System.Drawing.Color.SeaGreen;
             this.inputSearch.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputSearch.Location = new System.Drawing.Point(169, 156);
+            this.inputSearch.Location = new System.Drawing.Point(199, 123);
             this.inputSearch.Name = "inputSearch";
-            this.inputSearch.Size = new System.Drawing.Size(209, 27);
+            this.inputSearch.Size = new System.Drawing.Size(405, 27);
             this.inputSearch.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(87, 160);
+            this.label1.Location = new System.Drawing.Point(117, 127);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 19);
             this.label1.TabIndex = 5;
@@ -99,7 +99,7 @@
             // 
             this.buttonSearch.Image = ((System.Drawing.Image)(resources.GetObject("buttonSearch.Image")));
             this.buttonSearch.ImageActive = null;
-            this.buttonSearch.Location = new System.Drawing.Point(384, 156);
+            this.buttonSearch.Location = new System.Drawing.Point(610, 123);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(32, 27);
             this.buttonSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -111,7 +111,7 @@
             // 
             this.buttonAdd.Image = ((System.Drawing.Image)(resources.GetObject("buttonAdd.Image")));
             this.buttonAdd.ImageActive = null;
-            this.buttonAdd.Location = new System.Drawing.Point(576, 156);
+            this.buttonAdd.Location = new System.Drawing.Point(779, 119);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(28, 27);
             this.buttonAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -123,7 +123,7 @@
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(527, 160);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(730, 123);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(47, 18);
             this.bunifuCustomLabel2.TabIndex = 8;
@@ -147,7 +147,7 @@
             this.buttonViewAll.IdleFillColor = System.Drawing.Color.White;
             this.buttonViewAll.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.buttonViewAll.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.buttonViewAll.Location = new System.Drawing.Point(665, 150);
+            this.buttonViewAll.Location = new System.Drawing.Point(868, 113);
             this.buttonViewAll.Margin = new System.Windows.Forms.Padding(5);
             this.buttonViewAll.Name = "buttonViewAll";
             this.buttonViewAll.Size = new System.Drawing.Size(109, 33);
@@ -159,7 +159,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(788, 491);
+            this.ClientSize = new System.Drawing.Size(1100, 661);
             this.Controls.Add(this.buttonViewAll);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.buttonAdd);

@@ -110,9 +110,11 @@ namespace qlnt.UI
                 o.SoLuongCongViecHoanThanh = 0;
                 //// set lại đăng nhập
                 o.MaNguoiLap = 1;
-                 
+
+                bus.Add(o,l);
+                MessageBox.Show("Đã lập thành công");
+                Close();
                 
-                MessageBox.Show(bus.Add(o, l).ToString());
                 
                 
             }

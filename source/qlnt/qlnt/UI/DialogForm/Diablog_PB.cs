@@ -62,31 +62,31 @@ namespace qlnt.UI
             checkString c = new checkString();
             if (c.isNUll(textTenPB.Text))
             {
-                MessageBox.Show("Dữ liệu không được để rỗng");
+                MessageBox.Show("Dữ liệu tên phân bón không được để rỗng");
                 textTenPB.Focus();
                 return false;
             }
             if (c.isNUll(comboBoxLoai.Text))
             {
-                MessageBox.Show("Dữ liệu không được để rỗng");
+                MessageBox.Show("Dữ liệu loại không được để rỗng");
                 comboBoxLoai.Focus();
                 return false;
             }
             if (c.isNUll(textSoLuong.Text))
             {
-                MessageBox.Show("Dữ liệu không được để rỗng");
+                MessageBox.Show("Dữ liệu số lượng phải là số");
                 textSoLuong.Focus();
                 return false;
             }
             if (c.isNUll(textKhoiLuong.Text))
             {
-                MessageBox.Show("Dữ liệu không được để rỗng");
+                MessageBox.Show("Dữ liệu khối lượng không được để rỗng");
                 textKhoiLuong.Focus();
                 return false;
             }
-            if (c.isNUll(textDonGia.Text))
+            if (!c.isNumber(textDonGia.Text))
             {
-                MessageBox.Show("Dữ liệu không được để rỗng");
+                MessageBox.Show("Dữ liệu đơn giá phải là số");
                 textDonGia.Focus();
                 return false;
             }

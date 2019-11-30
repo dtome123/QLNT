@@ -54,7 +54,7 @@
             // 
             // inputSearch
             // 
-            this.inputSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inputSearch.Margin = new System.Windows.Forms.Padding(2);
             // 
             // buttonSearch
             // 
@@ -105,7 +105,7 @@
             this.DataGrid.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.DataGrid.HeaderForeColor = System.Drawing.Color.Honeydew;
             this.DataGrid.Location = new System.Drawing.Point(70, 229);
-            this.DataGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DataGrid.Margin = new System.Windows.Forms.Padding(2);
             this.DataGrid.Name = "DataGrid";
             this.DataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGrid.RowHeadersWidth = 51;
@@ -174,9 +174,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 414);
+            this.ClientSize = new System.Drawing.Size(1100, 661);
             this.Controls.Add(this.DataGrid);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormNhaCungCap";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.FormNhaCungCap_Load);

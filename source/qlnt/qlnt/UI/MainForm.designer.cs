@@ -40,13 +40,12 @@
             this.fbtnInformation = new Bunifu.Framework.UI.BunifuFlatButton();
             this.fbtnMainPage = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlHeader = new System.Windows.Forms.Panel();
-            this.fbtnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ibtnClose = new Bunifu.Framework.UI.BunifuImageButton();
-            this.pnlWeather = new System.Windows.Forms.Panel();
+            this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlToDoList = new System.Windows.Forms.Panel();
             this.pnlStatistics = new System.Windows.Forms.Panel();
             this.pnlClock = new System.Windows.Forms.Panel();
-            this.pnlMain = new System.Windows.Forms.Panel();
+            this.pnlWeather = new System.Windows.Forms.Panel();
             this.pnlSidebar.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ibtnClose)).BeginInit();
@@ -105,6 +104,7 @@
             this.fbtnWorkMngmt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.fbtnWorkMngmt.Textcolor = System.Drawing.Color.White;
             this.fbtnWorkMngmt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fbtnWorkMngmt.Click += new System.EventHandler(this.fbtnWorkMngmt_Click);
             // 
             // fbtnWarehouseMngmt
             // 
@@ -164,7 +164,7 @@
             this.fbtnEmployMngmt.IconVisible = true;
             this.fbtnEmployMngmt.IconZoom = 90D;
             this.fbtnEmployMngmt.IsTab = false;
-            this.fbtnEmployMngmt.Location = new System.Drawing.Point(0, 294);
+            this.fbtnEmployMngmt.Location = new System.Drawing.Point(0, 182);
             this.fbtnEmployMngmt.Name = "fbtnEmployMngmt";
             this.fbtnEmployMngmt.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
             this.fbtnEmployMngmt.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(145)))), ((int)(((byte)(27)))));
@@ -176,6 +176,7 @@
             this.fbtnEmployMngmt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.fbtnEmployMngmt.Textcolor = System.Drawing.Color.White;
             this.fbtnEmployMngmt.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fbtnEmployMngmt.Click += new System.EventHandler(this.fbtnEmployMngmt_Click);
             // 
             // ftbnProductsSellingMngmt
             // 
@@ -256,6 +257,7 @@
             this.fbtnStatistics.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.fbtnStatistics.Textcolor = System.Drawing.Color.White;
             this.fbtnStatistics.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fbtnStatistics.Click += new System.EventHandler(this.fbtnStatistics_Click);
             // 
             // fbtnInstruction
             // 
@@ -314,7 +316,7 @@
             this.fbtnInformation.IconVisible = true;
             this.fbtnInformation.IconZoom = 90D;
             this.fbtnInformation.IsTab = false;
-            this.fbtnInformation.Location = new System.Drawing.Point(0, 182);
+            this.fbtnInformation.Location = new System.Drawing.Point(0, 294);
             this.fbtnInformation.Name = "fbtnInformation";
             this.fbtnInformation.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
             this.fbtnInformation.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(145)))), ((int)(((byte)(27)))));
@@ -367,49 +369,12 @@
             // pnlHeader
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(145)))), ((int)(((byte)(27)))));
-            this.pnlHeader.Controls.Add(this.fbtnLogin);
             this.pnlHeader.Controls.Add(this.ibtnClose);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(180, 0);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(1100, 60);
             this.pnlHeader.TabIndex = 1;
-            // 
-            // fbtnLogin
-            // 
-            this.fbtnLogin.Active = false;
-            this.fbtnLogin.Activecolor = System.Drawing.Color.Transparent;
-            this.fbtnLogin.BackColor = System.Drawing.Color.Transparent;
-            this.fbtnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.fbtnLogin.BorderRadius = 0;
-            this.fbtnLogin.ButtonText = "Đăng nhập";
-            this.fbtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.fbtnLogin.DisabledColor = System.Drawing.Color.Gray;
-            this.fbtnLogin.Iconcolor = System.Drawing.Color.Transparent;
-            this.fbtnLogin.Iconimage = null;
-            this.fbtnLogin.Iconimage_right = null;
-            this.fbtnLogin.Iconimage_right_Selected = null;
-            this.fbtnLogin.Iconimage_Selected = null;
-            this.fbtnLogin.IconMarginLeft = 0;
-            this.fbtnLogin.IconMarginRight = 0;
-            this.fbtnLogin.IconRightVisible = true;
-            this.fbtnLogin.IconRightZoom = 0D;
-            this.fbtnLogin.IconVisible = false;
-            this.fbtnLogin.IconZoom = 90D;
-            this.fbtnLogin.IsTab = false;
-            this.fbtnLogin.Location = new System.Drawing.Point(978, 12);
-            this.fbtnLogin.Name = "fbtnLogin";
-            this.fbtnLogin.Normalcolor = System.Drawing.Color.Transparent;
-            this.fbtnLogin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(100)))), ((int)(((byte)(34)))));
-            this.fbtnLogin.OnHoverTextColor = System.Drawing.Color.White;
-            this.fbtnLogin.selected = false;
-            this.fbtnLogin.Size = new System.Drawing.Size(75, 30);
-            this.fbtnLogin.TabIndex = 1;
-            this.fbtnLogin.Text = "Đăng nhập";
-            this.fbtnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.fbtnLogin.Textcolor = System.Drawing.Color.White;
-            this.fbtnLogin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fbtnLogin.Click += new System.EventHandler(this.fbtnLogin_Click);
             // 
             // ibtnClose
             // 
@@ -425,14 +390,14 @@
             this.ibtnClose.Zoom = 10;
             this.ibtnClose.Click += new System.EventHandler(this.ibtnClose_Click);
             // 
-            // pnlWeather
+            // pnlMain
             // 
-            this.pnlWeather.BackColor = System.Drawing.Color.Gray;
-            this.pnlWeather.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlWeather.Location = new System.Drawing.Point(247, 98);
-            this.pnlWeather.Name = "pnlWeather";
-            this.pnlWeather.Size = new System.Drawing.Size(450, 280);
-            this.pnlWeather.TabIndex = 2;
+            this.pnlMain.Controls.Add(this.pnlClock);
+            this.pnlMain.Controls.Add(this.pnlToDoList);
+            this.pnlMain.Location = new System.Drawing.Point(180, 59);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(1100, 661);
+            this.pnlMain.TabIndex = 6;
             // 
             // pnlToDoList
             // 
@@ -459,14 +424,14 @@
             this.pnlClock.Size = new System.Drawing.Size(450, 280);
             this.pnlClock.TabIndex = 5;
             // 
-            // pnlMain
+            // pnlWeather
             // 
-            this.pnlMain.Controls.Add(this.pnlClock);
-            this.pnlMain.Controls.Add(this.pnlToDoList);
-            this.pnlMain.Location = new System.Drawing.Point(180, 59);
-            this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1100, 661);
-            this.pnlMain.TabIndex = 6;
+            this.pnlWeather.BackColor = System.Drawing.Color.Gray;
+            this.pnlWeather.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlWeather.Location = new System.Drawing.Point(247, 98);
+            this.pnlWeather.Name = "pnlWeather";
+            this.pnlWeather.Size = new System.Drawing.Size(450, 280);
+            this.pnlWeather.TabIndex = 2;
             // 
             // Dashboard
             // 
@@ -495,10 +460,6 @@
         private System.Windows.Forms.Panel pnlSidebar;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnMainPage;
         private System.Windows.Forms.Panel pnlHeader;
-        private System.Windows.Forms.Panel pnlWeather;
-        private System.Windows.Forms.Panel pnlToDoList;
-        private System.Windows.Forms.Panel pnlStatistics;
-        private System.Windows.Forms.Panel pnlClock;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnInformation;
         private Bunifu.Framework.UI.BunifuImageButton ibtnClose;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnInstruction;
@@ -508,7 +469,10 @@
         private Bunifu.Framework.UI.BunifuFlatButton ftbnProductsSellingMngmt;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnWarehouseMngmt;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnEmployMngmt;
-        private Bunifu.Framework.UI.BunifuFlatButton fbtnLogin;
         private Bunifu.Framework.UI.BunifuFlatButton fbtnWorkMngmt;
+        private System.Windows.Forms.Panel pnlClock;
+        private System.Windows.Forms.Panel pnlToDoList;
+        private System.Windows.Forms.Panel pnlStatistics;
+        private System.Windows.Forms.Panel pnlWeather;
     }
 }

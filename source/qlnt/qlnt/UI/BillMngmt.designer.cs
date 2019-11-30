@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BillMngmt));
             this.tbtnCreateBill = new Bunifu.Framework.UI.BunifuTileButton();
             this.tbtnSearchBill = new Bunifu.Framework.UI.BunifuTileButton();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // tbtnCreateBill
@@ -70,17 +72,33 @@
             this.tbtnSearchBill.Name = "tbtnSearchBill";
             this.tbtnSearchBill.Size = new System.Drawing.Size(205, 211);
             this.tbtnSearchBill.TabIndex = 6;
+            this.tbtnSearchBill.Click += new System.EventHandler(this.tbtnSearchBill_Click);
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(33, 28);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(71, 71);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 8;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // BillMngmt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 661);
+            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.tbtnCreateBill);
             this.Controls.Add(this.tbtnSearchBill);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BillMngmt";
             this.Text = "BillMngmt";
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -89,5 +107,6 @@
 
         private Bunifu.Framework.UI.BunifuTileButton tbtnCreateBill;
         private Bunifu.Framework.UI.BunifuTileButton tbtnSearchBill;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
     }
 }

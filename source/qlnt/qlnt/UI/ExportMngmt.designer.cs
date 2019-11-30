@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExportMngmt));
             this.tbtnCreateExpf = new Bunifu.Framework.UI.BunifuTileButton();
             this.tbtnSearchExpf = new Bunifu.Framework.UI.BunifuTileButton();
+            this.ibtnBack = new Bunifu.Framework.UI.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.ibtnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // tbtnCreateExpf
@@ -71,16 +73,31 @@
             this.tbtnSearchExpf.Size = new System.Drawing.Size(205, 211);
             this.tbtnSearchExpf.TabIndex = 6;
             // 
+            // ibtnBack
+            // 
+            this.ibtnBack.Image = ((System.Drawing.Image)(resources.GetObject("ibtnBack.Image")));
+            this.ibtnBack.ImageActive = null;
+            this.ibtnBack.Location = new System.Drawing.Point(30, 34);
+            this.ibtnBack.Name = "ibtnBack";
+            this.ibtnBack.Size = new System.Drawing.Size(71, 71);
+            this.ibtnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ibtnBack.TabIndex = 8;
+            this.ibtnBack.TabStop = false;
+            this.ibtnBack.Zoom = 10;
+            this.ibtnBack.Click += new System.EventHandler(this.ibtnBack_Click);
+            // 
             // ExportMngmt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 661);
+            this.Controls.Add(this.ibtnBack);
             this.Controls.Add(this.tbtnCreateExpf);
             this.Controls.Add(this.tbtnSearchExpf);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ExportMngmt";
             this.Text = "ExportMngmt";
+            ((System.ComponentModel.ISupportInitialize)(this.ibtnBack)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -89,5 +106,6 @@
 
         private Bunifu.Framework.UI.BunifuTileButton tbtnCreateExpf;
         private Bunifu.Framework.UI.BunifuTileButton tbtnSearchExpf;
+        private Bunifu.Framework.UI.BunifuImageButton ibtnBack;
     }
 }

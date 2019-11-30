@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using qlnt.DB;
+using qlnt.DB.Entity;
 
 namespace qlnt.UI
 {

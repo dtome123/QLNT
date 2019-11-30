@@ -12,9 +12,11 @@ namespace qlnt.UI
 {
     public partial class Dashboard : Form
     {
-        public Dashboard()
+        public Dashboard(int authorization)
         {
             InitializeComponent();
+            if (authorization != 0) fbtnEmployMngmt.Enabled = false;
+            else fbtnEmployMngmt.Enabled = true;
             showPanels();
         }
         private void hidePanels()
@@ -27,6 +29,7 @@ namespace qlnt.UI
 
         private void showPanels()
         {
+            
             //showing API Weather Panel
             APIWeather APIWeather = new APIWeather();
             APIWeather.TopLevel =  false;
@@ -38,6 +41,7 @@ namespace qlnt.UI
             ToDoListPanel todo = new ToDoListPanel();
             todo.TopLevel = false;
             pnlToDoList.Controls.Add(todo);
+            todo.BringToFront();
             todo.Show();
             pnlToDoList.Visible = true;
 
@@ -46,24 +50,35 @@ namespace qlnt.UI
             load(pnlStatistics, stat);
             pnlStatistics.Visible = true;
 
-            //i don't have any idea for this one yet
+            //i haven't had any great idea for this one yet
             ClockPanel clock = new ClockPanel();
-            load(pnlClock, clock);
+            clock.TopLevel = false;
+            pnlClock.Controls.Add(clock);
+            clock.Show();
             pnlClock.Visible = true;
+           
+        }
+        private void reloadPanels()
+        {
+            pnlClock.Visible = true;
+            pnlWeather.Visible = true;
+            pnlToDoList.Visible = true;
+            pnlStatistics.Visible = true;
         }
         private void ibtnClose_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            this.Close();
         }
         private void fbtnDashboard_Click(object sender, EventArgs e)
         {
-            pnlMain.Controls.Clear();
-            showPanels();
+            DashboardPanel dashboard = new DashboardPanel();
+            dashboard.TopLevel = false;
+            load(pnlMain, dashboard);
         }
         private void fbtnInformation_Click(object sender, EventArgs e)
         {
             hidePanels();
-            InformationForm info = new InformationForm();
+            FormCay info = new FormCay();
             info.TopLevel = false;
             load(pnlMain, info);
         }
@@ -74,13 +89,6 @@ namespace qlnt.UI
             ProductSellingMngmt psmngmt = new ProductSellingMngmt();
             load(pnlMain, psmngmt);
         }
-        private void fbtnLogin_Click(object sender, EventArgs e)
-        {
-            hidePanels();
-            LoginForm login = new LoginForm();
-            load(pnlMain, login);
-        }
-
         public void load(Panel panel, Form form)
         {
             panel.Controls.Clear();
@@ -90,12 +98,34 @@ namespace qlnt.UI
             panel.Controls.Add(form);
             form.Show();
         }
-
         private void fbtnWarehouseMngmt_Click(object sender, EventArgs e)
-        {
+        {   
             hidePanels();
             WarehouseMngmtForm warehouse = new WarehouseMngmtForm();
             load(pnlMain, warehouse);
+        }
+        private void fbtnWorkMngmt_Click(object sender, EventArgs e)
+        {
+            hidePanels();
+            FormKeHoach kehoach = new FormKeHoach();
+            load(pnlMain, kehoach);
+        }
+        private void fbtnEmployMngmt_Click(object sender, EventArgs e)
+        {
+            hidePanels();
+            FormNhanVien employee = new FormNhanVien();
+            load(pnlMain, employee);
+        }
+        private void fbtnStatistics_Click(object sender, EventArgs e)
+        {
+            hidePanels();
+            StatisticsForm stat = new StatisticsForm();
+            load(pnlMain, stat);
+        }
+
+        private void fbtnLogin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

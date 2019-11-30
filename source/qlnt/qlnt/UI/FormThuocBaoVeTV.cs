@@ -26,7 +26,7 @@ namespace qlnt
         internal void View()
         {
             bus.View(dataGrid);
-            dataGrid.Rows[0].Selected = false;
+            //dataGrid.Rows[0].Selected = false;
         }
         private void Form2_Load(object sender, EventArgs e)
         {

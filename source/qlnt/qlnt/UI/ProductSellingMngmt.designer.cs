@@ -74,6 +74,7 @@
             this.tbtnBillMngmt.Name = "tbtnBillMngmt";
             this.tbtnBillMngmt.Size = new System.Drawing.Size(205, 211);
             this.tbtnBillMngmt.TabIndex = 5;
+            this.tbtnBillMngmt.Click += new System.EventHandler(this.tbtnBillMngmt_Click);
             // 
             // tbtnExportMngmt
             // 
@@ -113,6 +114,7 @@
             this.tbtnCustomerMngmt.Name = "tbtnCustomerMngmt";
             this.tbtnCustomerMngmt.Size = new System.Drawing.Size(389, 211);
             this.tbtnCustomerMngmt.TabIndex = 6;
+            this.tbtnCustomerMngmt.Click += new System.EventHandler(this.tbtnCustomerMngmt_Click);
             // 
             // tbtnSupplierMngmt
             // 
@@ -132,6 +134,7 @@
             this.tbtnSupplierMngmt.Name = "tbtnSupplierMngmt";
             this.tbtnSupplierMngmt.Size = new System.Drawing.Size(364, 211);
             this.tbtnSupplierMngmt.TabIndex = 7;
+            this.tbtnSupplierMngmt.Click += new System.EventHandler(this.tbtnSupplierMngmt_Click);
             // 
             // ProductSellingMngmt
             // 

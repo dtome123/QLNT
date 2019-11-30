@@ -13,7 +13,7 @@ namespace qlnt.DB
         public Dictionary<int, string> getListQuyen()
         {
             QLNTEntities1 db = new QLNTEntities1();
-            return (from c in db.Quyen select new { c.MaQuyen, c.TenChucVu }).ToDictionary(c => c.MaQuyen, c => c.TenChucVu);
+            return (from c in db.Quyen where c.MaQuyen!=1 select new { c.MaQuyen, c.TenChucVu }).ToDictionary(c => c.MaQuyen, c => c.TenChucVu);
         }
 
         public void View(BunifuCustomDataGrid dataGid)
@@ -74,13 +74,13 @@ namespace qlnt.DB
             }
         }
 
-        public void Search(BunifuCustomDataGrid dataGid, string s)
+        public void Search(BunifuCustomDataGrid dataGrid, string s)
         {
             using (QLNTEntities1 db = new QLNTEntities1())
             {
                 var result = from nv in db.NhanVien
                              join q in db.Quyen on nv.MaQuyen equals q.MaQuyen
-                             where nv.TenNV.Contains(s)
+                             where nv.TenNV.Contains(s) && nv.MaNV != 1
                              select new
                              {
                                  MaNV = nv.MaNV,
@@ -91,7 +91,7 @@ namespace qlnt.DB
                                  MaQuyen = q.MaQuyen,
                                  TenChucVu = q.TenChucVu
                              };
-                dataGid.DataSource = result.ToList();
+                dataGrid.DataSource = result.ToList();
             }
         }
     }

@@ -38,7 +38,9 @@
             this.pnlDecor = new System.Windows.Forms.Panel();
             this.lblUsernameError = new System.Windows.Forms.Label();
             this.lblPasswordError = new System.Windows.Forms.Label();
+            this.ibtnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnlDecor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ibtnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -86,6 +88,7 @@
             this.txtboxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.txtboxPassword.Location = new System.Drawing.Point(441, 329);
             this.txtboxPassword.Name = "txtboxPassword";
+            this.txtboxPassword.PasswordChar = '*';
             this.txtboxPassword.Size = new System.Drawing.Size(473, 45);
             this.txtboxPassword.TabIndex = 4;
             // 
@@ -157,11 +160,25 @@
             this.lblPasswordError.TabIndex = 8;
             this.lblPasswordError.Text = "Sai mật khẩu, vui lòng thử lại!";
             // 
+            // ibtnClose
+            // 
+            this.ibtnClose.Image = ((System.Drawing.Image)(resources.GetObject("ibtnClose.Image")));
+            this.ibtnClose.ImageActive = null;
+            this.ibtnClose.Location = new System.Drawing.Point(1038, 12);
+            this.ibtnClose.Name = "ibtnClose";
+            this.ibtnClose.Size = new System.Drawing.Size(50, 50);
+            this.ibtnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ibtnClose.TabIndex = 9;
+            this.ibtnClose.TabStop = false;
+            this.ibtnClose.Zoom = 10;
+            this.ibtnClose.Click += new System.EventHandler(this.ibtnClose_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 661);
+            this.Controls.Add(this.ibtnClose);
             this.Controls.Add(this.lblPasswordError);
             this.Controls.Add(this.lblUsernameError);
             this.Controls.Add(this.pnlDecor);
@@ -175,6 +192,7 @@
             this.Text = "LoginForm";
             this.pnlDecor.ResumeLayout(false);
             this.pnlDecor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ibtnClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,5 +209,6 @@
         private System.Windows.Forms.Panel pnlDecor;
         private System.Windows.Forms.Label lblUsernameError;
         private System.Windows.Forms.Label lblPasswordError;
+        private Bunifu.Framework.UI.BunifuImageButton ibtnClose;
     }
 }
