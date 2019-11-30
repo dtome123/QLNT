@@ -53,6 +53,7 @@
             this.ibtnBack.TabIndex = 20;
             this.ibtnBack.TabStop = false;
             this.ibtnBack.Zoom = 10;
+            this.ibtnBack.Click += new System.EventHandler(this.ibtnBack_Click);
             // 
             // dgvFormList
             // 

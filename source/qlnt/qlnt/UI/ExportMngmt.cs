@@ -32,5 +32,23 @@ namespace qlnt.UI
         {
             this.Hide();
         }
+
+        private void tbtnCreateExpf_Click(object sender, EventArgs e)
+        {
+            ExportForm expf = new ExportForm();
+            expf.TopLevel = false;
+            this.Controls.Add(expf);
+            expf.BringToFront();
+            expf.Show();
+        }
+
+        private void tbtnSearchExpf_Click(object sender, EventArgs e)
+        {
+            ExportFormList expf = new ExportFormList();
+            expf.TopLevel = false;
+            this.Controls.Add(expf);
+            expf.BringToFront();
+            expf.Show();
+        }
     }
 }

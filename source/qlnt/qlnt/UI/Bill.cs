@@ -29,5 +29,10 @@ namespace qlnt.UI
         {
             
         }
+
+        private void fbtnDiscardChanges_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

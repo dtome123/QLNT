@@ -16,5 +16,10 @@ namespace qlnt.UI
         {
             InitializeComponent();
         }
+
+        private void ibtnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

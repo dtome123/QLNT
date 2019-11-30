@@ -53,6 +53,7 @@
             this.tbtnCreateExpf.Name = "tbtnCreateExpf";
             this.tbtnCreateExpf.Size = new System.Drawing.Size(205, 211);
             this.tbtnCreateExpf.TabIndex = 7;
+            this.tbtnCreateExpf.Click += new System.EventHandler(this.tbtnCreateExpf_Click);
             // 
             // tbtnSearchExpf
             // 
@@ -72,6 +73,7 @@
             this.tbtnSearchExpf.Name = "tbtnSearchExpf";
             this.tbtnSearchExpf.Size = new System.Drawing.Size(205, 211);
             this.tbtnSearchExpf.TabIndex = 6;
+            this.tbtnSearchExpf.Click += new System.EventHandler(this.tbtnSearchExpf_Click);
             // 
             // ibtnBack
             // 

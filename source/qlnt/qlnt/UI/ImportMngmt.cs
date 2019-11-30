@@ -19,7 +19,11 @@ namespace qlnt.UI
 
         private void tbtnImportSearch_Click(object sender, EventArgs e)
         {
-
+            ImportFormList impf = new ImportFormList();
+            impf.TopLevel = false;
+            this.Controls.Add(impf);
+            impf.BringToFront();
+            impf.Show();
         }
 
         private void tbtnCreateImpf_Click(object sender, EventArgs e)
@@ -27,6 +31,7 @@ namespace qlnt.UI
             ImportForm impf = new ImportForm();
             impf.TopLevel = false;
             this.Controls.Add(impf);
+            impf.BringToFront();
             impf.Show();
         }
         private void hideComponents()

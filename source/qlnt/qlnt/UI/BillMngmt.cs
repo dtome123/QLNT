@@ -31,13 +31,26 @@ namespace qlnt.UI
 
         private void tbtnSearchBill_Click(object sender, EventArgs e)
         {
-            hideComponents();
+            BillList bill = new BillList();
+            bill.TopLevel = false;
+            this.Controls.Add(bill);
+            bill.BringToFront();
+            bill.Show();
 
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void tbtnCreateBill_Click(object sender, EventArgs e)
+        {
+            Bill bill = new Bill();
+            bill.TopLevel = false;
+            this.Controls.Add(bill);
+            bill.BringToFront();
+            bill.Show();
         }
     }
 }

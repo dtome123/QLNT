@@ -53,6 +53,7 @@
             this.tbtnCreateBill.Name = "tbtnCreateBill";
             this.tbtnCreateBill.Size = new System.Drawing.Size(205, 211);
             this.tbtnCreateBill.TabIndex = 7;
+            this.tbtnCreateBill.Click += new System.EventHandler(this.tbtnCreateBill_Click);
             // 
             // tbtnSearchBill
             // 
